@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/helpers/head.htm',{
+"title": "Страница товара"
+})
+<body class="page">
+<div class="wrapper">
+	@@include('html/components/header.htm')
+	<main class="content">
+		@@include('html/modules/breadcrumbs.htm',{"current":"Наименование товара"})
+		<section class="catalog-item" data-observ>
+			<div class="catalog-item__container">
+				<div class="catalog-item-slider">
+					<div class="swiper product-thumbs-slider swiper-thumbs">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="product-thumbs-slider__image">
+									<img src="@content/temp/products/product-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-thumbs-slider__image">
+									<img src="@content/temp/products/product-2.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-thumbs-slider__image">
+									<img src="@content/temp/products/product-3.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-thumbs-slider__image">
+									<img src="@content/temp/products/product-4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper product-main-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="product-main-slider__image">
+									<img src="@content/temp/products/product-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-main-slider__image">
+									<img src="@content/temp/products/product-2.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-main-slider__image">
+									<img src="@content/temp/products/product-3.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="product-main-slider__image">
+									<img src="@content/temp/products/product-4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-info-body">
+					<div class="product-info-body__head">
+						<div class="product-article">Артикул: 4865132</div>
+						<div class="catalog-head-controls">
+							<a href="#" class="catalog-head-controls__item">
+								<svg>
+									<use href="@content/svg/sprite.svg#favorite"></use>
+								</svg>
+								<span>В избранное</span>
+							</a>
+							<a href="#" class="catalog-head-controls__item">
+								<svg>
+									<use href="@content/svg/sprite.svg#compare"></use>
+								</svg>
+								<span>Сравнить</span>
+							</a>
+							<a href="#" class="catalog-head-controls__item">
+								<svg>
+									<use href="@content/svg/sprite.svg#share"></use>
+								</svg>
+								<span>Поделиться</span>
+							</a>
+						</div>
+					</div>
+					<div class="product-title">
+						<h3>Asic майнер Whatsminer M50S 130Th</h3>
+					</div>
+					<div class="product-reviews">
+						<div class="rating">
+							<span class="rating__item"></span>
+							<span class="rating__item"></span>
+							<span class="rating__item"></span>
+							<span class="rating__item"></span>
+							<span class="rating__item"></span>
+						</div>
+						<a href="#feedback" class="product-reviews__link" data-change-tab>Отзывы <span>(12)</span></a>
+						<a href="#faq" class="product-reviews__link" data-change-tab>Вопросы и ответы <span>(12)</span></a>
+					</div>
+					<div class="hash-rate">
+						<div class="hash-rate__label">Хешрейт, Th/s:</div>
+						<div class="hash-rate__items">
+							<a href="#">100</a>
+							<a href="#">102</a>
+							<a href="#">104</a>
+							<a href="#">106</a>
+							<a href="#" class="active">108</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-info-bottom">
+					<div class="product-info-bottom__offer">
+						<div class="price-block">
+							<div class="price-block__new">266 989 ₽</div>
+							<div class="price-block__old">266 989 ₽</div>
+						</div>
+						<div class="add-remove-controls" data-counter="counter">
+							<button class="add-remove-controls__add" data-counter="plus">+</button>
+							<input type="number" name="product_count" class="add-remove-controls__count" value="1" data-counter="count">
+							<button class="add-remove-controls__remove" data-counter="minus">-</button>
+						</div>
+						<button class="button" type="button">Добавить в корзину</button>
+						<button class="button button_stroke" type="button">Быстрый заказ</button>
+					</div>
+					<div class="product-info-bottom__specs">
+						<div class="specs-item">
+							<div class="specs-item__row">
+								<span class="specs-item__key">Алгоритм</span>
+								<span class="specs-item__value">SHA-256</span>
+							</div>
+							<div class="specs-item__row">
+								<span class="specs-item__key">Криптовалюта</span>
+								<span class="specs-item__value">BTC, BCH</span>
+							</div>
+							<div class="specs-item__row">
+								<span class="specs-item__key">Энергопотребление</span>
+								<span class="specs-item__value">3 500 Вт</span>
+							</div>
+							<a href="#features" class="specs-item__link" data-change-tab>Посмотреть все характеристики</a>
+						</div>
+						<div class="specs-item">
+							<div class="specs-item__row">
+								<span class="specs-item__key">Доход в день</span>
+								<span class="specs-item__value">20,9 $</span>
+							</div>
+							<div class="specs-item__row">
+								<span class="specs-item__key">Доход в месяц</span>
+								<span class="specs-item__value">634,4 $</span>
+							</div>
+							<div class="specs-item__row">
+								<span class="specs-item__key">Окупаемость</span>
+								<span class="specs-item__value">10,6 месяцев</span>
+							</div>
+							<a href="#calculator" class="specs-item__button" data-change-tab>
+								<svg>
+									<use href="@content/svg/sprite.svg#calc"></use>
+								</svg>
+								Калькулятор доходности
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-item-tabs">
+			<div class="catalog-item-tabs__container">
+				<div class="tabs" data-tabs="product-info">
+					<div class="tabs__nav">
+						<button class="tabs__trigger" type="button" data-category="review">Обзор</button>
+						<button class="tabs__trigger" type="button" data-category="features">Характеристики</button>
+						<button class="tabs__trigger" type="button" data-category="calculator">Калькулятор доходности</button>
+						<button class="tabs__trigger" type="button" data-category="feedback">Отзывы</button>
+						<button class="tabs__trigger" type="button" data-category="faq">Вопросы и ответы</button>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__panel">
+							<div class="text-box">
+								<p>
+									В Whatsminer M50S 130Th используются 5 нанометровые чипы, который обеспечивают высокую скорость обработки данных и эффективное управление теплом. Благодаря этому, майнер работает стабильно и без перегрева, что повышает его надежность и долговечность.
+								</p>
+								<p>
+									Устройство имеет компактный размер и легко монтируется в стойке. Оно оснащено двумя вентиляторами, которые обеспечивают надежное охлаждение и защиту от перегрева. Кроме того, Whatsminer M50S 130Th имеет удобный интерфейс для управления майнером и мониторинга его работы.
+								</p>
+								<p>
+									В целом, Whatsminer M50S 130Th является отличным выбором для тех, кто хочет заработать на добыче криптовалюты. Благодаря своей мощности, эффективности и надежности, майнер обеспечивает стабильный и высокий доход, что делает его одним из лучших устройств на рынке.
+								</p>
+								<p>
+									Whatsminer M50S 130Th является мощным и эффективным ASIC-майнером, который предназначен для майнинга криптовалюты, таких как Bitcoin и Bitcoin Cash. Устройство разработано компанией MicroBT и имеет высокую производительность относительно других майнеров на рынке.
+								</p>
+								<p>
+									Одной из особенностей Whatsminer M50S 130Th является его хешрейт 130 Терахеш в секунду. Благодаря этому, майнер обеспечивает быструю и эффективную добычу криптовалюты, что позволяет майнерам получать больше дохода.
+								</p>
+								<p>
+									Также стоит отметить низкое энергопотребление устройства - всего 3,5 Вт на Терахеш в секунду, что делает Whatsminer M50S 130Th одним из самых энергоэффективных майнеров на рынке. Благодаря этому, майнеры могут существенно снизить свои затраты на электроэнергию и увеличить свою прибыльность.
+								</p>
+							</div>
+						</div>
+						<div class="tabs__panel">
+							<div class="page-layout">
+								<div class="page-layout__body">
+									<div class="features-block">
+										<div class="title title_blue"><h2>Характеристики</h2></div>
+										<div class="specs-item">
+											<div class="specs-item__row">
+												<span class="specs-item__key">Производитель</span>
+												<span class="specs-item__value">Whatsminer</span>
+											</div>
+											<div class="specs-item__row">
+												<span class="specs-item__key">Алгоритм</span>
+												<span class="specs-item__value">SHA-256</span>
+											</div>
+											<div class="specs-item__row">
+												<span class="specs-item__key">Криптовалюта</span>
+												<span class="specs-item__value">Bitcoin (BTC), BitcoinCash (BCH)</span>
+											</div>
+											<div class="specs-item__row">
+												<span class="specs-item__key">Страна</span>
+												<span class="specs-item__value">Китай</span>
+											</div>
+											<div class="specs-item__row">
+												<span class="specs-item__key">Хэшрейт</span>
+												<span class="specs-item__value">108 TH/s</span>
+											</div>
+											<div class="specs-item__row">
+												<span class="specs-item__key">Энергопотребление</span>
+												<span class="specs-item__value">3 500 Вт</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<aside class="page-layout__sidebar">
+									@@include('./html/modules/form.htm')
+								</aside>
+							</div>
+						</div>
+						<div  class="tabs__panel">
+							<div class="page-layout page-layout_second">
+								<div class="page-layout__body">
+									<form class="calculator-block">
+										<div class="calculator-block__title">Выберите оборудование</div>
+										<div class="calculator-block__selects">
+											<div class="select-device" data-select="calc-device">
+												<input type="hidden" name="product-name">
+												<button class="select-device__trigger" data-type-s="trigger" type="button">
+													<span class="trigger-content"></span>
+													<span class="trigger-icon">
+									<svg><use href="@content/svg/sprite.svg#arrow"></use></svg>
+								</span>
+												</button>
+												<ul class="select-device__list" data-type-s="list">
+													<li class="select-device__option" data-value="Bitmain Antminer">Bitmain Antminer</li>
+													<li class="select-device__option" data-value="Dog Miner">Dog Miner</li>
+													<li class="select-device__option" data-value="Cat Miner">Cat Miner</li>
+												</ul>
+											</div>
+											<div class="select-device" data-select="device-model">
+												<input type="hidden" name="product-model">
+												<button class="select-device__trigger" data-type-s="trigger" type="button">
+													<span class="trigger-content"></span>
+													<span class="trigger-icon">
+									<svg><use href="@content/svg/sprite.svg#arrow"></use></svg>
+								</span>
+												</button>
+												<ul class="select-device__list" data-type-s="list">
+													<li class="select-device__option" data-value="none">Модель</li>
+													<li class="select-device__option" data-value="Bitmain Antminer">Bitmain Antminer</li>
+													<li class="select-device__option" data-value="Dog Miner">Dog Miner</li>
+													<li class="select-device__option" data-value="Cat Miner">Cat Miner</li>
+												</ul>
+											</div>
+										</div>
+										<div class="calculator-block__selects">
+											<div class="order-product order-product_center">
+												<div class="order-product__image-ibg">
+													<img src="@content/temp/products/product-1.jpg" alt="">
+												</div>
+												<div class="order-product__info">
+													<span class="text-label">Наименование</span>
+													<span class="order-product__name">Asic майнер Whatsminer M50S 130Th</span>
+												</div>
+											</div>
+											<div class="calculator-block__amounts">
+												<div class="amount-field">
+													<span class="text-label">Стоимость</span>
+													<span class="amount-field__control">
+											<input type="text" name="product-cost" class="bold" value="408 999 ₽" disabled>
+										</span>
+												</div>
+												<div class="amount-field">
+													<span class="text-label">Потребление (Вт)</span>
+													<span class="amount-field__control">
+											<input type="text" name="product-power" value="3000" disabled>
+										</span>
+												</div>
+												<div class="amount-field" data-counter="counter">
+													<span class="text-label">Количество</span>
+													<span class="amount-field__control">
+											<button class="plus" type="button" data-counter="plus">+</button>
+											<input type="number" name="product-count" value="1" data-counter="count">
+											<button class="minus" type="button" data-counter="minus">-</button>
+										</span>
+												</div>
+											</div>
+										</div>
+										<div class="calculator-block__unit-selection">
+											<div class="calculator-block__mode">
+												<div class="calculator-block__title">Выберите режим</div>
+												<label class="radio-control">
+										<span class="radio-control__field">
+											<input type="radio" name="mode" value="daily" checked>
+											<span class="radio-control__target"></span>
+											<span class="text-label">Суточный</span>
+										</span>
+												</label>
+												<label class="radio-control">
+										<span class="radio-control__field">
+											<input type="radio" name="mode" value="nightly">
+											<span class="radio-control__target"></span>
+											<span class="text-label">Ночной</span>
+										</span>
+												</label>
+											</div>
+											<div class="calculator-block__cost">
+												<div class="calculator-block__title">Введите стоимость электроэнергии</div>
+												<label class="radio-control">
+										<span class="radio-control__field">
+											<input type="radio" name="cost" value="base" checked>
+											<span class="radio-control__target"></span>
+											<span class="text-label">Базовое размещение</span>
+										</span>
+													<span class="cost-text">4,2 <span class="text-label">₽ / кВт / час</span></span>
+												</label>
+												<label class="radio-control">
+										<span class="radio-control__field">
+											<input type="radio" name="cost" value="custom">
+											<span class="radio-control__target"></span>
+											<span class="text-label">Задать свою стоимость</span>
+										</span>
+													<span class="amount-field">
+											<span class="amount-field__control">
+												<input type="text" name="cost-value" value="9">
+											</span>
+											<span class="text-label">₽ / кВт / час</span>
+										</span>
+												</label>
+											</div>
+										</div>
+										<div class="calculator-block__bottom">
+											<button class="button" type="button">Рассчитать доходность</button>
+											<div>
+												<span class="cost-text">USDT = 83.35 ₽</span>
+												<span class="text-label">на 19.05.2023</span>
+											</div>
+										</div>
+										<p class="calculator-block__note">Обратите внимание, что расчеты основаны на средних значениях, поэтому ваши окончательные результаты могут отличаться.</p>
+									</form>
+								</div>
+								<aside class="page-layout__sidebar">
+									<div class="order">
+										<div class="box-title"><h2>Результаты расчётов</h2></div>
+										<ul class="profit order__profit">
+											<li>
+												<div class="profit__key">Чистая прибыль</div>
+												<div class="profit__value">1 600 238 ₽<span>/ мес.</span></div>
+											</li>
+											<li>
+												<div class="profit__key">Окупаемость</div>
+												<div class="profit__value">0,26<span>мес.</span></div>
+											</li>
+										</ul>
+										<ul class="order-info">
+											<li><span>Стоимость оборудования</span><span>408 999 ₽</span></li>
+											<li><span>Затраты на размещение</span><span>9 852 ₽</span></li>
+											<li><span>Доход от майнинга в месяц</span><span>1 610 090 ₽</span></li>
+										</ul>
+									</div>
+									@@include('./html/modules/form.htm')
+								</aside>
+							</div>
+						</div>
+						<div  class="tabs__panel">
+							<div class="page-layout page-layout_second">
+								<div class="page-layout__body">
+									<div class="feedback-block">
+										<div class="title title_blue"><h2>Отзывы</h2></div>
+										<div class="feedback-block__empty">
+											<svg><use href="@content/svg/sprite.svg#message"></use></svg>На этот товар пока нет отзывов
+										</div>
+										<div class="feedback-block__count">2 отзыва</div>
+										<div class="feedback-message">
+											<div class="feedback-message__head">
+												<div class="client-name">Роман</div>
+												<div class="date-message">21.06.2023 г.</div>
+											</div>
+											<div class="rating">
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item disabled"></span>
+												<span class="rating__item disabled"></span>
+											</div>
+											<div class="text-message">
+												<span>Комментарий:</span> Давно хотел обновиться, выбор пал на этот асик, рекомендую
+											</div>
+											<div class="feedback-message__actions">
+												<button><svg><use href="@content/svg/sprite.svg#message"></use></svg>Ответить</button>
+												<button><svg><use href="@content/svg/sprite.svg#dislike"></use></svg>Пожаловаться</button>
+											</div>
+										</div>
+										<div class="feedback-message">
+											<div class="feedback-message__head">
+												<div class="client-name">Роман</div>
+												<div class="date-message">21.06.2023 г.</div>
+											</div>
+											<div class="rating">
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item disabled"></span>
+												<span class="rating__item disabled"></span>
+											</div>
+											<div class="text-message">
+												<span>Комментарий:</span> Давно хотел выбор пал на этот асик, рекомендую выбор пал на этот асик, рекомендую обновиться, выбор пал на этот асик, рекомендую
+											</div>
+											<div class="feedback-message__actions">
+												<button><svg><use href="@content/svg/sprite.svg#message"></use></svg>Ответить</button>
+												<button><svg><use href="@content/svg/sprite.svg#dislike"></use></svg>Пожаловаться</button>
+											</div>
+										</div>
+										<div class="feedback-message">
+											<div class="feedback-message__head">
+												<div class="client-name">Роман</div>
+												<div class="date-message">21.06.2023 г.</div>
+											</div>
+											<div class="rating">
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item disabled"></span>
+												<span class="rating__item disabled"></span>
+											</div>
+											<div class="text-message">
+												<span>Комментарий:</span> Давно хотел обновиться, выбор пал на этот асик, рекомендую
+											</div>
+											<div class="feedback-message__actions">
+												<button><svg><use href="@content/svg/sprite.svg#message"></use></svg>Ответить</button>
+												<button><svg><use href="@content/svg/sprite.svg#dislike"></use></svg>Пожаловаться</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<aside class="page-layout__sidebar">
+									<div class="feedback-info">
+										<div class="feedback-info__head">
+											<span>Рейтинг товара</span>
+											<div class="rating">
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item disabled"></span>
+											</div>
+											<span>4.1</span>
+										</div>
+										<button class="feedback-info__button button" type="button">Добавить отзыв</button>
+									</div>
+									@@include('./html/modules/form.htm')
+								</aside>
+							</div>
+						</div>
+						<div  class="tabs__panel">
+							<div class="page-layout page-layout_second">
+								<div class="page-layout__body">
+									<div class="faq-block">
+										<div class="title title_blue"><h2>Вопросы и ответы</h2></div>
+										<div class="faq-message">
+											<div class="faq-message__body">
+												<div class="client-name">Роман</div>
+												<div class="faq-message__date date-message">21.05.2023 г.</div>
+												<div class="text-message">
+													<span>Вопрос:</span> Здравствуйте, я могу заказать 50 штук и Вы привезете мне их в течение недели?
+												</div>
+												<div class="faq-message__actions">
+													<button class="active"><svg><use href="@content/svg/sprite.svg#like"></use></svg></button>
+													<button><svg><use href="@content/svg/sprite.svg#dislike"></use></svg></button>
+												</div>
+											</div>
+										</div>
+										<div class="faq-message faq-message_answer">
+											<div class="faq-message__body">
+												<div class="client-name">Sibmain</div>
+												<div class="faq-message__date date-message">25.06.2023 г.</div>
+												<div class="text-message">
+													<span>Ответ:</span> Здравствуйте, Роман!  Да, конечно, свяжитесь с нами удобным для Вас способом и мы проконсультируем Вас по всем вопросам.
+												</div>
+												<div class="faq-message__actions">
+													<button><svg><use href="@content/svg/sprite.svg#like"></use></svg></button>
+													<button class="active"><svg><use href="@content/svg/sprite.svg#dislike"></use></svg></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<aside class="page-layout__sidebar">
+									<div class="feedback-info">
+										<div class="feedback-info__head">
+											<span>Рейтинг товара</span>
+											<div class="rating">
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item"></span>
+												<span class="rating__item disabled"></span>
+											</div>
+											<span>4.1</span>
+										</div>
+										<button class="feedback-info__button button" type="button">Добавить отзыв</button>
+									</div>
+									@@include('./html/modules/form.htm')
+								</aside>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="products">
+			<div class="products__container">
+				<div class="actions-head products__head">
+					<div class="title">
+						<h3>С этим товаром <span>смотрят</span></h3>
+					</div>
+					<div class="actions-head__actions-buttons">
+						<button class="actions-head__prev" type="button">
+							<svg>
+								<use href="@content/svg/sprite.svg#arrow"></use>
+							</svg>
+						</button>
+						<button class="actions-head__next" type="button">
+							<svg>
+								<use href="@content/svg/sprite.svg#arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="swiper products__slider">
+					<div class="swiper-wrapper products__wrapper">
+						<div class="swiper-slide products__slide">
+							@@include('html/modules/product.htm',{
+							"image": "product-1.jpg"
+							})
+						</div>
+						<div class="swiper-slide products__slide">
+							@@include('html/modules/product.htm',{
+							"image": "product-2.jpg"
+							})
+						</div>
+						<div class="swiper-slide products__slide">
+							@@include('html/modules/product.htm',{
+							"image": "product-3.jpg"
+							})
+						</div>
+						<div class="swiper-slide products__slide">
+							@@include('html/modules/product.htm',{
+							"image": "product-4.jpg"
+							})
+						</div>
+						<div class="swiper-slide products__slide">
+							@@include('html/modules/product.htm',{
+							"image": "product-1.jpg"
+							})
+						</div>
+						<div class="swiper-slide products__slide">
+							@@include('html/modules/product.htm',{
+							"image": "product-3.jpg"
+							})
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/components/subscribe-us.htm',{})
+	@@include('html/components/footer.htm',{})
+</div>
+@@include('html/helpers/js.htm',{})
+</body>
+</html>

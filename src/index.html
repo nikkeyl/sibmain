@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/helpers/head.htm',{
+	"title": "Главная"
+	})
+	<body class="page">
+		<div class="wrapper">
+			@@include('html/components/header.htm',{})
+			<!-- main content -->
+			<main class="content">
+				<section class="main-slider" data-observ>
+					<div class="main-slider__container">
+						<div class="swiper main-slider__slider main-slider__slider_big" style="background-color: var(--color-blue);">
+							<div class="swiper-wrapper main-slider__wrapper">
+								<div class="swiper-slide main-slider__slide">
+									<div class="main-slider__info">
+										<div class="main-slider__body">
+											<div class="main-slider__title">
+												<h1>Продажа майнинг оборудования</h1>
+											</div>
+											<div class="main-slider__text">
+												<p>От заводов производителей с возможностью размещения в дата-центрах в Сибири</p>
+											</div>
+											<a href="" class="main-slider__button">Подробнее</a>
+										</div>
+										<div class="main-slider__image-ibg--contain">
+											<img data-src="@content/temp/main-slider/sail-mining.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide main-slider__slide">
+									<div class="main-slider__info">
+										<div class="main-slider__body">
+											<div class="main-slider__title">
+												<h1>Продажа майнинг оборудования</h1>
+											</div>
+											<div class="main-slider__text">
+												<p>От заводов производителей с возможностью размещения в дата-центрах в Сибири</p>
+											</div>
+											<a href="" class="main-slider__button">Подробнее</a>
+										</div>
+										<div class="main-slider__image-ibg--contain">
+											<img data-src="@content/temp/main-slider/sail-mining.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide main-slider__slide">
+									<div class="main-slider__info">
+										<div class="main-slider__body">
+											<div class="main-slider__title">
+												<h1>Продажа майнинг оборудования</h1>
+											</div>
+											<div class="main-slider__text">
+												<p>От заводов производителей с возможностью размещения в дата-центрах в Сибири</p>
+											</div>
+											<a href="" class="main-slider__button">Подробнее</a>
+										</div>
+										<div class="main-slider__image-ibg--contain">
+											<img data-src="@content/temp/main-slider/sail-mining.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-slider-manufactures main-slider__manufactures">
+								<div class="main-slider-manufactures__image-ibg--contain">
+									<img src="@content/icons/manufacturers/bitmain.svg" alt="Битмэйн">
+								</div>
+								<div class="main-slider-manufactures__image-ibg--contain">
+									<img src="@content/icons/manufacturers/canaan.svg" alt="Кэнаан">
+								</div>
+								<div class="main-slider-manufactures__image-ibg--contain">
+									<img src="@content/icons/manufacturers/jasminer.svg" alt="Джасмайнер">
+								</div>
+								<div class="main-slider-manufactures__image-ibg--contain">
+									<img src="@content/icons/manufacturers/whatsminer.svg" alt="Вотсмайнер">
+								</div>
+								<div class="main-slider-manufactures__image-ibg--contain">
+									<img src="@content/icons/manufacturers/ipollo.svg" alt="Иполло">
+								</div>
+								<div class="main-slider-manufactures__image-ibg--contain">
+									<img src="@content/icons/manufacturers/innosilicon.svg" alt="Инносиликон">
+								</div>
+							</div>
+							<div class="main-slider__pagination"></div>
+						</div>
+					</div>
+					<div class="main-slider__image">
+						<img src="@content/icons/main-slider/hexagon.svg" alt="">
+					</div>
+				</section>
+				<div class="advantages">
+					<div class="advantages__container">
+						@@include('html/modules/advantage.htm',{
+						"class":" advantages__item",
+						"icon": "airplane.svg",
+						"alt": "Прямые доставки",
+						"title": "Прямые доставки",
+						"text": "Прямые контракты с заводами производителями без посредников"
+						})
+						@@include('html/modules/advantage.htm',{
+						"class":" advantages__item",
+						"icon": "docs.svg",
+						"alt": "Таможенное оформление",
+						"title": "Таможенное оформление",
+						"text": "Официальный ввоз оборудования с предоставлением всех документов"
+						})
+						@@include('html/modules/advantage.htm',{
+						"class":" advantages__item",
+						"icon": "quality.svg",
+						"alt": "Контроль качества",
+						"title": "Контроль качества",
+						"text": "Предпродажная проверка всего оборудования, с возможностью предоставления видео проверки"
+						})
+						@@include('html/modules/advantage.htm',{
+						"class":" advantages__item",
+						"icon": "data-center.svg",
+						"alt": "Собственный дата-центр",
+						"title": "Собственный дата-центр",
+						"text": "Размещение в собственных дата-центрах в Сибири с общей мощностью 400 мВт"
+						})
+						@@include('html/modules/advantage.htm',{
+						"class":" advantages__item",
+						"icon": "tarifs.svg",
+						"alt": "выгодные тарифы на размещение",
+						"title": "выгодные тарифы на размещение",
+						"text": "Дневной - от 4 руб. с НДС. Ночной - от 3 руб. с НДС16 ч/будни, 24 ч/вых."
+						})
+					</div>
+				</div>
+				<section class="products">
+					<div class="products__container">
+						<div class="actions-head products__head">
+							<div class="title">
+								<h3>Популярные товары</h3>
+							</div>
+							<div class="actions-head__actions-buttons">
+								<button class="actions-head__prev" type="button">
+									<svg>
+										<use href="@content/svg/sprite.svg#arrow"></use>
+									</svg>
+								</button>
+								<button class="actions-head__next" type="button">
+									<svg>
+										<use href="@content/svg/sprite.svg#arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="swiper products__slider">
+							<div class="swiper-wrapper products__wrapper">
+								<div class="swiper-slide products__slide">
+									@@include('html/modules/product.htm',{
+									"image": "product-1.jpg"
+									})
+								</div>
+								<div class="swiper-slide products__slide">
+									@@include('html/modules/product.htm',{
+									"image": "product-2.jpg"
+									})
+								</div>
+								<div class="swiper-slide products__slide">
+									@@include('html/modules/product.htm',{
+									"image": "product-3.jpg"
+									})
+								</div>
+								<div class="swiper-slide products__slide">
+									@@include('html/modules/product.htm',{
+									"image": "product-4.jpg"
+									})
+								</div>
+								<div class="swiper-slide products__slide">
+									@@include('html/modules/product.htm',{
+									"image": "product-1.jpg"
+									})
+								</div>
+								<div class="swiper-slide products__slide">
+									@@include('html/modules/product.htm',{
+									"image": "product-3.jpg"
+									})
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="partners">
+					<div class="partners__container">
+						<div class="partners__title">
+							<h3>Партнёры:</h3>
+						</div>
+						<div class="partners__logos">
+							<div class="partners__image-ibg--contain">
+								<img data-src="@content/temp/partners/en-plus.png" alt="en-plus">
+							</div>
+							<div class="partners__image-ibg--contain">
+								<img data-src="@content/temp/partners/sgk.png" alt="sgk">
+							</div>
+							<div class="partners__image-ibg--contain">
+								<img data-src="@content/temp/partners/vsk.png" alt="vsk">
+							</div>
+							<div class="partners__image-ibg--contain">
+								<img data-src="@content/temp/partners/rakib.png" alt="rakib">
+							</div>
+							<div class="partners__image-ibg--contain">
+								<img data-src="@content/temp/partners/blockchain-life.png" alt="blockchain-life">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="about-us">
+					<div class="about-us__container">
+						<div class="about-us__title title">
+							<h3>О компании</h3>
+						</div>
+						<div class="about-us__info text">
+							<div class="about-us__text">
+								<p>
+									Sibmain - надежный поставщик майнинг оборудования и оператор дата-центра в Сибири, общей мощностью 400 мВт. Обеспечивающий услуги по поставке, размещению и обслуживанию оборудования для майнинга криптовалюты, гарантируя надежность, безопасность, круглосуточный мониторинг и техническую поддержку, а так же предлагающий решения для энергоемких вычислений индустриального майнинга.
+								</p>
+							</div>
+							<div class="about-us__text text_gray">
+								<p>
+									Мы используем экологически чистую гидроэнергию в регионах с большим профицитом электрогенерации, благодаря долгосрочному стратегическому партнерству с «Сибирской Генерирующей компанией» и «En+ Group» что позволяет предоставлять клиентам фиксированную и конкурентоспособную цену на электроэнергию.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="gallery">
+					<div class="gallery__container">
+						<div class="gallery__title title">
+							<h3>Галерея</h3>
+						</div>
+						<div class="gallery__items">
+							<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_0" href="@content/temp/gallery/image-1.jpg">
+								<img data-src="@content/temp/gallery/image-1.jpg" alt="">
+							</a>
+							<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_1" href="@content/temp/gallery/image-2.jpg">
+								<img data-src="@content/temp/gallery/image-2.jpg" alt="">
+							</a>
+							<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_2" href="@content/temp/gallery/image-3.jpg">
+								<img data-src="@content/temp/gallery/image-3.jpg" alt="">
+							</a>
+							<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_3" href="@content/temp/gallery/image-1.jpg">
+								<img data-src="@content/temp/gallery/image-4.jpg" alt="">
+							</a>
+							<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_4" href="@content/temp/gallery/image-5.jpg">
+								<img data-src="@content/temp/gallery/image-5.jpg" alt="">
+							</a>
+							<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_5" href="@content/temp/gallery/image-6.jpg">
+								<img data-src="@content/temp/gallery/image-6.jpg" alt="">
+							</a>
+							<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_6" href="@content/temp/gallery/image-7.jpg">
+								<img data-src="@content/temp/gallery/image-7.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="data-center">
+					<div class="data-center__container">
+						<div class="data-center__title title">
+							<h3>Дата-центр</h3>
+						</div>
+						<div class="data-center__info">
+							@@include('html/modules/advantage.htm',{
+							"class":" data-center__item-info advantage_small",
+							"icon": "lightning.svg",
+							"alt": "400 мВт",
+							"title": "400 мВт",
+							"text": "Общая мощность, которую мы предоставляем нашим клиентам"
+							})
+							@@include('html/modules/advantage.htm',{
+							"class":" data-center__item-info advantage_small",
+							"icon": "up-time.svg",
+							"alt": "UP-TIME - 99%",
+							"title": "UP-TIME - 99%",
+							"text": "Аптайм оборудования (технические работы не более 24 часов в год)"
+							})
+							@@include('html/modules/advantage.htm',{
+							"class":" data-center__item-info advantage_small",
+							"icon": "gear.svg",
+							"alt": "24/7",
+							"title": "24/7",
+							"text": "Дежурные мониторинга и дежурные на площадке следят за оборудованием"
+							})
+							@@include('html/modules/advantage.htm',{
+							"class":" data-center__item-info advantage_small",
+							"icon": "fast.svg",
+							"alt": "7 минут",
+							"title": "7 минут",
+							"text": "Скорость реагирования на выключившийся аппарат для сохранения up-time 99%"
+							})
+							<div class="data-center__tarifs tarifs">
+								<div class="tarifs__row">
+									<div class="tarifs__type">
+										<div class="tarifs__type-name">ДНЕВНОЙ ТАРИФ</div>
+										<div class="tarifs__type-info">Работа машин 24/7</div>
+									</div>
+									<div class="tarifs__value">
+										От 4 руб за кВт/час
+										<span>с учётом НДС</span>
+									</div>
+								</div>
+								<div class="tarifs__row">
+									<div class="tarifs__type">
+										<div class="tarifs__type-name">НОЧНОЙ ТАРИФ</div>
+										<div class="tarifs__type-info">16 часов в будни 24 часа в выходные и праздники</div>
+									</div>
+									<div class="tarifs__value">
+										От 3 руб за кВт/час
+										<span>с учётом НДС</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="data-center__body">
+							<div class="data-center__request">
+								<div class="data-center__description text text_white">
+									<p>Предоставляем размещение оборудования для майнинга в собственных дата-центрах в Сибири, на
+										высококонкурентных условиях и качественным сервисом с сопутствующими услугами:</p>
+									<ul>
+										<li>размещение и первоначальная настройка</li>
+										<li>предоставление доступа на площадку и экскурсия</li>
+										<li>техническое обслуживание вашего оборудования</li>
+										<li>обеспечение безопасности оборудования</li>
+										<li>ремонт оборудования</li>
+									</ul>
+								</div>
+								@@include('html/modules/form.htm',{})
+							</div>
+							<div class="data-center__video">
+								<a data-fancybox href="https://www.youtube.com/embed/raRAI0y4fSM?rel=0&showinfo=0;&autoplay=1" class="video-main" style="background: url('@content/temp/preview/preview.jpg') no-repeat center top / cover">
+									<img data-src="@content/icons/preview/play.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/components/subscribe-us.htm',{})
+			@@include('html/components/footer.htm',{})
+		</div>
+		<!-- sсripts -->
+		@@include('html/helpers/js.htm',{})
+	</body>
+</html>

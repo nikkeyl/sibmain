@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/helpers/head.htm',{
+	"title": "Категории"
+	})
+	<body class="page">
+		<div class="wrapper">
+			@@include('html/components/header.htm')
+			<main class="content" data-observ>
+				@@include('html/modules/breadcrumbs.htm',{"current":"Наименование товара"})
+				<div class="categories">
+					<div class="categories__container">
+						<aside class="categories__filter" id="filters">
+							<button class="filter-close" type="button" data-child-close="filters"></button>
+							<form class="spollers spollers_filter" data-spollers>
+								<fieldset class="spollers__item">
+									<button class="spollers__title spoller-active" type="button" data-spoller>
+										Цена <svg><use href="@content/svg/sprite.svg#arrow"></use></svg>
+									</button>
+									<div class="spollers__body">
+										<div class="range-price">
+											<div class="range-price__field">
+												<div class="range-price__input">
+													<input type="text" data-price-start value="100000">
+												</div>
+												<div class="range-price__input">
+													<input type="text" data-price-end value="600000">
+												</div>
+											</div>
+											<div data-range data-price-start data-price-end></div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="spollers__item">
+									<button class="spollers__title spoller-active" type="button" data-spoller>
+										Бренд <svg><use href="@content/svg/sprite.svg#arrow"></use></svg>
+									</button>
+									<div class="spollers__body">
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Bitmain</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Whatsminer</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Innosilicon</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Canaan</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Алгоритм
+										<svg>
+											<use href="@content/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Bitmain</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Whatsminer</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Innosilicon</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Canaan</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Потребление
+										<svg>
+											<use href="@content/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<div class="range-price">
+											<div class="range-price__field">
+												<div class="range-price__input">
+													<input type="text" data-price-start value="0">
+												</div>
+												<div class="range-price__input">
+													<input type="text" data-price-end value="300000">
+												</div>
+											</div>
+											<div data-range data-price-start data-price-end></div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Добываемые монеты
+										<svg>
+											<use href="@content/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Bitmain</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Whatsminer</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Innosilicon</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label class="checkbox__label">
+												<span class="checkbox__text">Canaan</span>
+												<input type="checkbox" value="1" name="checkbox">
+												<span class="checkbox__box">
+													<svg>
+														<use href="@content/svg/sprite.svg#check"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</aside>
+						<div class="categories__body">
+							<div class="categories__category">
+								<button class="categories__button active" type="button">ASIC для майнинга Bitcoin</button>
+								<button class="categories__button" type="button">ASIC для майнинга LTC / DOGE</button>
+								<button class="categories__button" type="button">ASIC для майнинга LTC / DOGE</button>
+							</div>
+							<div class="categories__filters">
+								<button class="categories__button categories__button_white" type="button" data-child="filters">
+									Фильтры<span><span></span></span>
+								</button>
+								<div class="sorted-block" data-select="sort-by">
+									<input type="hidden" name="sorting">
+									<button class="sorted-block__trigger" type="button" data-type-s="trigger">
+										<span class="trigger-content">Сортировка</span>
+										<span class="trigger-icon">
+											<svg><use href="@content/svg/sprite.svg#arrow"></use></svg>
+										</span>
+									</button>
+									<ul class="sorted-block__list" data-type-s="list">
+										<li class="sorted-block__option none" data-value="none">Сортировка</li>
+										<li class="sorted-block__option" data-value="asc">Цена ↑</li>
+										<li class="sorted-block__option" data-value="desc">Цена ↓</li>
+									</ul>
+								</div>
+							</div>
+							<div class="categories__products">
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+								@@include('html/modules/product.htm',{
+								"image": "product-1.jpg"
+								})
+							</div>
+							<button class="categories__button categories__button_fw" type="button">Загрузить еще...</button>
+						</div>
+					</div>
+				</div>
+				@@include('html/modules/info.htm',{})
+			</main>
+			@@include('html/components/subscribe-us.htm',{})
+			@@include('html/components/footer.htm',{})
+		</div>
+		@@include('html/helpers/js.htm',{})
+	</body>
+</html>

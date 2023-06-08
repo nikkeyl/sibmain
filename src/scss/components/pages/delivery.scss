@@ -1,0 +1,168 @@
+.delivery {
+	padding: rem(50) 0 rem(180);
+
+	@include media-mx(1200) {
+		padding-bottom: rem(85);
+
+		.page-layout {
+			row-gap: rem(70);
+		}
+	}
+
+	@include media-mx(480) {
+		padding: rem(25) 0 rem(50);
+
+		.page-layout {
+			row-gap: rem(45);
+		}
+	}
+
+	.delivery-info {
+		margin-top: rem(50);
+
+		@include media-mx(480) {
+			margin-top: rem(30);
+		}
+	}
+
+	.title {
+		margin-bottom: rem(50);
+
+		@include media-mx(960) {
+			margin-bottom: rem(25);
+		}
+	}
+
+	// .delivery__partners
+	&__partners {
+		margin-top: rem(85);
+		display: flex;
+		justify-content: space-between;
+		gap: rem(20);
+
+		@include media-mx(1200) {
+			margin-top: rem(75);
+		}
+
+		@include media-mx(960) {
+			margin-top: rem(50);
+		}
+
+		@include media-mx(640) {
+			margin-top: rem(40);
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: rem(35) rem(65);
+		}
+
+		@include media-mx(480) {
+			gap: rem(25) rem(45);
+		}
+	}
+
+	// .delivery__image-ibg
+	&__image-ibg {
+		overflow: hidden;
+		width: 100%;
+		height: rem(64);
+
+		img {
+			object-fit: contain;
+		}
+	}
+}
+
+.delivery-text {
+	font-size: 	rem(20);
+	line-height: 1.2;
+
+	@include media-mx(640) {
+		font-size: rem(16);
+	}
+
+	@include media-mx(480) {
+		font-size: rem(14);
+	}
+}
+
+.delivery-info {
+	display: flex;
+	flex-direction: column;
+	gap: rem(40);
+
+	@include media-mx(480) {
+		gap: rem(30);
+	}
+
+	.delivery-text {
+		color: var(--color-grey-30);
+		margin-top: rem(-25);
+	}
+}
+
+.delivery-cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: rem(20);
+	margin-top: rem(75);
+
+	@include media-mx(960) {
+		grid-template-columns: 1fr;
+		margin-top: rem(35);
+	}
+}
+
+.delivery-card {
+	padding: rem(35);
+	border: rem(1) solid rgba(7, 7, 7, 0.1);
+	border-radius: calc(var(--main-radius) * 2);
+
+	@include media-mx(960) {
+		padding: rem(20);
+	}
+
+	// .delivery-card__text
+	&__text {
+		font-size: rem(20);
+		line-height: 1.2;
+		color: var(--color-grey-30);
+
+		@include media-mx(960) {
+			font-size: rem(14);
+		}
+	}
+
+	// .delivery-card__header
+	&__header {
+		@extend %f-ai-center;
+		gap: rem(20);
+		margin-bottom: rem(20);
+	}
+
+	// .delivery-card__title
+	&__title {
+		font-family: var(--title-font-family);
+		font-size: rem(24);
+		line-height: math.div(20, 24);
+		font-weight: 700;
+		letter-spacing: 0.005em;
+		color: var(--color-blue);
+
+		@include media-mx(960) {
+			font-size: rem(20);
+			line-height: 1;
+		}
+	}
+
+	// .delivery__card-icon
+	&__icon {
+		svg {
+			fill: var(--color-blue);
+			@include width-height(rem(35), rem(35));
+
+			@include media-mx(640) {
+				@include width-height(rem(20), rem(20));
+			}
+		}
+	}
+}

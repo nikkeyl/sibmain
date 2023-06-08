@@ -1,0 +1,21 @@
+.header-bottom {
+	border-bottom: rem(1) solid rgba(#777, 0.05);
+	padding: rem(12) 0;
+
+	@include media-mx(960) {
+		$font-size: 14;
+
+		display: flex;
+		gap: rem(10);
+		padding-top: 0;
+		padding-bottom: rem(12);
+		font-size: rem($font-size);
+	}
+
+	// .header-bottom__container
+	&__container {
+		display: flex;
+		gap: rem(20);
+		width: 100%;
+	}
+}

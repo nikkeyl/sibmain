@@ -1,0 +1,159 @@
+.client-data {
+	margin-top: rem(50);
+
+	.radio-control {
+		display: flex;
+		flex-direction: column;
+		gap: rem(15);
+
+		padding: rem(18) rem(20);
+		border: rem(1) solid var(--color-grey-5);
+		border-radius: var(--main-radius);
+		transition: border-color .3s ease-in-out;
+
+		&:has(input:checked) {
+			border-color: var(--color-blue);
+		}
+
+		@include media-mx(480) {
+			padding: rem(15);
+		}
+	}
+}
+
+.group-control {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: rem(20);
+
+	@include media-mx(640) {
+		grid-template-columns: 100%;
+	}
+}
+
+.input-control {
+	$radius: 50;
+	$input-height: 46;
+	$color-gray: #a2a1a7;
+
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: rem(10);
+
+	& input[type="tel"] {
+		padding-left: rem(85);
+	}
+
+	input {
+		width: 100%;
+		height: rem($input-height);
+		padding: 0 rem(24);
+		border-radius: rem($radius);
+		font-size: rem(16);
+		font-weight: 400;
+		letter-spacing: 0.005em;
+		color: $color-gray;
+		background-color: #fff;
+		border: rem(1) solid var(--color-grey-5);
+		@include hide-placeholder;
+		transition: border-color .2s ease-in-out, color .2s ease-in-out;
+
+		@include hover {
+			border-color: var(--color-disabled);
+		}
+
+		&:focus {
+			color: var(--color-dark-2);
+			border-color: var(--color-blue);
+		}
+	}
+
+	&.error {
+		.message-error {
+			display: block;
+		}
+
+		& input:focus {
+			box-shadow: 0 0 0 rem(2) rgba(firebrick, 40%);
+		}
+	}
+
+	@include media-mx(480) {
+	    input {
+				padding: 0 rem(20);
+				font-size: rem(15);
+			}
+	}
+
+	.tel-block {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: rem(24);
+		z-index: 2;
+
+		&__list {
+			z-index: 5;
+		}
+	}
+}
+
+.message-error {
+	display: none;
+	color: firebrick;
+	font-size: rem(14);
+	line-height: 1.2;
+}
+
+.form-body {
+	display: flex;
+	flex-direction: column;
+	gap: rem(20);
+
+	.box-title {
+		margin-bottom: rem(15);
+	}
+
+	input,
+	textarea {
+		background-color: #fff;
+		border: rem(1) solid var(--color-grey-5);
+		@include hide-placeholder;
+	}
+
+	textarea {
+		width: 100%;
+		height: rem(160);
+		padding: rem(16) rem(24);
+		font-size: rem(16);
+		line-height: math.div(22, 16);
+		border-radius: calc(var(--main-radius) * 2);
+		letter-spacing: 0.005em;
+		color: #a2a1a7;
+		resize: none;
+		transition: .3s ease-in-out;
+
+		@include media-mx(480) {
+			padding: rem(15) rem(10);
+		}
+	;
+
+		&:focus {
+			color: var(--color-dark-1);
+		}
+	}
+
+	// .form-body__item
+	&__item {
+		padding: rem(30);
+		background-color: #fff;
+		border: rem(1) solid var(--color-grey-5);
+		border-radius: calc(var(--main-radius) * 2);
+
+		@include media-mx(640) {
+			padding: rem(20);
+		}
+	}
+}

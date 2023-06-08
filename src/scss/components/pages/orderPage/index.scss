@@ -1,0 +1,25 @@
+.order-page {
+	// .order-page__container
+	&__container {
+		padding-top: rem(50);
+		padding-bottom: rem(80);
+
+		@include media-mx(480) {
+			padding-top: rem(30);
+		}
+	}
+
+	.title {
+		margin-bottom: rem(25);
+	}
+
+	.tabs {
+		// .tabs__content
+		&__content {
+			padding-top: rem(25);
+		}
+	}
+}
+
+@import "orderPlacement";
+@import "clientData";

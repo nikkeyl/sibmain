@@ -1,0 +1,133 @@
+.contacts {
+	padding: rem(50) 0 rem(100);
+
+	// .contacts__title
+	&__title {
+		margin-bottom: rem(45);
+
+		@include media-mx(960) {
+			margin-bottom: rem(30);
+		}
+	}
+
+	// .contacts__map
+	&__map {
+		margin-top: rem(25);
+		position: relative;
+		padding-bottom: aspectRatio(16, 9);
+
+		@include media-mx(640) {
+			padding-bottom: 90%;
+		}
+
+		@include media-mx(480) {
+			margin-top: rem(15);
+		}
+	}
+}
+
+.contacts-info {
+	border-radius: rem(16);
+	padding: rem(45) rem(45) rem(35);
+	background: var(--color-light);
+
+	@include media-mx(960) {
+		padding: rem(20);
+	}
+	.title {
+		margin-bottom: rem(25);
+
+		@include media-mx(960) {
+			margin-bottom: rem(15);
+		}
+	}
+
+	// .contacts-info__address
+	&__address {
+		margin-bottom: rem(15);
+		font-size: rem(20);
+		line-height: math.div(24, 20);
+		color: var(--color-dark-2);
+
+		@include media-mx(960) {
+			font-size: rem(14);
+			line-height: math.div(17, 14);
+		}
+	}
+
+	// .contacts-info__phone
+	&__phone {
+		width: max-content;
+		margin-bottom: rem(18);
+
+		@include hover {
+			.contacts-info__icon {
+				svg {
+					fill: var(--color-blue);
+				}
+			}
+		}
+
+		@include media-mx(960) {
+			margin-bottom: rem(10);
+		}
+	}
+
+	// .contacts-info__email
+	&__email {
+		width: max-content;
+
+		@include hover {
+			.contacts-info__icon_stroke {
+				svg {
+					stroke: var(--color-blue);
+				}
+			}
+		}
+	}
+
+	// .contacts-info__subaddress
+	&__subaddress {
+		font-size: rem(20);
+		line-height: math.div(24, 20);
+		color: rgb(7 7 7 / 30%);
+		margin-top: rem(100);
+
+		@include media-mx(960) {
+			margin-top: rem(80);
+			font-size: rem(14);
+			line-height: math.div(17, 14);
+		}
+		@include media-mx(480) {
+			margin-top: rem(50);
+		}
+		span {
+			font-weight: 700;
+		}
+	}
+
+	.contact__link {
+		color: var(--color-dark-1);
+		@include media-mx(960) {
+			font-size: rem(14);
+			line-height: math.div(22, 14);
+		}
+	}
+
+	// .contacts-info__icon
+	&__icon {
+		display: flex;
+
+		svg {
+			@extend %default-transition;
+			@include width-height(rem(20), rem(20));
+		}
+
+		&.stroke {
+			svg {
+				fill: none;
+				stroke: var(--color-dark-1);
+			}
+		}
+	}
+}

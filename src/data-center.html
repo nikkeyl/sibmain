@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/helpers/head.htm',{
+  "title": "Дата центр"
+  })
+  <body class="page">
+    <div class="wrapper">
+      @@include('html/components/header.htm',{})
+      <!-- main content -->
+      <main class="content">
+        @@include('html/modules/breadcrumbs.htm',{"current":"Дата-центр"})
+        <section class="main-slider" data-observ>
+          <div class="main-slider__container">
+            <div class="swiper main-slider__slider">
+              <div class="swiper-wrapper main-slider__wrapper">
+                <div class="swiper-slide main-slider__slide main-slider__slide_padding">
+                  <div class="main-slider__info">
+                    <div class="main-slider__body">
+                      <div class="main-slider__title">
+                        <h1>Дата-центр для майнинга в городе Красноярск</h1>
+                      </div>
+                      <div class="main-slider__text">
+                        <p>
+                          ЦОД расположен на территории режимного объекта и находится под круглосуточной охраной, все контейнеры оборудованы комплексной системой безопасности
+                        </p>
+                      </div>
+                      <a href="" class="main-slider__button">Разместить оборудование</a>
+                    </div>
+                  </div>
+                  <div class="main-slider__image-bg">
+                    <img data-src="@content/temp/main-slider/data-center.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide main-slider__slide main-slider__slide_padding">
+                  <div class="main-slider__info">
+                    <div class="main-slider__body">
+                      <div class="main-slider__title">
+                        <h1>Дата-центр для майнинга в городе Красноярск</h1>
+                      </div>
+                      <div class="main-slider__text">
+                        <p>
+                          ЦОД расположен на территории режимного объекта и находится под круглосуточной охраной, все контейнеры оборудованы комплексной системой безопасности
+                        </p>
+                      </div>
+                      <a href="" class="main-slider__button">Разместить оборудование</a>
+                    </div>
+                  </div>
+                  <div class="main-slider__image-bg">
+                    <img data-src="@content/temp/main-slider/data-center.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="main-slider__pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="data-center">
+          <div class="data-center__container">
+            <div class="data-center__info">
+              @@include('html/modules/advantage.htm',{
+              "class":" data-center__item-info advantage_small",
+              "icon": "lightning.svg",
+              "alt": "400 мВт",
+              "title": "400 мВт",
+              "text": "Общая мощность, которую мы предоставляем нашим клиентам"
+              })
+              @@include('html/modules/advantage.htm',{
+              "class":" data-center__item-info advantage_small",
+              "icon": "up-time.svg",
+              "alt": "UP-TIME - 99%",
+              "title": "UP-TIME - 99%",
+              "text": "Аптайм оборудования (технические работы не более 24 часов в год)"
+              })
+              @@include('html/modules/advantage.htm',{
+              "class":" data-center__item-info advantage_small",
+              "icon": "gear.svg",
+              "alt": "24/7",
+              "title": "24/7",
+              "text": "Дежурные мониторинга и дежурные на площадке следят за оборудованием"
+              })
+              @@include('html/modules/advantage.htm',{
+              "class":" data-center__item-info advantage_small",
+              "icon": "fast.svg",
+              "alt": "7 минут",
+              "title": "7 минут",
+              "text": "Скорость реагирования на выключившийся аппарат для сохранения up-time 99%"
+              })
+              <div class="data-center__tarifs tarifs">
+                <div class="tarifs__row">
+                  <div class="tarifs__type">
+                    <div class="tarifs__type-name">ДНЕВНОЙ ТАРИФ</div>
+                    <div class="tarifs__type-info">Работа машин 24/7</div>
+                  </div>
+                  <div class="tarifs__value">
+                    От 4 руб за кВт/час
+                    <span>с учётом НДС</span>
+                  </div>
+                </div>
+                <div class="tarifs__row">
+                  <div class="tarifs__type">
+                    <div class="tarifs__type-name">НОЧНОЙ ТАРИФ</div>
+                    <div class="tarifs__type-info">16 часов в будни 24 часа в выходные и праздники</div>
+                  </div>
+                  <div class="tarifs__value">
+                    От 3 руб за кВт/час
+                    <span>с учётом НДС</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page-layout __container">
+          <div>
+            <section class="place-mining">
+              <div class="place-mining__title title">
+                <h3>Размещение майнинг-оборудования</h3>
+              </div>
+              <div class="place-mining__text text">
+                <p>Предоставляем размещение оборудования для майнинга в собственных дата-центрах в Сибири, на высококонкурентных условиях и качественным сервисом с сопутствующими услугами:</p>
+                <ul>
+                  <li>размещение и первоначальная настройка</li>
+                  <li>предоставление доступа на площадку и экскурсия</li>
+                  <li>техническое обслуживание вашего оборудования</li>
+                  <li>обеспечение безопасности оборудования</li>
+                  <li>ремонт оборудования</li>
+                </ul>
+              </div>
+              <div class="place-mining__cards">
+                <div class="mining-advatages">
+                  <div class="mining-advatages__image-ibg">
+                    <img data-src="@content/icons/advantages/temperature.svg" alt="">
+                  </div>
+                  <div class="mining-advatages__text text text_gray">
+                    <p>Используем промышленное охлаждение и поддерживаем рекомендуемую температуру летом и зимой</p>
+                  </div>
+                </div>
+                <div class="mining-advatages">
+                  <div class="mining-advatages__image-ibg">
+                    <img data-src="@content/icons/advantages/internet.svg" alt="">
+                  </div>
+                  <div class="mining-advatages__text text text_gray">
+                    <p>Используем промышленное охлаждение и поддерживаем рекомендуемую температуру летом и зимой</p>
+                  </div>
+                </div>
+                <div class="mining-advatages">
+                  <div class="mining-advatages__image-ibg">
+                    <img data-src="@content/icons/advantages/lock.svg" alt="">
+                  </div>
+                  <div class="mining-advatages__text text text_gray">
+                    <p>Используем промышленное охлаждение и поддерживаем рекомендуемую температуру летом и зимой</p>
+                  </div>
+                </div>
+                <div class="mining-advatages">
+                  <div class="mining-advatages__image-ibg">
+                    <img data-src="@content/icons/advantages/clear.svg" alt="">
+                  </div>
+                  <div class="mining-advatages__text text text_gray">
+                    <p>Используем промышленное охлаждение и поддерживаем рекомендуемую температуру летом и зимой</p>
+                  </div>
+                </div>
+                <div class="mining-advatages">
+                  <div class="mining-advatages__image-ibg">
+                    <img data-src="@content/icons/advantages/connect.svg" alt="">
+                  </div>
+                  <div class="mining-advatages__text text text_gray">
+                    <p>Используем промышленное охлаждение и поддерживаем рекомендуемую температуру летом и зимой</p>
+                  </div>
+                </div>
+                <div class="mining-advatages">
+                  <div class="mining-advatages__image-ibg">
+                    <img data-src="@content/icons/advantages/globus.svg" alt="">
+                  </div>
+                  <div class="mining-advatages__text text text_gray">
+                    <p>Используем промышленное охлаждение и поддерживаем рекомендуемую температуру летом и зимой</p>
+                  </div>
+                </div>
+              </div>
+              <div class="place-mining__alert">
+                <p>Мы несем полную ответственность за Ваше оборудование и готовы компенсировать утраты на случай, если с ним что-то случится по нашей вине!</p>
+              </div>
+            </section>
+            <section class="place-tarifs">
+              <div class="place-tarifs__title title">
+                <h3>Выгодные тарифы на размещение</h3>
+              </div>
+              <div class="place-tarifs__tarifs">
+                <div class="tarifs">
+                  <div class="tarifs__row">
+                    <div class="tarifs__type">
+                      <div class="tarifs__type-name">ДНЕВНОЙ ТАРИФ</div>
+                      <div class="tarifs__type-info">Работа машин 24/7</div>
+                    </div>
+                    <div class="tarifs__value">
+                      От 4 руб за кВт/час
+                      <span>с учётом НДС</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tarifs">
+                  <div class="tarifs__row">
+                    <div class="tarifs__type">
+                      <div class="tarifs__type-name">НОЧНОЙ ТАРИФ</div>
+                      <div class="tarifs__type-info">16 часов в будни 24 часа в выходные и праздники</div>
+                    </div>
+                    <div class="tarifs__value">
+                      От 3 руб за кВт/час
+                      <span>с учётом НДС</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="place-tarifs__text">
+                <h4>Технологический центр обработки данных</h4>
+                <p>
+                  Новый дата-центр в Красноярске
+                  с учётом всех нюансов обслуживания
+                  и размещения оборудования гарантирует стерильность и
+                  правильные условия эксплуатации,
+                  что увеличивает срок службы машин.
+                  Дата-центр находится в 30 минутах от
+                  аэропорта города Красноярска.
+                </p>
+                <h4>Бесперебойное электричество 24/7</h4>
+                <p>
+                  Сотрудничество с крупнейшими и
+                  надёжными поставщиками электроэнергии «Сибирской Генерирующей Компанией»
+                  и «EN+ Group» предоставляющим
+                  официальное электричество позволяет
+                  гарантировать бесперебойную подачу
+                  электричества 24/7 и высокий UP-TIME.
+                </p>
+                <h4>Гарантия безопасности</h4>
+                <p>
+                  Территория дата-центра находится под
+                  круглосуточной охраной и видеонаблюдением,
+                  вход осуществляется по пропускам в
+                  сопровождении службы безопасности.
+                  По вашему запросу предоставляется
+                  доступ к видео работы дата-центра.
+                </p>
+              </div>
+              <div class="place-tarifs__video">
+                <a data-fancybox href="https://www.youtube.com/embed/raRAI0y4fSM?rel=0&showinfo=0;&autoplay=1" class="video-main" style="background: url('@content/temp/preview/preview.jpg') no-repeat center top / cover">
+                  <img data-src="@content/icons/preview/play.svg" alt="">
+                </a>
+              </div>
+            </section>
+          </div>
+          <aside class="page-layout__sidebar">
+            <form class="form-request" data-da=".place-mining__text, 1199">
+              <div class="form-request__title sub-title">Оставить заявку</div>
+              <fieldset class="form-request__actions">
+								<div class="form-request__input input-control">
+									<input type="text" placeholder="Имя*" name="client-name">
+									<span class="message-error">Поле должно быть заполнено</span>
+								</div>
+								<div class="form-request__tel-select input-control">
+									<div class="tel-block" data-select="tel">
+										<input type="hidden" name="tel">
+										<button class="tel-block__trigger" data-type-s="trigger" type="button">
+											<span class="trigger-content"></span>
+											<span class="trigger-icon">
+												<svg>
+													<use href="@content/svg/sprite.svg#arrow"></use>
+												</svg>
+											</span>
+										</button>
+										<ul class="tel-block__list" data-type-s="list">
+											<li class="tel-block__option" data-value="ru" data-placeholder="+7 (999) 999 99 99">
+												<span class="tel-block__image"><img src="@content/temp/lang/flag-ru.jpg" alt="RU"></span>
+											</li>
+											<li class="tel-block__option" data-value="en" data-placeholder="+13 (999) 999 99 99">
+												<span class="tel-block__image"><img src="@content/temp/lang/flag-en.jpg" alt="EN"></span>
+											</li>
+										</ul>
+									</div>
+									<input class="input" type="tel" name="input" placeholder="+7 (999) 999 99 99" data-error="error">
+								</div>
+                <button class="form-request__button button" type="submit">Отправить</button>
+              </fieldset>
+              <div class="form-request__info">
+                Нажимая кнопку Вы принимаете порядок обработки персональных данных описанный в нашей политике конфиденциальности.
+              </div>
+            </form>
+          </aside>
+        </div>
+        <section class="gallery">
+          <div class="gallery__container">
+            <div class="gallery__title title">
+              <h3>Фотографии площадки</h3>
+            </div>
+            <div class="gallery__items">
+              <a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_0" href="@content/temp/gallery/image-1.jpg">
+                <img data-src="@content/temp/gallery/image-1.jpg" alt="">
+              </a>
+              <a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_1" href="@content/temp/gallery/image-2.jpg">
+                <img data-src="@content/temp/gallery/image-2.jpg" alt="">
+              </a>
+              <a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_2" href="@content/temp/gallery/image-3.jpg">
+                <img data-src="@content/temp/gallery/image-3.jpg" alt="">
+              </a>
+              <a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_3" href="@content/temp/gallery/image-1.jpg">
+                <img data-src="@content/temp/gallery/image-4.jpg" alt="">
+              </a>
+              <a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_4" href="@content/temp/gallery/image-5.jpg">
+                <img data-src="@content/temp/gallery/image-5.jpg" alt="">
+              </a>
+              <a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_5" href="@content/temp/gallery/image-6.jpg">
+                <img data-src="@content/temp/gallery/image-6.jpg" alt="">
+              </a>
+              <a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_6" href="@content/temp/gallery/image-7.jpg">
+                <img data-src="@content/temp/gallery/image-7.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="reviews__container">
+            <div class="actions-head reviews__head">
+              <div class="title">
+                <h3>Отзывы Клиентов</h3>
+              </div>
+              <div class="actions-head__actions-buttons">
+                <button class="actions-head__prev" type="button">
+                  <svg>
+                    <use href="@content/svg/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button class="actions-head__next" type="button">
+                  <svg>
+                    <use href="@content/svg/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="swiper reviews__slider">
+              <div class="swiper-wrapper reviews__wrapper">
+                <div class="swiper-slide reviews__slide">
+                  <article class="review">
+                    <div class="review__body">
+                      <div class="review__text">
+                        <svg>
+                          <use href="@content/svg/sprite.svg#quote-up"></use>
+                        </svg>
+                        <p>
+                          “One of the advantages of utilizing freelancers is finding talent with different skills
+                          quickly as our needs change.”
+                        </p>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="review__client">
+                      <div class="review__image-ibg">
+                        <img data-src="@content/temp/reviews/client-1.jpg" alt="Kлиент">
+                      </div>
+                      <div class="review__info">
+                        <div class="review__name">Davis Rosser</div>
+                        <div class="review__review__status">Director of Content Experience</div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <article class="review">
+                    <div class="review__body">
+                      <div class="review__text">
+                        <svg>
+                          <use href="@content/svg/sprite.svg#quote-up"></use>
+                        </svg>
+                        <p>
+                          “One of the advantages of utilizing freelancers is finding talent with different skills
+                          quickly as our needs change.”
+                        </p>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="review__client">
+                      <div class="review__image-ibg">
+                        <img data-src="@content/temp/reviews/client-1.jpg" alt="Kлиент">
+                      </div>
+                      <div class="review__info">
+                        <div class="review__name">Davis Rosser</div>
+                        <div class="review__review__status">Director of Content Experience</div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/components/subscribe-us.htm',{})
+      @@include('html/components/footer.htm',{})
+    </div>
+    <!-- sсripts -->
+    @@include('html/helpers/js.htm',{})
+  </body>
+</html>

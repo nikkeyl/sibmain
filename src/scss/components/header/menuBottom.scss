@@ -1,0 +1,132 @@
+.menu-bottom {
+	// .menu-bottom__list
+	&__list {
+		@include adaptive-value("gap", 55, 15, $max-width, 960, 1);
+
+		display: flex;
+
+		li {
+			&:nth-child(2) {
+				z-index: 2;
+			}
+
+			@extend %f-ai-center;
+			display: grid;
+
+			gap: rem(8);
+			height: fit-content;
+			font-weight: 300;
+			font-size: rem(16);
+			line-height: 1.2;
+			transition: color 0.3s;
+
+			a {
+				display: flex;
+				align-items: center;
+				gap: rem(10);
+
+				svg {
+					@include width-height(rem(9), rem(5));
+
+					z-index: 3;
+					fill: none;
+					stroke: var(--color-dark);
+					transform: rotate(0);
+
+					@extend %default-transition;
+				}
+
+				&._active {
+					color: var(--color-blue);
+
+					svg {
+						stroke: var(--color-blue);
+						transform: rotate(180deg);
+					}
+				}
+
+				&.active {
+					font-weight: 500;
+				}
+
+				@media (any-hover: hover) {
+					&:hover {
+						z-index: 95;
+						color: var(--color-blue);
+
+						svg {
+							stroke: var(--color-blue);
+						}
+					}
+				}
+			}
+
+			@include media-mn(960) {
+				position: relative;
+			}
+		}
+		@include media-mn(960) {
+			align-items: center;
+		}
+
+		@include media-mx(960) {
+			flex-direction: column;
+			gap: rem(20);
+		}
+	}
+
+	// .menu-bottom__sub-list
+	&__sub-list {
+		opacity: 0;
+		visibility: hidden;
+
+		@extend %default-transition;
+
+		&._open {
+			top: rem(-10);
+			opacity: 1;
+			visibility: visible;
+		}
+
+		@include media-mn(960) {
+			position: absolute;
+			left: rem(-18);
+			top: 0;
+			z-index: -1;
+			border-radius: rem(8);
+			padding: rem(45) rem(18) rem(18);
+			box-shadow: rem(5) rem(8) rem(15) rgba(#000, 0.25);
+			background: var(--color-light);
+		}
+
+		@include media-mx(960) {
+			padding-top: 0;
+			padding-left: rem(10);
+			height: 0;
+
+			&._open {
+				padding-top: rem(10);
+				height: max-content;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		li {
+			&:not(:last-child) {
+				margin-bottom: rem(15);
+			}
+
+			a {
+				font-size: rem(15);
+				line-height: 1.2;
+				transition: color 0.3s;
+
+				@media (any-hover: hover) {
+					&:hover {
+						color: var(--color-blue);
+					}
+				}
+			}
+		}
+	}
+}

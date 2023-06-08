@@ -1,0 +1,128 @@
+.equality {
+  @include adaptive-value("padding-top", 50, 25, $max-width, $min-width, 1);
+  @include adaptive-value("padding-bottom", 120, 60, $max-width, $min-width, 1);
+
+  // .equality__container
+  &__container {
+  }
+  // .equality__title
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(50);
+
+      @include media-mx($phone) {
+        margin-bottom: rem(30);
+      }
+    }
+  }
+  // .equality__action
+  &__action {
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+  // .equality__cards
+  &__cards {
+    padding-bottom: rem(25);
+    display: flex;
+    gap: rem(20);
+    overflow: auto;
+    > * {
+      min-width: rem(330);
+      @include media-mx(640) {
+        min-width: rem(295);
+      }
+      @include media-mx($phone) {
+        min-width: rem(220);
+      }
+
+      &:not(:first-child) {
+        .equality-card-list__label {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.swiper-wrapper {
+}
+.equality {
+  // .equality__wrapper
+  &__wrapper {
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+  // .equality__slide
+  &__slide {
+  }
+}
+
+.swiper-scrollbar {
+  width: 100%;
+  border-radius: rem(10);
+  height: rem(10);
+  background-color: var(--color-light);
+}
+.swiper-scrollbar-drag {
+  height: 100%;
+  border-radius: rem(10);
+  background-color: var(--color-blue);
+  cursor: grab;
+}
+
+.equality-action {
+  display: flex;
+
+  align-items: center;
+  gap: rem(20);
+  position: relative;
+
+  &__label {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    span {
+      font-size: rem(17);
+      line-height: math.div(20, 17);
+      letter-spacing: 0.005em;
+      color: #a2a1a7;
+    }
+    gap: rem(10);
+
+    input {
+      &:checked + .equality-action__box::after {
+        left: rem(40 - 18);
+      }
+      display: none;
+    }
+    cursor: pointer;
+  }
+  &__box {
+    display: flex;
+    position: relative;
+
+    &::before {
+      content: "";
+      flex: 0 0 rem(40);
+      align-self: flex-start;
+      background-color: rgba(#777, 0.3);
+      border-radius: rem(15);
+      width: rem(40);
+      height: rem(20);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      @include pseudo();
+      transition: left 0.3s, right 0.3s;
+      inset: rem(2);
+
+      @include width-height(rem(16), rem(16));
+      background-color: var(--color-blue);
+    }
+  }
+}

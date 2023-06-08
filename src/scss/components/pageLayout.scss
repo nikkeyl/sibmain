@@ -1,0 +1,37 @@
+.page-layout {
+	display: grid;
+	grid-template-columns: 1fr rem(500);
+	gap: rem(30);
+
+	@include media-mx(1400) {
+		grid-template-columns: 1fr rem(400);
+	}
+
+	@include media-mx(1200) {
+		grid-template-columns: 100%;
+		gap: rem(20);
+	}
+
+	// .page-layout_second
+	&_second {
+		.page-layout__sidebar {
+			display: grid;
+			grid-template-columns: 1fr;
+			align-self: start;
+			gap: rem(20);
+
+			@include media-mx(1200) {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			@include media-mx(900) {
+				grid-template-columns: 100%;
+			}
+		}
+	}
+
+	// .page-layout__sidebar
+	&__sidebar {
+
+	}
+}

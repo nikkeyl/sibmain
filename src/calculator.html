@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/helpers/head.htm',{
+"title": "Калькулятор доходности"
+})
+<body class="page">
+<div class="wrapper">
+	@@include('html/components/header.htm')
+	<main class="content" data-observ>
+		@@include('html/modules/breadcrumbs.htm', {"current":"Калькулятор доходности"})
+		<section class="calculator-page">
+			<div class="calculator-page__container">
+				<div class="title"><h2>Калькулятор доходности</h2></div>
+				<div class="page-layout page-layout_second">
+					<div class="page-layout__body">
+						<form class="calculator-block">
+							<div class="box-title ">Выберите оборудование</div>
+							<div class="calculator-block__selects">
+								<div class="select-device" data-select="calc-device">
+									<input type="hidden" name="product-name">
+									<button class="select-device__trigger" data-type-s="trigger" type="button">
+										<span class="trigger-content"></span>
+										<span class="trigger-icon">
+									<svg><use href="@content/svg/sprite.svg#arrow"></use></svg>
+								</span>
+									</button>
+									<ul class="select-device__list" data-type-s="list">
+										<li class="select-device__option" data-value="Bitmain Antminer">Bitmain Antminer</li>
+										<li class="select-device__option" data-value="Dog Miner">Dog Miner</li>
+										<li class="select-device__option" data-value="Cat Miner">Cat Miner</li>
+									</ul>
+								</div>
+								<div class="select-device" data-select="device-model">
+									<input type="hidden" name="product-model">
+									<button class="select-device__trigger" data-type-s="trigger" type="button">
+										<span class="trigger-content"></span>
+										<span class="trigger-icon">
+									<svg><use href="@content/svg/sprite.svg#arrow"></use></svg>
+								</span>
+									</button>
+									<ul class="select-device__list" data-type-s="list">
+										<li class="select-device__option" data-value="none">Модель</li>
+										<li class="select-device__option" data-value="Bitmain Antminer">Bitmain Antminer</li>
+										<li class="select-device__option" data-value="Dog Miner">Dog Miner</li>
+										<li class="select-device__option" data-value="Cat Miner">Cat Miner</li>
+									</ul>
+								</div>
+							</div>
+							<div class="calculator-block__selects">
+								<div class="order-product order-product_center">
+									<div class="order-product__image-ibg">
+										<img src="@content/temp/products/product-1.jpg" alt="">
+									</div>
+									<div class="order-product__info">
+										<span class="text-label">Наименование</span>
+										<span class="order-product__name">Asic майнер Whatsminer M50S 130Th</span>
+									</div>
+								</div>
+								<div class="calculator-block__amounts">
+									<div class="amount-field">
+										<span class="text-label">Стоимость</span>
+										<span class="amount-field__control">
+											<input type="text" name="product-cost" class="bold" value="408 999 ₽" disabled>
+										</span>
+									</div>
+									<div class="amount-field">
+										<span class="text-label">Потребление (Вт)</span>
+										<span class="amount-field__control">
+											<input type="text" name="product-power" value="3000" disabled>
+										</span>
+									</div>
+									<div class="amount-field">
+										<span class="text-label">Количество</span>
+										<span class="amount-field__control" data-counter="counter">
+											<button class="plus" type="button" data-counter="plus">+</button>
+											<input type="number" name="product-count" value="1" data-counter="count">
+											<button class="minus" type="button" data-counter="minus">-</button>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="calculator-block__unit-selection">
+								<div class="calculator-block__mode">
+									<div class="box-title ">Выберите режим</div>
+									<label class="radio-control">
+										<span class="radio-control__field">
+											<input type="radio" name="mode" value="daily" checked>
+											<span class="radio-control__target"></span>
+											<span class="text-label">Суточный</span>
+										</span>
+									</label>
+									<label class="radio-control">
+										<span class="radio-control__field">
+											<input type="radio" name="mode" value="nightly">
+											<span class="radio-control__target"></span>
+											<span class="text-label">Ночной</span>
+										</span>
+									</label>
+								</div>
+								<div class="calculator-block__cost">
+									<div class="box-title ">Введите стоимость электроэнергии</div>
+									<label class="radio-control">
+										<span class="radio-control__field">
+											<input type="radio" name="cost" value="base" checked>
+											<span class="radio-control__target"></span>
+											<span class="text-label">Базовое размещение</span>
+										</span>
+										<span class="cost-text">4,2 <span class="text-label">₽ / кВт / час</span></span>
+									</label>
+									<label class="radio-control">
+										<span class="radio-control__field">
+											<input type="radio" name="cost" value="custom">
+											<span class="radio-control__target"></span>
+											<span class="text-label">Задать свою стоимость</span>
+										</span>
+										<span class="amount-field">
+											<span class="amount-field__control">
+												<input type="text" name="cost-value" value="9">
+											</span>
+											<span class="text-label">₽ / кВт / час</span>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="calculator-block__bottom">
+								<button class="button" type="button">Рассчитать доходность</button>
+								<div>
+									<span class="cost-text">USDT = 83.35 ₽</span>
+									<span class="text-label">на 19.05.2023</span>
+								</div>
+							</div>
+							<p class="calculator-block__note">Обратите внимание, что расчеты основаны на средних значениях, поэтому ваши окончательные результаты могут отличаться.</p>
+						</form>
+					</div>
+					<aside class="page-layout__sidebar">
+						<div class="order">
+							<div class="box-title"><h2>Результаты расчётов</h2></div>
+							<ul class="profit order__profit">
+								<li>
+									<div class="profit__key">Чистая прибыль</div>
+									<div class="profit__value">1 600 238 ₽<span>/ мес.</span></div>
+								</li>
+								<li>
+									<div class="profit__key">Окупаемость</div>
+									<div class="profit__value">0,26<span>мес.</span></div>
+								</li>
+							</ul>
+							<ul class="order-info">
+								<li><span>Стоимость оборудования</span><span>408 999 ₽</span></li>
+								<li><span>Затраты на размещение</span><span>9 852 ₽</span></li>
+								<li><span>Доход от майнинга в месяц</span><span>1 610 090 ₽</span></li>
+							</ul>
+						</div>
+						@@include('./html/modules/form.htm')
+					</aside>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/components/subscribe-us.htm')
+	@@include('html/components/footer.htm')
+</div>
+@@include('html/helpers/js.htm')
+</body>
+</html>

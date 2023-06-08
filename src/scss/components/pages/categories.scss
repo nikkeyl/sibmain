@@ -1,0 +1,234 @@
+.categories {
+  @include adaptive-value("padding-top", 50, 25, $max-width, $min-width, 1);
+
+  // .categories__filter
+  &__filter {
+    @include media-mx(1200) {
+      position: fixed;
+      width: rem(320);
+      z-index: 95;
+      padding: rem(50) rem(15) rem(20);
+      transition: left 0.3s;
+      background-color: var(--color-light);
+      height: 100%;
+      top: 0;
+      left: rem(-320);
+
+      &._open {
+        left: 0;
+        box-shadow: 0 0 rem(15) rgba(#000, 15%);
+      }
+    }
+
+    @include media-mx($phone) {
+      left: -100%;
+      width: 100%;
+    }
+  }
+
+  // .categories__filter
+  &__filters {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		gap: rem(20);
+		padding-bottom: rem(30);
+
+		.sorted-block {
+			margin-left: auto;
+		}
+
+    @include media-mn(1200) {
+			.categories__button {
+				display: none;
+			}
+    }
+  }
+
+  &__container {
+    @include media-mn(1200) {
+      display: grid;
+      gap: rem(20);
+      grid-template-columns: rem(350) 1fr;
+    }
+  }
+
+  // .categories__body
+  &__body {
+    overflow: auto;
+    @include adaptive-value("padding-bottom", 50, 25, $max-width, $min-width, 1);
+  }
+
+  // .categories__category
+  &__category {
+    display: flex;
+    gap: rem(20);
+    overflow: auto;
+    align-items: center;
+    min-width: 100%;
+    padding-bottom: rem(5);
+    @include adaptive-value("margin-bottom", 50, 25, $max-width, $min-width, 1);
+  }
+
+  // .categories__button
+  &__button {
+    font-weight: 400;
+    line-height: math.div(22, 16);
+    letter-spacing: 0.005em;
+    white-space: nowrap;
+    border: rem(1) solid #d6d6d6;
+    border-radius: rem(200);
+    padding: rem(12) rem(15);
+    color: #070707;
+    transition: background-color 0.3s;
+
+    @include hover {
+      background-color: var(--color-light);
+    }
+
+    &_fw {
+      width: 100%;
+    }
+
+    &_white {
+      padding: rem(15);
+      background-color: var(--color-light);
+      gap: rem(20);
+      display: flex;
+      align-items: center;
+
+      span {
+        display: block;
+        width: rem(20);
+        height: rem(14);
+        position: relative;
+
+        span,
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: rem(20);
+          border-radius: rem(2);
+          height: rem(2);
+          background-color: var(--color-blue);
+        }
+        span {
+          top: calc(50% - rem(1));
+        }
+
+        &::after {
+          top: 0;
+        }
+
+        &::before {
+          bottom: 0;
+        }
+      }
+    }
+
+    &.active {
+      background-color: var(--color-light);
+    }
+  }
+
+  // .categories__products
+  &__products {
+    @include grid-cards(fill, rem(260), 1fr, $phone) {
+      gap: rem(25);
+      justify-items: center;
+      @include adaptive-value("padding-bottom", 80, 20, $max-width, $min-width, 1);
+
+      > * {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.range-price {
+  // .range-price__field
+  &__field {
+    position: relative;
+    width: 100%;
+    display: flex;
+    border: rem(1) solid #e9ebed;
+    padding: rem(15) rem(0);
+    border-radius: rem(100);
+
+    &::before {
+      @include pseudo();
+      height: 70%;
+      width: rem(1);
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #e9ebed;
+      left: 50%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  // .range-price__input
+  &__input {
+    position: relative;
+
+    input {
+      width: 100%;
+      padding-inline: rem(40) rem(15);
+      display: block;
+      flex: 1 1 auto;
+      background-color: transparent;
+    }
+
+    &::before {
+      left: rem(10);
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: rem(16);
+			font-weight: 400;
+			color: var(--color-disabled);
+    }
+
+    &:first-child {
+      &::before {
+        @include pseudo("от");
+      }
+    }
+
+    &:last-child {
+      &::before {
+        @include pseudo("до");
+      }
+    }
+  }
+}
+
+.filter-close {
+  width: rem(30);
+  top: rem(15);
+  right: rem(15);
+  height: rem(20);
+  position: absolute;
+
+  &::before,
+  &::after {
+    @include pseudo();
+    height: rem(2);
+    width: 100%;
+    border-radius: rem(2);
+    background-color: var(--color-blue);
+  }
+  &::after {
+    top: 50%;
+    transform: rotate(-45deg);
+    left: 0;
+  }
+  &::before {
+    right: 0;
+    transform: rotate(45deg);
+  }
+}

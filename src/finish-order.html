@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/helpers/head.htm',{
+  "title": "Спасибо за заказ!"
+  })
+  <body class="page">
+    <div class="wrapper">
+      @@include('html/components/header.htm',{})
+      <main class="content" data-observ>
+        @@include('html/modules/breadcrumbs.htm',{"current":"Доставка и оплата"})
+        <section class="finish-order">
+          <div class="finish-order__container">
+            <div class="page-layout page-layout_second">
+              <div class="page-layout__body">
+                <div class="finish-order__title title"><h1>Спасибо за заказ!</h1></div>
+                <div class="delivery-text">
+                  <p>
+                    Благодарим Вас за размещенный заказ на нашем сайте.
+                  </p>
+                </div>
+                <div class="finish-order__number">
+                  <h3>Номер вашего заказа: 084653</h3>
+                </div>
+                <div class="delivery-text">
+                  <p>Информация о Вашем заказе была отправлена на Вашу электронную почту. Мы закрепим за Вами менеджера, он рассмотрит заказ и свяжется с Вами в ближайшее время для согласования позиций.</p>
+                </div>
+                <div class="info-title title title_grey">
+                  <h2>Дополнительная информация</h2>
+                </div>
+                @@include('html/modules/delivery-info.htm',{})
+              </div>
+              <aside class="page-layout__sidebar">
+                @@include('html/modules/order.htm',{})
+                @@include('html/modules/form.htm',{})
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/components/subscribe-us.htm',{})
+      @@include('html/components/footer.htm',{})
+    </div>
+    <!-- sсripts -->
+    @@include('html/helpers/js.htm',{})
+  </body>
+</html>

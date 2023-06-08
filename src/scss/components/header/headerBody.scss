@@ -1,0 +1,21 @@
+.header-body {
+	// .header-body__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(20);
+	}
+
+	// .header-body__catalog-button
+	&__catalog-button {
+		@include media-mx(480) {
+			display: none;
+		}
+	}
+
+	// .header-body__search
+	&__search {
+		flex: 1 1 auto;
+	}
+}

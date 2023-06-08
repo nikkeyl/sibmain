@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/helpers/head.htm',{
+  "title": "Контакты"
+  })
+  <body class="page">
+    <div class="wrapper">
+      @@include('html/components/header.htm',{})
+      <!-- main content -->
+      <main class="content" data-observ>
+        @@include('html/modules/breadcrumbs.htm',{"current":"Контакты"})
+        <section class="contacts">
+          <div class="contacts__container">
+            <div class="contacts__title title">
+              <h1>Контакты</h1>
+            </div>
+            <div class="page-layout">
+              <div class="page-layout__body">
+                @@include('html/modules/contacts.htm',{})
+                <div class="contacts__map">
+                  <div
+										class="map-container"
+										id="map-yandex"
+										data-coords="55.728469,37.612910; 55.729280,37.611102"
+										data-baloonContent="Офис в городе Москва Россия, г. Москва, Калужская площадь, 1/1; Октябрьская, станция метро"
+										data-zoom="17"
+									>
+									</div>
+                </div>
+              </div>
+              <aside class="page-layout__sidebar">
+                @@include('html/modules/form.htm',{})
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/components/subscribe-us.htm',{})
+      @@include('html/components/footer.htm',{})
+    </div>
+    @@include('html/modules/popup.htm',{})
+    <!-- sсripts -->
+    @@include('html/helpers/js.htm',{})
+  </body>
+</html>

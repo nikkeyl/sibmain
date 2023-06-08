@@ -1,0 +1,44 @@
+.news {
+	padding: rem(50) 0 rem(120);
+
+	@include media-mx(960) {
+		padding: rem(30) 0 rem(100);
+	}
+
+	@include media-mx(640) {
+		padding: rem(25) 0 rem(70);
+	}
+
+	.tabs__nav {
+		margin: rem(24) 0;
+		width: calc(100% - rem(500 + 30));
+
+		@include media-mx(1400) {
+			width: calc(100% - rem(400 + 30));
+		}
+
+		@include media-mx(1200) {
+			width: 100%;
+		}
+	}
+
+	.pagination {
+		margin-top: rem(55);
+
+		@include media-mx(640) {
+			margin-top: rem(35);
+		}
+	}
+
+
+	// .news__card-container
+	&__card-container {
+		display: flex;
+		flex-direction: column;
+		gap: rem(24);
+
+		@include media-mx(960) {
+			gap: rem(20);
+		}
+	}
+}

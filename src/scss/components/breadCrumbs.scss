@@ -1,0 +1,51 @@
+.breadcrumbs {
+	white-space: nowrap;
+	@include adaptive-value("padding-top", 50, 25, $max-width, $min-width, 1);
+
+	// .breadcrumbs__list
+	&__list {
+		display: flex;
+		gap: rem(10);
+		flex-wrap: wrap
+	}
+
+	// .breadcrumbs__item
+	&__item {
+		@extend %f-ai-center;
+		gap: rem(10);
+
+		&::after {
+			content: '';
+			width: 12px;
+			height: 12px;
+			background-image: url("../images/icons/angle-right.svg");
+			background-repeat: no-repeat;
+			opacity: .4;
+			background-position: center;
+			background-size: contain;
+		}
+
+		&:last-child {
+			&::after {
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+	&__link,
+	&__current {
+		font-size: rem(17);
+		line-height: math.div(20, 17);
+		letter-spacing: 0.005em;
+		color: var(--color-gray);
+	}
+
+	// .breadcrumbs__link
+	&__link {
+		transition: color 0.3s ease-in-out;
+
+		@include hover {
+			color: var(--color-blue);
+		}
+	}
+}

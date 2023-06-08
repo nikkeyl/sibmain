@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/helpers/head.htm',{
+"title": "Калькулятор доходности"
+})
+<body class="page">
+<div class="wrapper">
+	@@include('html/components/header.htm')
+	<main class="content order-page" data-observ>
+		@@include('html/modules/breadcrumbs.htm', {"current":"Калькулятор доходности"})
+		<div class="order-page__container" data-observ>
+			<div class="page-layout page-layout_second">
+				<div class="page-layout__body">
+					<section class="order-placement">
+						<div class="title"><h1>Оформление заказа</h1></div>
+						<div class="tabs" data-tabs="order-placement">
+							<div class="tabs__nav">
+								<div class="tabs__trigger">Корзина</div>
+								<div class="tabs__trigger">Товары в "Избранном"</div>
+							</div>
+							<div class="tabs__content">
+								<div class="tabs__panel">
+									<div class="basket-items">
+										<div class="goods">
+											<div class="order-product">
+												<div class="order-product__image-ibg">
+													<img src="@content/temp/products/product-1.jpg" alt="">
+												</div>
+												<div class="order-product__info">
+													<span class="order-product__name">Asic майнер Whatsminer M50S 130 Whatsminer 1000 TRQd Th</span>
+													<button class="order-product__button" type="button">Удалить</button>
+												</div>
+											</div>
+											<div class="amount-field">
+												<div class="amount-field__price">1 266 989 ₽</div>
+												<div class="amount-field__control" data-counter="counter">
+													<button class="plus" type="button" data-counter="plus">+</button>
+													<input type="number" name="product-count" value="1" data-counter="count">
+													<button class="minus" type="button" data-counter="minus">-</button>
+												</div>
+											</div>
+										</div>
+										<div class="goods">
+											<div class="order-product">
+												<div class="order-product__image-ibg">
+													<img src="@content/temp/products/product-1.jpg" alt="">
+												</div>
+												<div class="order-product__info">
+													<span class="order-product__name">Whatsminer Asic майнер Whatsminer M50S 130Th Asic 123455512 Gerafgtgn Qrsadasccggqwe</span>
+													<button class="order-product__button" type="button">Удалить</button>
+												</div>
+											</div>
+											<div class="amount-field">
+												<div class="amount-field__price">66 989 ₽</div>
+												<div class="amount-field__control" data-counter="counter">
+													<button class="plus" type="button" data-counter="plus">+</button>
+													<input type="number" name="product-count" value="1" data-counter="count">
+													<button class="minus" type="button" data-counter="minus">-</button>
+												</div>
+											</div>
+										</div>
+										<div class="goods">
+											<div class="order-product">
+												<div class="order-product__image-ibg">
+													<img src="@content/temp/products/product-1.jpg" alt="">
+												</div>
+												<div class="order-product__info">
+													<span class="order-product__name">Asic майнер Whatsminer M50S 130Th</span>
+													<button class="order-product__button" type="button">Удалить</button>
+												</div>
+											</div>
+											<div class="amount-field">
+												<div class="amount-field__price">266 989 ₽</div>
+												<div class="amount-field__control" data-counter="counter">
+													<button class="plus" type="button" data-counter="plus">+</button>
+													<input type="number" name="product-count" value="1" data-counter="count">
+													<button class="minus" type="button" data-counter="minus">-</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__panel">
+									<div class="basket-items">
+										<div class="goods">
+											<div class="order-product">
+												<div class="order-product__image-ibg">
+													<img src="@content/temp/products/product-1.jpg" alt="">
+												</div>
+												<div class="order-product__info">
+													<span class="order-product__name">Asic майнер Whatsminer M50S 130 Whatsminer 1000 TRQd Th</span>
+													<button class="order-product__button" type="button">Сравнить</button>
+													<button class="order-product__button" type="button">Удалить из Избранного</button>
+												</div>
+											</div>
+											<div class="amount-field">
+												<div class="amount-field__price">1 266 989 ₽</div>
+												<button class="button" type="button">Добавить в корзину</button>
+											</div>
+										</div>
+										<div class="goods">
+											<div class="order-product">
+												<div class="order-product__image-ibg">
+													<img src="@content/temp/products/product-1.jpg" alt="">
+												</div>
+												<div class="order-product__info">
+													<span class="order-product__name">Asic майнер Whatsminer M50S 130 Th</span>
+													<button class="order-product__button" type="button">Сравнить</button>
+													<button class="order-product__button" type="button">Удалить из Избранного</button>
+												</div>
+											</div>
+											<div class="amount-field">
+												<div class="amount-field__price">266 989 ₽</div>
+												<button class="button" type="button">Добавить в корзину</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="client-data">
+						<div class="title"><h2>Данные покупателя</h2></div>
+						<div class="tabs" data-tabs="client-data">
+							<div class="tabs__nav">
+								<div class="tabs__trigger">Физическое лицо</div>
+								<div class="tabs__trigger">Юридическое лицо</div>
+							</div>
+							<div class="tabs__content">
+								<div class="tabs__panel">
+									<div class="form-body">
+										<fieldset class="form-body__item">
+											<div class="box-title"><h3>1. Контактная информация:</h3></div>
+											<div class="group-control">
+												<div class="input-control">
+													<input type="text" placeholder="Имя*" name="client-name">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+												<div class="input-control">
+													<input type="text" placeholder="Фамилия*" name="client-surname">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+												<div class="input-control">
+													<input type="email" placeholder="Электронная почта*" name="client-email">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+												<div class="input-control">
+													<div class="tel-block" data-select="tel">
+														<input type="hidden" name="country">
+														<button class="tel-block__trigger" data-type-s="trigger" type="button">
+															<span class="trigger-content"></span>
+															<span class="trigger-icon">
+																<svg>
+																	<use href="@content/svg/sprite.svg#arrow"></use>
+																</svg>
+															</span>
+														</button>
+														<ul class="tel-block__list" data-type-s="list">
+															<li class="tel-block__option" data-value="ru" data-placeholder="+7 (999) 999 99 99">
+																<span class="tel-block__image"><img src="@content/temp/lang/flag-ru.jpg" alt="RU"></span>
+															</li>
+															<li class="tel-block__option" data-value="en" data-placeholder="+13 (999) 999 99 99">
+																<span class="tel-block__image"><img src="@content/temp/lang/flag-en.jpg" alt="EN"></span>
+															</li>
+														</ul>
+													</div>
+													<input type="tel" name="client-phone">
+												</div>
+											</div>
+										</fieldset>
+										<fieldset class="form-body__item">
+											<div class="box-title"><h3>2. Способ получения заказа:</h3></div>
+											<div class="group-control">
+												<label class="radio-control">
+													<span class="radio-control__field">
+														<input type="radio" name="method-delivery" value="shipping" checked>
+														<span class="radio-control__target"></span>
+														<span class="text-label">Доставка</span>
+													</span>
+													<span class="radio-control__text">Услуги курьера и доставки осуществляются компанией СДЭК. Сроки рассчитывает менеджер. Для получения необходим паспорт.</span>
+												</label>
+												<label class="radio-control">
+													<span class="radio-control__field">
+														<input type="radio" name="method-delivery" value="self-delivery">
+														<span class="radio-control__target"></span>
+														<span class="text-label">Самовывоз</span>
+													</span>
+													<span class="radio-control__text">После оформления заказа наш менеджер свяжется с вами для уточнения деталей. Самовывоз можно осуществить по адресу: г. Москва, Калужская площадь, 1/1</span>
+												</label>
+											</div>
+										</fieldset>
+										<fieldset class="form-body__item">
+											<div class="box-title"><h3>3. Способ оплата:</h3></div>
+											<div class="group-control">
+												<label class="radio-control">
+													<span class="radio-control__field">
+														<input type="radio" name="method-payment" value="non-cash" checked>
+														<span class="radio-control__target"></span>
+														<span class="text-label">Безналичный расчет</span>
+													</span>
+													<span class="radio-control__text">Услуги курьера и доставки осуществляются компанией СДЭК. Сроки рассчитывает менеджер. Для получения необходим паспорт.</span>
+												</label>
+												<label class="radio-control">
+													<span class="radio-control__field">
+														<input type="radio" name="method-payment" value="cash">
+														<span class="radio-control__target"></span>
+														<span class="text-label">Наличными в офисе</span>
+													</span>
+													<span class="radio-control__text">г. Москва, Калужская площадь, 1/1</span>
+												</label>
+											</div>
+										</fieldset>
+										<fieldset class="form-body__item">
+											<div class="box-title"><h3>4. Дополнительная информация:</h3></div>
+											<textarea name="add-message" placeholder="Комментарий, сообщение к заказу (необязательно)"></textarea>
+										</fieldset>
+									</div>
+								</div>
+								<div class="tabs__panel">
+									<div class="form-body">
+										<fieldset class="form-body__item">
+											<div class="box-title"><h3>1. Контактная информация:</h3></div>
+											<div class="group-control">
+												<div class="input-control">
+													<input type="text" placeholder="Фамилия Имя Отчество*" name="client-fio">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+												<div class="input-control">
+													<div class="tel-block" data-select="tel">
+														<input type="hidden" name="country">
+														<button class="tel-block__trigger" data-type-s="trigger" type="button">
+															<span class="trigger-content"></span>
+															<span class="trigger-icon">
+																<svg>
+																	<use href="@content/svg/sprite.svg#arrow"></use>
+																</svg>
+															</span>
+														</button>
+														<ul class="tel-block__list" data-type-s="list">
+															<li class="tel-block__option" data-value="ru" data-placeholder="+7 (999) 999 99 99">
+																<span class="tel-block__image"><img src="@content/temp/lang/flag-ru.jpg" alt="RU"></span>
+															</li>
+															<li class="tel-block__option" data-value="en" data-placeholder="+13 (999) 999 99 99">
+																<span class="tel-block__image"><img src="@content/temp/lang/flag-en.jpg" alt="EN"></span>
+															</li>
+														</ul>
+													</div>
+													<input type="tel" name="client-phone">
+												</div>
+												<div class="input-control">
+													<input type="text" placeholder="ИНН*" name="client-code">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+												<div class="input-control">
+													<input type="text" placeholder="Наименование организации*" name="client-company">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+												<div class="input-control">
+													<input type="email" placeholder="Электронная почта*" name="client-email">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+											</div>
+										</fieldset>
+										<fieldset class="form-body__item">
+											<div class="box-title"><h3>2. Способ получения заказа:</h3></div>
+											<div class="group-control">
+												<label class="radio-control">
+														<span class="radio-control__field">
+															<input type="radio" name="method-delivery" value="shipping" checked>
+															<span class="radio-control__target"></span>
+															<span class="text-label">Доставка</span>
+														</span>
+													<span class="radio-control__text">Услуги курьера и доставки осуществляются компанией СДЭК. Сроки рассчитывает менеджер. Для получения необходим паспорт.</span>
+												</label>
+												<label class="radio-control">
+														<span class="radio-control__field">
+															<input type="radio" name="method-delivery" value="self-delivery">
+															<span class="radio-control__target"></span>
+															<span class="text-label">Самовывоз</span>
+														</span>
+													<span class="radio-control__text">После оформления заказа наш менеджер свяжется с вами для уточнения деталей. Самовывоз можно осуществить по адресу: г. Москва, Калужская площадь, 1/1</span>
+												</label>
+											</div>
+										</fieldset>
+										<fieldset class="form-body__item">
+											<div class="box-title"><h3>3. Способ оплаты:</h3></div>
+											<div class="group-control">
+												<label class="radio-control">
+														<span class="radio-control__field">
+															<input type="radio" name="method-payment" value="non-cash" checked>
+															<span class="radio-control__target"></span>
+															<span class="text-label">Безналичный расчет</span>
+														</span>
+													<span class="radio-control__text">Услуги курьера и доставки осуществляются компанией СДЭК. Сроки рассчитывает менеджер. Для получения необходим паспорт.</span>
+												</label>
+											</div>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<aside class="page-layout__sidebar">
+					<div class="order">
+						<div class="box-title"><h2>Ваша корзина</h2></div>
+						<ul class="order-info">
+							<li><span>Всего товаров:</span><span>3 товара</span></li>
+							<li><span>Сумма заказа:</span><span>34 390 ₽</span></li>
+							<li><span>Доставка:</span><span class="sale">Бесплатно</span></li>
+							<li><span>Скидка:</span><span class="sale">-1 920 ₽</span></li>
+						</ul>
+						<div class="order__result">
+							<span>Итого к оплате</span>
+							<span>32 470 ₽</span>
+						</div>
+						<button class="button" type="button">Подтвердить заказ</button>
+					</div>
+					@@include('./html/modules/form.htm')
+				</aside>
+			</div>
+		</div>
+	</main>
+	@@include('html/components/subscribe-us.htm')
+	@@include('html/components/footer.htm')
+</div>
+@@include('html/helpers/js.htm')
+</body>
+</html>

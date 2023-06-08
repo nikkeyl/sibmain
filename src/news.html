@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/helpers/head.htm',{
+"title": "Новости"
+})
+  <body class="page">
+    <div class="wrapper">
+      @@include('html/components/header.htm',{})
+      <main class="content">
+        @@include('html/modules/breadcrumbs.htm',{"current":"Новости"})
+        <section class="news" data-observ>
+          <div class="news__container" data-tabs="news">
+						<div class="title"><h1>Новости</h1></div>
+						<div class="tabs__nav">
+							<div class="tabs__trigger">Блог</div>
+							<div class="tabs__trigger">Информация в СМИ о нас</div>
+						</div>
+            <div class="page-layout">
+							<div class="page-layout__body">
+								<div class="tabs__content">
+									<div class="tabs__panel">
+										<div class="news__card-container">
+											@@include('html/modules/news-card.htm',{
+											"img":"images/temp/news/news-1.jpg",
+											"title":"В США предложили изучить влияние майнинга биткоина на экологию",
+											"text":"Законодатели США представили законопроект, который требует от Агентства по охране окружающей среды провести всестороннее исследование воздействия индустрии майнинга на экологию.",
+											"link":""
+											})
+											@@include('html/modules/news-card.htm',{
+											"img":"images/temp/news/news-2.jpg",
+											"title":"Каждый десятый Россиянин - владеет криптовалютой",
+											"text":"Россия заняла третье место по степени зрелости криптовалютного рынка, согласно исследованию платформы.",
+											"link":""
+											})
+											@@include('html/modules/news-card.htm',{
+											"img":"images/temp/news/news-3.jpg",
+											"title":"Блокчейн-штат",
+											"text":"Флорида занимает первое место в США по темпам принятия цифровых валют и развитию блокчейн-инфраструктуры.",
+											"link":""
+											})
+											@@include('html/modules/news-card.htm',{
+											"img":"images/temp/news/news-1.jpg",
+											"title":"В США предложили изучить влияние майнинга биткоина на экологию",
+											"text":"Законодатели США представили законопроект, который требует от Агентства по охране окружающей среды провести всестороннее исследование воздействия индустрии майнинга на экологию.",
+											"link":""
+											})
+											@@include('html/modules/news-card.htm',{
+											"img":"images/temp/news/news-2.jpg",
+											"title":"Каждый десятый Россиянин - владеет криптовалютой",
+											"text":"Россия заняла третье место по степени зрелости криптовалютного рынка, согласно исследованию платформы.",
+											"link":""
+											})
+											@@include('html/modules/news-card.htm',{
+											"img":"images/temp/news/news-3.jpg",
+											"title":"Блокчейн-штат",
+											"text":"Флорида занимает первое место в США по темпам принятия цифровых валют и развитию блокчейн-инфраструктуры.",
+											"link":""
+											})
+										</div>
+											@@include('html/modules/pagination.htm',{})
+									</div>
+									<div class="tabs__panel">
+										<div class="news__card-container">
+											@@include('html/modules/news-card.htm',{
+											"img":"images/temp/news/news-3.jpg",
+											"title":"Блокчейн-штат",
+											"text":"Флорида занимает первое место в США по темпам принятия цифровых валют и развитию блокчейн-инфраструктуры.",
+											"link":""
+											})
+											@@include('html/modules/news-card.htm',{
+											"img":"images/temp/news/news-3.jpg",
+											"title":"Блокчейн-штат",
+											"text":"Флорида занимает первое место в США по темпам принятия цифровых валют и развитию блокчейн-инфраструктуры.",
+											"link":""
+											})
+										</div>
+											@@include('html/modules/pagination.htm',{})
+									</div>
+								</div>
+							</div>
+              <aside class="page-layout__sidebar">
+                @@include('html/modules/form.htm',{})
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/components/subscribe-us.htm',{})
+      @@include('html/components/footer.htm',{})
+    </div>
+    <!-- sсripts -->
+    @@include('html/helpers/js.htm',{})
+  </body>
+</html>

@@ -1,0 +1,85 @@
+@use 'sass:math';
+
+@import '@scss/base/functions';
+@import '@scss/base/variables';
+@import '@scss/base/mixins';
+
+/* Range plugin */
+
+.noUi-target,
+.noUi-target * {
+	box-sizing: border-box;
+	user-select: none;
+}
+
+.noUi-base,
+.noUi-connects {
+	@include width-height(100%, 100%);
+}
+
+/* Wrapper for all connect elements. */
+.noUi-connect,
+.noUi-origin {
+	@include width-height(100%, 100%);
+
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform-origin: 0 0;
+	will-change: transform;
+}
+
+.noUi-connect {
+	background-color: #000000;
+}
+
+/* Give origins 0 height/width so they don't interfere with clicking the * connect elements. */
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+	transition: transform 0.3s;
+}
+
+/* Slider size and handle placement; */
+.noUi-horizontal {
+	height: rem(3);
+}
+
+.noUi-handle {
+	position: absolute;
+	border: rem(3) solid #000000;
+	border-radius: 50%;
+	background-color:var(--color-light);
+	backface-visibility: hidden;
+	transition: background-color 0.1s;
+	cursor: grab;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		@include width-height(rem(20), rem(20));
+		background-color: transparent;
+	}
+}
+
+.noUi-horizontal .noUi-handle {
+	@include width-height(rem(10), rem(10));
+
+	right: rem(-5);
+	top: rem(-3.6);
+}
+
+/* Styling; * Giving the connect element a border radius causes issues with using transform: scale */
+.noUi-target {
+	position: relative;
+	// border: rem(1) solid #d3d3d3;
+	border-radius: rem(30);
+	background-color: #a8a8a8;
+}
+
+.noUi-active {
+	background-color: #d9d9d9;
+	cursor: grabbing;
+}

@@ -1,0 +1,35 @@
+<form class="form-request">
+	<div class="form-request__title sub-title">Оставить заявку</div>
+	<fieldset class="form-request__actions">
+		<div class="form-request__input input-control">
+			<input type="text" placeholder="Имя*" name="client-name">
+			<span class="message-error">Поле должно быть заполнено</span>
+		</div>
+		<div class="form-request__input input-control">
+			<div class="tel-block" data-select="tel">
+				<input type="hidden" name="country">
+				<button class="tel-block__trigger" data-type-s="trigger" type="button">
+					<span class="trigger-content"></span>
+					<span class="trigger-icon">
+						<svg>
+							<use href="@content/svg/sprite.svg#arrow"></use>
+						</svg>
+					</span>
+				</button>
+				<ul class="tel-block__list" data-type-s="list">
+					<li class="tel-block__option" data-value="ru" data-placeholder="+7 (999) 999 99 99">
+						<span class="tel-block__image"><img src="@content/temp/lang/flag-ru.jpg" alt="RU"></span>
+					</li>
+					<li class="tel-block__option" data-value="en" data-placeholder="+13 (999) 999 99 99">
+						<span class="tel-block__image"><img src="@content/temp/lang/flag-en.jpg" alt="EN"></span>
+					</li>
+				</ul>
+			</div>
+			<input type="tel" name="client-phone">
+		</div>
+		<button class="form-request__button button" type="submit">Отправить</button>
+	</fieldset>
+	<div class="form-request__info">
+		Нажимая кнопку Вы принимаете порядок обработки персональных данных описанный в нашей политике конфиденциальности.
+	</div>
+</form>

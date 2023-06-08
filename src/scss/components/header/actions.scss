@@ -1,0 +1,69 @@
+.actions {
+	display: flex;
+	gap: rem(20);
+
+	// .actions__button
+	&__button {
+		position: relative;
+		@extend %flex-center;
+		border: rem(1) solid rgba(#777, 0.3);
+		border-radius: 50%;
+		width: rem(46);
+		height: rem(46);
+		flex: 0 0 rem(46);
+		transition: background-color 0.3s;
+
+		// .actions__button_cart
+		&_cart {
+			@include media-mx(480) {
+				display: none;
+			}
+		}
+
+		// .actions__button_favorites
+		&_favorites {
+			@include media-mx(480) {
+				display: none;
+			}
+		}
+
+		// .actions__button_compare
+		&_compare {
+			@include media-mx(960) {
+				display: none;
+			}
+		}
+
+		span {
+			@include width-height(rem(20), rem(20));
+
+			position: absolute;
+			right: rem(-10);
+			top: rem(-5);
+			border-radius: 50%;
+			font-weight: 400;
+			font-size: rem(12);
+			line-height: math.div(22, 12);
+			letter-spacing: 0.005em;
+			text-align: center;
+			color: var(--color-light);
+			background-color: var(--color-blue);
+		}
+
+		svg {
+			@include width-height(rem(20), rem(20));
+
+			fill: var(--color-dark);
+			transition: fill 0.3s;
+		}
+
+		@include hover {
+			border-color: var(--color-blue);
+			background-color: var(--color-blue);
+
+			svg {
+				fill: var(--color-light);
+			}
+		}
+	}
+}

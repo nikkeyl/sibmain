@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/helpers/head.htm',{
+  "title": "Каталог"
+  })
+  <body class="page">
+    <div class="wrapper">
+      @@include('html/components/header.htm',{})
+      <!-- main content -->
+      <main class="content" data-observ>
+        @@include('html/modules/breadcrumbs.htm',{"current":"Каталог"})
+        <section class="manufactures">
+          <div class="manufactures__container">
+            <div class="manufactures__title title">
+              <h1>Производители</h1>
+            </div>
+            <div class="manufactures__cards">
+              <a class="manufactures__image-ibg--contain" href="">
+                <img data-src="@content/icons/manufacturers/bitmain-gray.svg" alt="Битмэйн">
+              </a>
+              <a class="manufactures__image-ibg--contain" href="">
+                <img data-src="@content/icons/manufacturers/whatsminer-gray.svg" alt="Вотсмайнер">
+              </a>
+              <a class="manufactures__image-ibg--contain" href="">
+                <img data-src="@content/icons/manufacturers/canaan-gray.svg" alt="Канаан">
+              </a>
+              <a class="manufactures__image-ibg--contain" href="">
+                <img data-src="@content/icons/manufacturers/innosilicon-gray.svg" alt="Инносиликон">
+              </a>
+              <a class="manufactures__image-ibg--contain" href="">
+                <img data-src="@content/icons/manufacturers/jasminer-gray.svg" alt="Джасмайнер">
+              </a>
+              <a class="manufactures__image-ibg--contain" href="">
+                <img data-src="@content/icons/manufacturers/ipollo-gray.svg" alt="Иполло">
+              </a>
+              <a class="manufactures__image-ibg--contain" href="">
+                <img data-src="@content/icons/manufacturers/glodshell.svg" alt="Голдшел">
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <div class="products__container">
+            <div class="actions-head products__head">
+              <div class="title">
+                <h3>Популярные товары</h3>
+              </div>
+              <div class="actions-head__actions-buttons">
+                <button class="actions-head__prev" type="button">
+                  <svg>
+                    <use href="@content/svg/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button class="actions-head__next" type="button">
+                  <svg>
+                    <use href="@content/svg/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="swiper products__slider">
+              <div class="swiper-wrapper products__wrapper">
+                <div class="swiper-slide products__slide">
+                  @@include('html/modules/product.htm',{
+                  "image": "product-1.jpg"
+                  })
+                </div>
+                <div class="swiper-slide products__slide">
+                  @@include('html/modules/product.htm',{
+                  "image": "product-2.jpg"
+                  })
+                </div>
+                <div class="swiper-slide products__slide">
+                  @@include('html/modules/product.htm',{
+                  "image": "product-3.jpg"
+                  })
+                </div>
+                <div class="swiper-slide products__slide">
+                  @@include('html/modules/product.htm',{
+                  "image": "product-4.jpg"
+                  })
+                </div>
+                <div class="swiper-slide products__slide">
+                  @@include('html/modules/product.htm',{
+                  "image": "product-1.jpg"
+                  })
+                </div>
+                <div class="swiper-slide products__slide">
+                  @@include('html/modules/product.htm',{
+                  "image": "product-3.jpg"
+                  })
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <div class="products__container">
+            <div class="actions-head products__head">
+              <div class="title">
+                <h3>Вы смотрели</h3>
+              </div>
+              <div class="actions-head__actions-buttons">
+                <button class="actions-head__prev actions-head__prev--later" type="button">
+                  <svg>
+                    <use href="@content/svg/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button class="actions-head__next actions-head__next--later" type="button">
+                  <svg>
+                    <use href="@content/svg/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="swiper products__slider products__slider--later">
+              <div class="swiper-wrapper products__wrapper">
+                <div class="swiper-slide products__slide">
+                  @@include('html/modules/product.htm',{
+                  "image": "product-1.jpg"
+                  })
+                </div>
+                <div class="swiper-slide products__slide">
+                  @@include('html/modules/product.htm',{
+                  "image": "product-3.jpg"
+									})
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        @@include('html/modules/info.htm',{})
+      </main>
+      @@include('html/components/subscribe-us.htm',{})
+      @@include('html/components/footer.htm',{})
+    </div>
+    <!-- sсripts -->
+    @@include('html/helpers/js.htm',{})
+  </body>
+</html>

@@ -1,0 +1,61 @@
+.spollers {
+	display: grid;
+	gap: rem(15);
+
+	&__item {
+		.spollers_filter & {
+			border-top: rem(1) solid #e9ebed;
+			padding-top: rem(15);
+		}
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(10);
+		width: 100%;
+		font-weight: 700;
+		@include adaptive-value("font-size", 24, 18, $max-width, $min-width, 1);
+		line-height: 1.2;
+		text-align: left;
+		cursor: default;
+
+		svg {
+			@include width-height(rem(12), rem(7));
+
+			transform: rotate(180deg);
+			transition: transform 0.3s;
+		}
+
+		.spoller-init & {
+			cursor: pointer;
+
+			&.spoller-active {
+				svg {
+					transform: rotate(0deg);
+				}
+			}
+		}
+	}
+
+	&__list {
+		padding: rem(23) 0 rem(30);
+	}
+
+	&__list-item {
+		&:not(:last-child) {
+			margin-bottom: rem(15);
+		}
+	}
+
+	&__body {
+		.spollers_filter & {
+			padding-bottom: rem(10);
+			padding-top: rem(20);
+		}
+	}
+
+	&__list-link {
+	}
+}

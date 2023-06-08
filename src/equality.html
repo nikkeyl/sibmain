@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/helpers/head.htm',{
+  "title": "Сравнение товаров"
+  })
+  <body class="page">
+    <div class="wrapper">
+      @@include('html/components/header.htm',{})
+      <!-- main content -->
+      <main class="content">
+        @@include('html/modules/breadcrumbs.htm',{"current":"Сравнение товаров"})
+        <section class="equality" data-observ>
+          <div class="equality__container">
+            <div class="equality__title title">
+              <h1>Сравнение товаров</h1>
+            </div>
+            <div class="equality-action equality__action">
+              <label class="equality-action__label">
+                <span>Только отличия</span>
+                <input type="checkbox" name="checkbox">
+                <span class="equality-action__box"></span>
+              </label>
+            </div>
+            <div class="swiper equality__slider">
+              <div class="swiper-wrapper equality__wrapper">
+                <div class="swiper-slide equality__slide">
+                  @@include('html/modules/equality-card.htm',{
+                  "image": "product-1.jpg"
+                  })
+                </div>
+                <div class="swiper-slide equality__slide">
+                  @@include('html/modules/equality-card.htm',{
+                  "image": "product-1.jpg"
+                  })
+                </div>
+                <div class="swiper-slide equality__slide">
+                  @@include('html/modules/equality-card.htm',{
+                  "image": "product-1.jpg"
+                  })
+                </div>
+                <div class="swiper-slide equality__slide">
+                  @@include('html/modules/equality-card.htm',{
+                  "image": "product-1.jpg"
+                  })
+                </div>
+                <div class="swiper-slide equality__slide">
+                  @@include('html/modules/equality-card.htm',{
+                  "image": "product-1.jpg"
+                  })
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/components/subscribe-us.htm',{})
+      @@include('html/components/footer.htm',{})
+    </div>
+    <!-- sсripts -->
+    @@include('html/helpers/js.htm',{})
+  </body>
+</html>

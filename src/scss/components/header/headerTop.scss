@@ -1,0 +1,38 @@
+.header-top {
+	border-bottom: rem(1) solid var(--color-grey-5);
+	padding: rem(12) 0;
+
+	// .header-top__container
+	&__container {
+		display: flex;
+		gap: rem(20);
+	}
+
+	// .header-top__lang-select
+	&__lang-select {
+		@include adaptive-value('width', 280, 80, $max-width, 960, 2);
+	}
+
+	// .header-top__menu
+	&__menu {
+		@include media-mn(960) {
+			flex: 1 1 auto;
+		}
+	}
+
+	// .header-top__contacts
+	&__contacts {
+		@include media-mn(960) {
+			display: flex;
+			gap: rem(35);
+		}
+
+		@include media-mx(960) {
+			margin-left: auto;
+		}
+	}
+
+	@include media-mx(960) {
+		justify-content: space-between;
+	}
+}

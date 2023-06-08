@@ -1,0 +1,29 @@
+/* Styles for scrollbar */
+* {
+	 scrollbar-color: var(--color-blue) #d6d6d6;
+	 scrollbar-width: rem(10);
+
+	&::-webkit-scrollbar {
+		@include width-height(rem(10), rem(10));
+
+		background-color: var(--color-light);
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: rem(5);
+		background-color: var(--color-light);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5);
+		background-color: var(--color-blue);
+
+		// transition: background-color 0.3s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: rgba(#0d61db, 0.8);
+			}
+		}
+	}
+}

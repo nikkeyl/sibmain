@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/helpers/head.htm',{
+"title": "Политика конфиденциальности"
+})
+<body class="page">
+<div class="wrapper">
+	@@include('html/components/header.htm',{})
+	<main class="content" data-observ>
+		@@include('html/modules/breadcrumbs.htm',{"current":"Политика конфиденциальности"})
+		<section class="policy">
+			<div class="policy__container">
+				<div class="title"><h1>Политика в отношении обработки персональных данных</h1></div>
+				<div class="page-layout">
+					<div class="page-layout__body">
+						<ol class="policy__list">
+							<li class="policy__subtitle">
+								<span>Общие положения</span>
+								<div class="policy__text">
+									<p>
+										Настоящая политика обработки персональных данных составлена в соответствии с требованиями
+										Федерального закона от 27.07.2006. № 152-ФЗ «О персональных данных» (далее — Закон о персональных
+										данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности
+										персональных данных, предпринимаемые ООО «Сибмайн К» (далее — Оператор).
+									</p>
+								</div>
+								<ol>
+									<li class="policy__text">Оператор ставит своей важнейшей целью и условием осуществления своей
+										деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в
+										том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.
+									</li>
+									<li class="policy__text">Настоящая политика Оператора в отношении обработки персональных данных (далее
+										— Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта
+										https://sibmain.ru.
+									</li>
+								</ol>
+							</li>
+						</ol>
+					</div>
+					<aside class="page-layout__sidebar">
+						@@include('html/modules/form.htm',{})
+					</aside>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/components/subscribe-us.htm',{})
+	@@include('html/components/footer.htm',{})
+</div>
+<!-- sсripts -->
+@@include('html/helpers/js.htm',{})
+</body>
+</html>

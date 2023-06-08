@@ -1,0 +1,145 @@
+.article {
+	padding: rem(50) 0;
+
+	&__head {
+		@include media-mn(1200) {
+			margin-bottom: rem(50);
+		}
+	}
+
+	// .article__data
+	&__data {
+		display: flex;
+		gap: rem(30);
+		margin: rem(30) 0;
+	}
+
+	// .article__image
+	&__image {
+		overflow: hidden;
+		margin-bottom: rem(50);
+		border-radius: var(--main-radius);
+		padding-bottom: percent(440, 1230);
+		width: 100%;
+
+		@include media-mx(1200) {
+			margin: rem(25) 0;
+		}
+	}
+
+	// .article__text-box
+	&__text-box {
+		p {
+			font-size: rem(20);
+			line-height: math.div(30, 20);
+			color: var(--color-dark-1);
+
+			&:not(:last-child) {
+				margin-bottom: rem(24);
+			}
+
+			@include media-mx(640) {
+				font-size: rem(14);
+				line-height: math.div(21, 14);
+			}
+		}
+	}
+
+	//  .article__topic
+	&__topic {
+		padding-block: rem(60) rem(45);
+		font-family: var(--text-font-family);
+		font-weight: 700;
+		font-size: rem(24);
+		line-height: math.div(30, 24);
+		color: var(--color-dark-1);
+
+		.article__link {
+			font-weight: 400;
+		}
+
+		@include media-mx(960) {
+			padding-block: rem(40);
+		}
+
+		@include media-mx(640) {
+			font-size: rem(16);
+		}
+
+		@include media-mx(480) {
+			font-size: rem(14);
+		}
+	}
+
+	// .article__tags
+	&__tags {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: rem(35);
+		row-gap: rem(15);
+		font-size: rem(24);
+		line-height: math.div(30, 24);
+
+		@include media-mx(640) {
+			font-size: rem(14);
+			line-height: math.div(17, 14);
+			gap: rem(15);
+		}
+	}
+
+	// .article__link
+	&__link {
+		@extend %default-transition;
+		color: var(--color-blue);
+
+		@include hover {
+			color: var(--color-dark-gray);
+		}
+	}
+}
+
+.short-news {
+	margin-bottom: rem(30);
+	border-radius: rem(16);
+	padding: rem(30);
+	background-color: var(--color-light);
+
+	// .short-news__item
+	&__item {
+		border-bottom: rem(1) solid var(--color-grey-5);
+		padding-bottom: rem(10);
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+
+	// .short-news__link
+	&__link {
+		@extend %default-transition;
+		color: var(--color-dark-2);
+		font-weight: 700;
+		margin-block: rem(30) rem(15);
+		font-size: rem(24);
+		line-height: math.div(30, 24);
+
+		@include hover {
+			color: var(--color-blue);
+		}
+	}
+
+	// .short-news__data
+	&__data {
+		display: flex;
+		gap: rem(30);
+		margin: rem(15) 0;
+	}
+
+	.article__link {
+		font-weight: 700;
+	}
+
+	@include media-mx(1200) {
+		display: none;
+	}
+}

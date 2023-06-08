@@ -1,0 +1,38 @@
+.input {
+	$height: 46;
+
+	display: block;
+	border: rem(1) solid #e9ebed;
+	border-radius: rem(100);
+	padding: rem(12) rem(26);
+	width: 100%;
+	height: rem($height);
+	color: var(--color-gray);
+	background: rgb(255 255 255 / 30%);
+	transition: color 0.3s;
+
+	@include media-mx(360) {
+		padding-right: 10px;
+	}
+
+	&::placeholder {
+		font-weight: 400;
+		font-size: rem(16);
+		line-height: math.div(22, 16);
+		letter-spacing: 0.005em;
+		color: #a2a1a7;
+		opacity: 1;
+		transition: opacity 0.3s;
+	}
+
+	&:focus {
+		&::placeholder {
+			opacity: 0;
+		}
+	}
+}
+
+textarea.input {
+	padding: 0;
+	resize: none;
+}

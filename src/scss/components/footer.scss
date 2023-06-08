@@ -1,0 +1,123 @@
+.footer {
+	// .footer__contacts
+	&__contacts {
+		@include adaptive-value("padding-top", 25, 10, $max-width, $min-width, 1);
+		@include adaptive-value("gap", 40, 10, $max-width, $min-width, 1);
+
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: rem(25);
+
+		&:not(:last-child) {
+			position: relative;
+
+			&::after {
+				@include pseudo;
+
+				left: -100%;
+				bottom: 0;
+				width: 300%;
+				height: rem(1);
+				background-color: rgba(#777, 0.3);
+			}
+		}
+	}
+}
+
+.top-footer {
+	@include adaptive-value("padding-bottom", 30, 10, $max-width, $min-width, 1);
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: rem(20);
+	padding-top: rem(50);
+
+	// .top-footer__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		column-gap: rem(40);
+		row-gap: rem(10);
+		width: 100%;
+
+		@include media-mn(960) {
+			justify-content: space-between;
+		}
+
+		@include media-mx(640) {
+			column-gap: rem(12);
+		}
+
+		li {
+			a {
+				color: #070707;
+				transition: color 0.3s ease-in-out;
+				font-size: rem(16);
+				font-weight: 400;
+				line-height: 1.2;
+
+				@include hover {
+					color: var(--color-blue);
+				}
+			}
+		}
+	}
+}
+
+.bottom-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: rem(10);
+	padding: rem(12) 0;
+
+	// .bottom-footer__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: rem(40);
+		row-gap: rem(10);
+
+		li {
+			a {
+				position: relative;
+				@include media-mn(768) {
+					padding: rem(10) 0;
+				}
+				@include media-mx(768) {
+					padding: rem(3) 0;
+				}
+				color: rgba(#777, 0.3);
+
+				@media (any-hover: hover) {
+					&::before {
+						@include pseudo;
+
+						top: 0;
+						width: 0;
+						height: rem(1);
+						background-color: var(--color-blue);
+						transition: width 0.3s;
+					}
+				}
+
+				@include hover {
+					&::before {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	// .bottom-footer__copy
+	&__copy {
+		font-weight: 400;
+		font-size: rem(16);
+		line-height: 1.2;
+		color: rgba(#777, 0.3);
+	}
+}

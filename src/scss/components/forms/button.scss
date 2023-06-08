@@ -1,0 +1,70 @@
+.button {
+	$icon: 0;
+	$fw: 0;
+	$font-size: 16;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: rem(20);
+	border: rem(1) solid var(--color-grey-5);
+	border-radius: rem(90);
+	padding: rem(12) rem(27);
+	max-width: fit-content;
+	font-size: rem($font-size);
+	line-height: math.div(20, $font-size);
+	text-align: center;
+	color: var(--color-light);
+	background-color: var(--color-blue);
+	transition: transform 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
+
+	@include hover {
+		background-color: var(--color-blue-hover);
+	}
+
+	&:active {
+		transform: translateY(rem(3));
+	}
+
+	// .button_white
+	&_white {
+		color: var(--color-blue);
+		background-color: var(--color-light);
+
+		@include hover {
+			color: var(--color-light);
+			background-color: var(--color-blue);
+		}
+	}
+
+	// .button_stroke
+	&_stroke {
+		background-color: transparent;
+		color: var(--color-disabled);
+		border-color: var(--color-grey-5);
+
+		@include hover {
+			color: var(--color-light);
+			border-color:  rgb(13 97 219 / 80%);
+		}
+	}
+
+	svg {
+		@include width-height(rem(18), rem(18));
+
+		fill: var(--color-light);
+	}
+
+	&_fw {
+		@include media-mx($phone) {
+			width: 100%;
+		}
+	}
+
+	@if $icon == 1 {
+		span {
+			padding: 0 rem(30) 0 0;
+			background: url('@content') left no-repeat;
+		}
+	}
+}

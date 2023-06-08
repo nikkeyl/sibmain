@@ -1,0 +1,47 @@
+$max-width-container: 1745;
+$container-padding: 30;
+
+// --------------------------------- //
+$max-width: 1920;
+$min-width: 320;
+
+// --------------------------------- //
+$container-width: $max-width-container + $container-padding;
+$desktop: $container-width;
+$laptop: 992;
+$tablet: 768;
+$phone: 480;
+
+// --------------------------------- //
+$a-focus-active-outline: 0;
+$focus-active-outline: 1;
+$background-gradient: 0;
+$ibg-contain: 1;
+$slider-fix: 0;
+$selestion: 0;
+
+// --------------------------------- //
+$main-background-color: var(--color-light-gray);
+$main-font-color: var(--color-dark);
+
+:root {
+	--color-light-gray: #f9f9fb;
+	--color-light: #fff;
+	--color-dark: #000;
+	--color-gray: #888;
+	--color-dark-gray: #1c1c1e;
+	--color-dark-1: #070707;
+	--color-dark-2: #00101e;
+	--color-blue: #0d61db;
+	--color-blue-hover: #3C80E1;
+	--color-disabled: #b5b5b5;
+	--color-grey-5: #f2f2f2;
+	--color-grey-10: #e2e2e3;
+	--color-grey-30: #b1b1b2;
+	--default-trans: .2s ease-in-out;
+	--main-radius: .5rem;
+	--text-font-family: "Inter";
+	--title-font-family: "Gilroy";
+	--font-size: 1rem;
+	--font-weight: 300;
+}

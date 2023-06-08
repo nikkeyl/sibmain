@@ -1,0 +1,65 @@
+.about-company {
+  @include adaptive-value("padding-top", 100, 50, $max-width, $min-width, 1);
+  @include adaptive-value("padding-bottom", 100, 50, $max-width, $min-width, 1);
+}
+
+.about-company-info {
+  @include adaptive-value("padding-bottom", 50, 25, $max-width, $min-width, 1);
+
+  // .about-company-info__title
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(50);
+      @include media-mx($phone) {
+        margin-bottom: rem(30);
+      }
+    }
+  }
+  // .about-company-info__info
+  &__info {
+    p {
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+}
+
+.certificats {
+  display: grid;
+  @include adaptive-value("padding-top", 50, 25, $max-width, $min-width, 1);
+  @include adaptive-value("padding-bottom", 50, 25, $max-width, $min-width, 1);
+
+  // .certificats__head
+  &__head {
+    &:not(:last-child) {
+      margin-bottom: rem(50);
+
+      @include media-mx($phone) {
+        margin-bottom: rem(30);
+      }
+    }
+  }
+  // .certificats__slider
+  &__slider {
+    background-color: var(--color-light);
+    border-radius: rem(16);
+    padding: rem(30);
+  }
+
+  // .certificats__image-ibg
+  &__image-ibg {
+    display: block;
+    background-color: #bdbdbd;
+    border-radius: rem(16);
+    width: rem(215);
+    // padding-bottom: percent(290, 215);
+    height: rem(290);
+    overflow: hidden;
+  }
+}
+
+.fancybox-image {
+  border-radius: rem(16);
+  overflow: hidden;
+}

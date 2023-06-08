@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/helpers/head.htm',{
+  "title": "Доставка и оплата"
+  })
+  <body class="page">
+    <div class="wrapper">
+      @@include('html/components/header.htm',{})
+      <main class="content">
+        @@include('html/modules/breadcrumbs.htm',{"current":"Доставка и оплата"})
+        <section class="delivery" data-observ>
+          <div class="delivery__container">
+            <div class="title"><h1>Доставка и оплата</h1></div>
+						<div class="page-layout">
+							<div class="page-layout__body">
+								<div class="delivery-text">
+									<p>
+										При оформлении заказа вы можете выбрать удобный способ оплаты. В интернет-магазине принимается только платежи в
+										рублях. После подтверждения заказа наш менеджер свяжется с вами для уточнения информации о доставке или размещении в
+										нашем дата-центре.
+									</p>
+								</div>
+								@@include('html/modules/delivery-info.htm',{})
+								<div class="delivery__partners">
+									<div class="delivery__image-ibg">
+										<img src="@content/temp/partners/cdek.png" alt="сдек логотип">
+									</div>
+									<div class="delivery__image-ibg">
+										<img src="@content/temp/partners/dhl.png" alt="dhl логотип">
+									</div>
+									<div class="delivery__image-ibg">
+										<img src="@content/temp/partners/dolines.png" alt="деловые линии логотип">
+									</div>
+									<div class="delivery__image-ibg">
+										<img src="@content/temp/partners/dpd.png" alt="dpd логотип">
+									</div>
+								</div>
+							</div>
+							<aside class="page-layout__sidebar">
+								@@include('html/modules/form.htm',{})
+							</aside>
+					</div>
+          </div>
+        </section>
+      </main>
+      @@include('html/components/subscribe-us.htm',{})
+      @@include('html/components/footer.htm',{})
+    </div>
+    <!-- sсripts -->
+    @@include('html/helpers/js.htm',{})
+  </body>
+</html>

@@ -1,0 +1,29 @@
+%flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+%f-ai-center {
+	display: flex;
+	align-items: center;
+}
+
+%default-transition {
+	transition: var(--default-trans);
+}
+
+%c-pointer {
+	cursor: pointer;
+}
+
+%default-box-shadow {
+	box-shadow: rem(5) rem(7) rem(17) rgba(#000, 10%);
+}
+
+// Скрыть скролл
+%hidden-scroll {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

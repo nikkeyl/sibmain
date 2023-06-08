@@ -1,0 +1,58 @@
+.policy {
+	padding: rem(50) 0 rem(130);
+
+	@include media-mx(1200) {
+		padding: rem(40) 0 rem(80);
+	}
+
+	@include media-mx(640) {
+		padding: rem(30) 0 rem(60);
+	}
+
+	.title {
+		margin-bottom: rem(50);
+
+		@include media-mx(960) {
+		    margin-bottom: rem(35);
+		}
+	}
+
+	// .policy__subtitle
+	&__subtitle {
+		@extend .sub-title;
+	}
+
+	// .policy__text
+	&__text {
+		color: rgba(7, 7, 7, 0.3);
+		font-weight: 300;
+		font-size: rem(24);
+		line-height: math.div(24, 20);
+		letter-spacing: 0.005em;
+		&:not(:last-child) {
+			margin-block: rem(24);
+		}
+
+		@include media-mx(640) {
+			font-size: rem(14);
+			line-height: math.div(17, 14);
+		}
+	}
+
+	&__list {
+		/* убираем стандартную нумерацию */
+		/* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+		counter-reset: li;
+		ol {
+			counter-reset: li;
+		}
+
+		li:before {
+			/* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+			counter-increment: li;
+			/* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+			content: counters(li, ".") ". ";
+		}
+	}
+
+}

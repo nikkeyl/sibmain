@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/helpers/head.htm',{
+  "title": "Статья"
+  })
+  <body class="page">
+    <div class="wrapper">
+      @@include('html/components/header.htm',{})
+      <!-- main content -->
+      <main class="content" data-observ>
+        @@include('html/modules/breadcrumbs.htm',{"current":"Статья"})
+        <section class="article">
+          <div class="article__container">
+            <div class="page-layout">
+              <div class="page-layout__body">
+								<div class="article__head">
+									<div class="title">
+										<h1>В США предложили изучить влияние майнинга биткоина на экологию</h1>
+									</div>
+									<div class="article__data">
+										@@include('html/modules/post-data.htm',{
+										"text": "19.05.23, 11:02",
+										"iconName": "clock"
+										})
+										@@include('html/modules/post-data.htm',{
+										"text": "462",
+										"iconName": "eye"
+										})
+									</div>
+									<div class="article__text-box">
+										<p>
+											Законодатели США представили законопроект, который требует от Агентства по охране окружающей среды провести всестороннее исследование воздействия индустрии майнинга на экологию.
+										</p>
+									</div>
+								</div>
+                <div class="article-img-ibg article__image">
+                  <img src="@content/temp/news/news-1.jpg" alt="">
+                </div>
+                <div class="article__text-box">
+                  <p>
+                    Законодатели США представили законопроект, который требует от Агентства по охране окружающей среды провести всестороннее исследование воздействия индустрии майнинга на экологию.
+                  </p>
+                  <p>
+                    Ведомство также должно отчитаться о выбросах парниковых газов отраслевыми объектами с потребляемой мощностью свыше 5 МВт.Авторами законопроекта стали член Палаты представителей Джаред Хоффман и сенатор Эдвард Марки. Они отметили, что доля биткоин-майнинга в общем потреблении электроэнергии в США уже достигла 1,4%. Этого объема достаточно для освещения всех домохозяйств в стране.
+                  </p>
+                  <p>
+                    По их мнению, индустрия производит столько же выбросов парниковых газов, сколько семь миллионов автомобилей с бензиновыми двигателями.
+                  </p>
+                  <p>
+                    «Объекты криптомайнинга не только подрывают наши усилия по борьбе с климатическим кризисом, но также могут загрязнять близлежащие сообщества. Предоставление этой отрасли безнаказанности за причинение такого вреда окружающей среде противоречит многочисленным федеральным политикам, и мы должны понимать весь вред, который представляет эта отрасль», — заявил Хоффман.
+                  </p>
+                  <p>
+                    Сенатор Джефф Меркли подчеркнул, что майнинговые компании потребляют огромное количество электроэнергии, большая часть которой вырабатывается за счет сжигания ископаемого топлива. Деятельность этих предприятий ведет к росту энерготарифов и объемов отходов электроники.
+                  </p>
+                  <p>
+                    Авторы законопроекта считают, что негативное воздействие биткоина на экологию связано с использованием алгоритма консенсуса Proof-of-Work. Они привели в пример блокчейн Ethereum, сокративший потребление электроэнергии на 99,9% после перехода на Proof-of-Stake.
+                  </p>
+                  <p>
+                    Законопроект поддержали общественные организации Sierra Club, Earthjustice, Environmental Working Group (EWG) и Seneca Lake Guardian.Вице-президентка последней Ивонн Тейлор заявила, что индустрия криптомайнинга растет, «угрожая всем сообществам в стране». Она напомнила, что организация добилась моратория на добычу криптовалют на энергии ископаемого топлива в штате Нью-Йорк.
+                  </p>
+                  <p>
+                    «Ранее в этом году мы выиграли нашу кампанию по отказу в разрешении на расширение Greenidge Generation, крупной биткоин-фермы, наносящей ущерб озеру Сенека, нашей местной экономике и климату», — добавила она.
+                  </p>
+                  <p>
+                    Тейлор полагает, что с «убивающим климат» криптомайнингом необходимо бороться на федеральном уровне.«Стимулы, встроенные в цифровые активы, такие как биткоин, требуют все больше и больше электроэнергии, а не меньше, в то время, когда всем нам нужно более эффективно ее использовать. Мы благодарны сенатору Марки за то, что он сделал климатические и энергетические последствия майнинга криптовалют приоритетом», — заявил вице президент EWG Скотт Фабер.
+                  </p>
+                </div>
+                <div class="article__topic">Читайте по теме:
+                  <a href="" class="article__link">
+                    Каждый десятый Россиянин - владеет криптовалютой
+                  </a>
+                </div>
+                <div class="article__tags">
+                  <a href="" class="article__link">#Криптовалюта</a>
+                  <a href="" class="article__link">#Новости</a>
+                  <a href="" class="article__link">#Закон</a>
+                </div>
+              </div>
+              <aside class="page-layout__sidebar">
+                <div class="short-news">
+                  <div class="sub-title">
+                    <h2>Читайте также</h2>
+                  </div>
+                  <div class="short-news__item">
+                    <div class="short-news__link">
+                      <a href="">Каждый десятый Россиянин - владеет криптовалютой</a>
+                    </div>
+                    <div class="short-news__data">
+                      @@include('html/modules/post-data.htm',{
+                      "text": "19.05.23, 11:02",
+                      "iconName": "clock"
+                      })
+                      @@include('html/modules/post-data.htm',{
+                      "text": "462",
+                      "iconName": "eye"
+                      })
+                    </div>
+                  </div>
+                  <div class="short-news__item">
+                    <div class="short-news__link">
+                      <a href="">Каждый десятый Россиянин - владеет криптовалютой</a>
+                    </div>
+                    <div class="short-news__data">
+                      @@include('html/modules/post-data.htm',{
+                      "text": "19.05.23, 11:02",
+                      "iconName": "clock"
+                      })
+                      @@include('html/modules/post-data.htm',{
+                      "text": "462",
+                      "iconName": "eye"
+                      })
+                    </div>
+                  </div>
+                  <div class="short-news__item">
+                    <div class="short-news__link">
+                      <a href="">Каждый десятый Россиянин - владеет криптовалютой</a>
+                    </div>
+                    <div class="short-news__data">
+                      @@include('html/modules/post-data.htm',{
+                      "text": "19.05.23, 11:02",
+                      "iconName": "clock"
+                      })
+                      @@include('html/modules/post-data.htm',{
+                      "text": "462",
+                      "iconName": "eye"
+                      })
+                    </div>
+                  </div>
+                </div>
+                @@include('html/modules/form.htm',{})
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/components/subscribe-us.htm',{})
+      @@include('html/components/footer.htm',{})
+    </div>
+    @@include('html/modules/popup.htm',{})
+    <!-- sсripts -->
+    @@include('html/helpers/js.htm',{})
+  </body>
+</html>
