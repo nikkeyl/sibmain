@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/StarkElessar/sibmain.git"
+		"url": "git+https://github.com/nikkeyl/sibmain.git"
 	},
 	"dependencies": {
 		"inputmask": "^5.0.8",
