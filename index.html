@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<style>
+		html {
+			opacity: 0;
+			transition: opacity .5s ease-in-out;
+		}
+
+		html.loaded {
+			opacity: 1;
+		}
+	</style>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css?v=20230608214355">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?v=20230608214355" />
+	<link rel="icon" href="favicon.ico">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body class="page">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-top header__top" data-lp>
+				<div class="header-top__container">
+					<div class="header-top__lang-select">
+						<div class="lang-block">
+							<button class="lang-block__trigger" type="button" data-target="sublist">
+								<span class="trigger-content">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-ru.webp" type="image/webp"><img src="assets/images/icons/lang/flag-ru.jpg" alt="RU"></picture></span> RU
+								</span>
+								<span class="trigger-icon">
+									<svg>
+										<use href="assets/images/svg/sprite.svg#arrow"></use>
+									</svg>
+								</span>
+							</button>
+							<div class="lang-block__list" data-sublist>
+								<a href="" class="lang-block__option active" data-value="ru">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-ru.webp" type="image/webp"><img src="assets/images/icons/lang/flag-ru.jpg" alt="RU"></picture></span> RU
+								</a>
+								<a href="" class="lang-block__option" data-value="en">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-en.webp" type="image/webp"><img src="assets/images/icons/lang/flag-en.jpg" alt="EN"></picture></span> EN
+								</a>
+							</div>
+						</div>
+					</div>
+					<nav class="menu-top header-top__menu" data-da=".menu-actions__info, 960">
+						<ul class="menu-top__list">
+							<li>
+								<a href="">Доставка и оплата</a>
+							</li>
+							<li>
+								<a href="">Поддержка</a>
+							</li>
+							<li>
+								<a href="">Гарантия и возврат</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-top__contacts">
+						<a href="mailto:info@sibmain.ru" class="contact" data-da=".menu-actions, 960">
+							<div class="contact__icon">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#email"></use>
+								</svg>
+							</div>
+							<div class="contact__link">info@sibmain.ru</div>
+						</a>
+						<a href="tel:+79375444443" class="contact">
+							<div class="contact__icon contact__icon_stroke">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#call"></use>
+								</svg>
+							</div>
+							<div class="contact__link">+7 (937) 544 44 43</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-body header__body" data-lp>
+				<div class="header-body__container">
+					<a class="logo" href="index.html">
+						<img src="assets/images/icons/logo/sibmain.svg" alt="Sibmain">
+					</a>
+					<button type="button" class="catalog-button header-body__catalog-button" data-da=".header-bottom__container, 960" data-child="header-catalog">
+						<span class="catalog-button__text">Каталог</span>
+						<span class="catalog-button__icon"><i></i></span>
+					</button>
+					<div class="catalog-menu header-body__catalog-menu" id="header-catalog" data-da=".menu-bottom, 480, first">
+						<div class="catalog-menu__head">
+							<a class="catalog-menu__logo" href="index.html">
+								<img src="assets/images/icons/logo/sibmain.svg" alt="Sibmain">
+							</a>
+							<button type="button" class="catalog-button catalog-button_close" data-child-close="header-catalog">
+								<span class="catalog-button__text">Каталог</span>
+								<span class="catalog-button__icon"><i></i></span>
+							</button>
+						</div>
+						<div class="catalog-menu__body">
+							<div class="catalog-menu__spollers spollers" data-spollers>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Производители
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Bitmain</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Whatsminer</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Innosilicon</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Canaan</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Контейнеры для майнинга
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Bitmain</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Whatsminer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Акессуары
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Canaan</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form class="search header-body__search" data-da=".header-bottom__container, 960">
+						<input class="search__input input" type="search" name="search" placeholder="Что Вы ищете?">
+						<button class="button search__button" type="submit">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#search"></use>
+							</svg>
+							Найти
+						</button>
+					</form>
+					<div class="actions header-body__actions">
+						<a href="" class="actions__button actions__button_favorites">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#favorite"></use>
+							</svg>
+						</a>
+						<a href="" class="actions__button actions__button_compare">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#compare"></use>
+							</svg>
+						</a>
+						<a href="" class="actions__button actions__button_cart">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#cart"></use>
+							</svg>
+							<span>99</span>
+						</a>
+						<button type="button" class="catalog-button burger-menu">
+							<span class="burger-menu__text">Меню</span>
+							<span class="burger-menu__icon">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+						<div class="menu-actions">
+							<div class="menu-actions__list"></div>
+							<div class="menu-actions__info"></div>
+							<div class="menu-actions__contacts"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom" data-lp>
+				<div class="header-bottom__container">
+					<nav class="menu-bottom header-bottom__menu" data-da=".menu-actions__list, 960">
+						<ul class="menu-bottom__list">
+							<li>
+								<a href="" class="active">Главная</a>
+							</li>
+							<li>
+								<a data-target="sublist">
+									Услуги
+									<svg>
+										<use href="assets/images/svg/sprite.svg#arrow-down"></use>
+									</svg>
+								</a>
+								<ul class="menu-bottom__sub-list" data-sublist>
+									<li>
+										<a href="">Размещение</a>
+									</li>
+									<li>
+										<a href="">Калькулятор</a>
+									</li>
+									<li>
+										<a href="">Обслуживание</a>
+									</li>
+									<li>
+										<a href="">Дата-центр</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Размещение</a>
+							</li>
+							<li>
+								<a href="">Калькулятор</a>
+							</li>
+							<li>
+								<a href="">Новости</a>
+							</li>
+							<li>
+								<a href="">О нас</a>
+							</li>
+							<li>
+								<a href="">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- main content -->
+		<main class="content">
+			<section class="main-slider" data-observ>
+				<div class="main-slider__container">
+					<div class="swiper main-slider__slider main-slider__slider_big" style="background-color: var(--color-blue);">
+						<div class="swiper-wrapper main-slider__wrapper">
+							<div class="swiper-slide main-slider__slide">
+								<div class="main-slider__info">
+									<div class="main-slider__body">
+										<div class="main-slider__title">
+											<h1>Продажа майнинг оборудования</h1>
+										</div>
+										<div class="main-slider__text">
+											<p>От заводов производителей с возможностью размещения в дата-центрах в Сибири</p>
+										</div>
+										<a href="" class="main-slider__button">Подробнее</a>
+									</div>
+									<div class="main-slider__image-ibg--contain">
+										<picture><source data-srcset="assets/images/temp/main-slider/sail-mining.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/main-slider/sail-mining.png" alt=""></picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide main-slider__slide">
+								<div class="main-slider__info">
+									<div class="main-slider__body">
+										<div class="main-slider__title">
+											<h1>Продажа майнинг оборудования</h1>
+										</div>
+										<div class="main-slider__text">
+											<p>От заводов производителей с возможностью размещения в дата-центрах в Сибири</p>
+										</div>
+										<a href="" class="main-slider__button">Подробнее</a>
+									</div>
+									<div class="main-slider__image-ibg--contain">
+										<picture><source data-srcset="assets/images/temp/main-slider/sail-mining.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/main-slider/sail-mining.png" alt=""></picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide main-slider__slide">
+								<div class="main-slider__info">
+									<div class="main-slider__body">
+										<div class="main-slider__title">
+											<h1>Продажа майнинг оборудования</h1>
+										</div>
+										<div class="main-slider__text">
+											<p>От заводов производителей с возможностью размещения в дата-центрах в Сибири</p>
+										</div>
+										<a href="" class="main-slider__button">Подробнее</a>
+									</div>
+									<div class="main-slider__image-ibg--contain">
+										<picture><source data-srcset="assets/images/temp/main-slider/sail-mining.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/main-slider/sail-mining.png" alt=""></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-slider-manufactures main-slider__manufactures">
+							<div class="main-slider-manufactures__image-ibg--contain">
+								<img src="assets/images/icons/manufacturers/bitmain.svg" alt="Битмэйн">
+							</div>
+							<div class="main-slider-manufactures__image-ibg--contain">
+								<img src="assets/images/icons/manufacturers/canaan.svg" alt="Кэнаан">
+							</div>
+							<div class="main-slider-manufactures__image-ibg--contain">
+								<img src="assets/images/icons/manufacturers/jasminer.svg" alt="Джасмайнер">
+							</div>
+							<div class="main-slider-manufactures__image-ibg--contain">
+								<img src="assets/images/icons/manufacturers/whatsminer.svg" alt="Вотсмайнер">
+							</div>
+							<div class="main-slider-manufactures__image-ibg--contain">
+								<img src="assets/images/icons/manufacturers/ipollo.svg" alt="Иполло">
+							</div>
+							<div class="main-slider-manufactures__image-ibg--contain">
+								<img src="assets/images/icons/manufacturers/innosilicon.svg" alt="Инносиликон">
+							</div>
+						</div>
+						<div class="main-slider__pagination"></div>
+					</div>
+				</div>
+				<div class="main-slider__image">
+					<img src="assets/images/icons/main-slider/hexagon.svg" alt="">
+				</div>
+			</section>
+			<div class="advantages">
+				<div class="advantages__container">
+					<div class="advantage advantages__item">
+						<img data-src="assets/images/icons/advantages/airplane.svg" class="advantage__icon" alt="Прямые доставки">
+						<div class="advantage__title">
+							Прямые доставки
+						</div>
+						<div class="advantage__text">
+							Прямые контракты с заводами производителями без посредников
+						</div>
+					</div>
+
+					<div class="advantage advantages__item">
+						<img data-src="assets/images/icons/advantages/docs.svg" class="advantage__icon" alt="Таможенное оформление">
+						<div class="advantage__title">
+							Таможенное оформление
+						</div>
+						<div class="advantage__text">
+							Официальный ввоз оборудования с предоставлением всех документов
+						</div>
+					</div>
+
+					<div class="advantage advantages__item">
+						<img data-src="assets/images/icons/advantages/quality.svg" class="advantage__icon" alt="Контроль качества">
+						<div class="advantage__title">
+							Контроль качества
+						</div>
+						<div class="advantage__text">
+							Предпродажная проверка всего оборудования, с возможностью предоставления видео проверки
+						</div>
+					</div>
+
+					<div class="advantage advantages__item">
+						<img data-src="assets/images/icons/advantages/data-center.svg" class="advantage__icon" alt="Собственный дата-центр">
+						<div class="advantage__title">
+							Собственный дата-центр
+						</div>
+						<div class="advantage__text">
+							Размещение в собственных дата-центрах в Сибири с общей мощностью 400 мВт
+						</div>
+					</div>
+
+					<div class="advantage advantages__item">
+						<img data-src="assets/images/icons/advantages/tarifs.svg" class="advantage__icon" alt="выгодные тарифы на размещение">
+						<div class="advantage__title">
+							выгодные тарифы на размещение
+						</div>
+						<div class="advantage__text">
+							Дневной - от 4 руб. с НДС. Ночной - от 3 руб. с НДС16 ч/будни, 24 ч/вых.
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<section class="products">
+				<div class="products__container">
+					<div class="actions-head products__head">
+						<div class="title">
+							<h3>Популярные товары</h3>
+						</div>
+						<div class="actions-head__actions-buttons">
+							<button class="actions-head__prev" type="button">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+							<button class="actions-head__next" type="button">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="swiper products__slider">
+						<div class="swiper-wrapper products__wrapper">
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-1.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-2.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-3.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-4.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-1.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-3.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="partners">
+				<div class="partners__container">
+					<div class="partners__title">
+						<h3>Партнёры:</h3>
+					</div>
+					<div class="partners__logos">
+						<div class="partners__image-ibg--contain">
+							<picture><source data-srcset="assets/images/temp/partners/en-plus.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/partners/en-plus.png" alt="en-plus"></picture>
+						</div>
+						<div class="partners__image-ibg--contain">
+							<picture><source data-srcset="assets/images/temp/partners/sgk.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/partners/sgk.png" alt="sgk"></picture>
+						</div>
+						<div class="partners__image-ibg--contain">
+							<picture><source data-srcset="assets/images/temp/partners/vsk.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/partners/vsk.png" alt="vsk"></picture>
+						</div>
+						<div class="partners__image-ibg--contain">
+							<picture><source data-srcset="assets/images/temp/partners/rakib.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/partners/rakib.png" alt="rakib"></picture>
+						</div>
+						<div class="partners__image-ibg--contain">
+							<picture><source data-srcset="assets/images/temp/partners/blockchain-life.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/partners/blockchain-life.png" alt="blockchain-life"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about-us">
+				<div class="about-us__container">
+					<div class="about-us__title title">
+						<h3>О компании</h3>
+					</div>
+					<div class="about-us__info text">
+						<div class="about-us__text">
+							<p>
+								Sibmain - надежный поставщик майнинг оборудования и оператор дата-центра в Сибири, общей мощностью 400 мВт. Обеспечивающий услуги по поставке, размещению и обслуживанию оборудования для майнинга криптовалюты, гарантируя надежность, безопасность, круглосуточный мониторинг и техническую поддержку, а так же предлагающий решения для энергоемких вычислений индустриального майнинга.
+							</p>
+						</div>
+						<div class="about-us__text text_gray">
+							<p>
+								Мы используем экологически чистую гидроэнергию в регионах с большим профицитом электрогенерации, благодаря долгосрочному стратегическому партнерству с «Сибирской Генерирующей компанией» и «En+ Group» что позволяет предоставлять клиентам фиксированную и конкурентоспособную цену на электроэнергию.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="gallery">
+				<div class="gallery__container">
+					<div class="gallery__title title">
+						<h3>Галерея</h3>
+					</div>
+					<div class="gallery__items">
+						<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_0" href="assets/images/temp/gallery/image-1.jpg">
+							<picture><source data-srcset="assets/images/temp/gallery/image-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-1.jpg" alt=""></picture>
+						</a>
+						<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_1" href="assets/images/temp/gallery/image-2.jpg">
+							<picture><source data-srcset="assets/images/temp/gallery/image-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-2.jpg" alt=""></picture>
+						</a>
+						<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_2" href="assets/images/temp/gallery/image-3.jpg">
+							<picture><source data-srcset="assets/images/temp/gallery/image-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-3.jpg" alt=""></picture>
+						</a>
+						<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_3" href="assets/images/temp/gallery/image-1.jpg">
+							<picture><source data-srcset="assets/images/temp/gallery/image-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-4.jpg" alt=""></picture>
+						</a>
+						<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_4" href="assets/images/temp/gallery/image-5.jpg">
+							<picture><source data-srcset="assets/images/temp/gallery/image-5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-5.jpg" alt=""></picture>
+						</a>
+						<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_5" href="assets/images/temp/gallery/image-6.jpg">
+							<picture><source data-srcset="assets/images/temp/gallery/image-6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-6.jpg" alt=""></picture>
+						</a>
+						<a data-fancybox="gallery" class="gallery__image-ibg gallery__image-ibg_6" href="assets/images/temp/gallery/image-7.jpg">
+							<picture><source data-srcset="assets/images/temp/gallery/image-7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-7.jpg" alt=""></picture>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="data-center">
+				<div class="data-center__container">
+					<div class="data-center__title title">
+						<h3>Дата-центр</h3>
+					</div>
+					<div class="data-center__info">
+						<div class="advantage data-center__item-info advantage_small">
+							<img data-src="assets/images/icons/advantages/lightning.svg" class="advantage__icon" alt="400 мВт">
+							<div class="advantage__title">
+								400 мВт
+							</div>
+							<div class="advantage__text">
+								Общая мощность, которую мы предоставляем нашим клиентам
+							</div>
+						</div>
+
+						<div class="advantage data-center__item-info advantage_small">
+							<img data-src="assets/images/icons/advantages/up-time.svg" class="advantage__icon" alt="UP-TIME - 99%">
+							<div class="advantage__title">
+								UP-TIME - 99%
+							</div>
+							<div class="advantage__text">
+								Аптайм оборудования (технические работы не более 24 часов в год)
+							</div>
+						</div>
+
+						<div class="advantage data-center__item-info advantage_small">
+							<img data-src="assets/images/icons/advantages/gear.svg" class="advantage__icon" alt="24/7">
+							<div class="advantage__title">
+								24/7
+							</div>
+							<div class="advantage__text">
+								Дежурные мониторинга и дежурные на площадке следят за оборудованием
+							</div>
+						</div>
+
+						<div class="advantage data-center__item-info advantage_small">
+							<img data-src="assets/images/icons/advantages/fast.svg" class="advantage__icon" alt="7 минут">
+							<div class="advantage__title">
+								7 минут
+							</div>
+							<div class="advantage__text">
+								Скорость реагирования на выключившийся аппарат для сохранения up-time 99%
+							</div>
+						</div>
+
+						<div class="data-center__tarifs tarifs">
+							<div class="tarifs__row">
+								<div class="tarifs__type">
+									<div class="tarifs__type-name">ДНЕВНОЙ ТАРИФ</div>
+									<div class="tarifs__type-info">Работа машин 24/7</div>
+								</div>
+								<div class="tarifs__value">
+									От 4 руб за кВт/час
+									<span>с учётом НДС</span>
+								</div>
+							</div>
+							<div class="tarifs__row">
+								<div class="tarifs__type">
+									<div class="tarifs__type-name">НОЧНОЙ ТАРИФ</div>
+									<div class="tarifs__type-info">16 часов в будни 24 часа в выходные и праздники</div>
+								</div>
+								<div class="tarifs__value">
+									От 3 руб за кВт/час
+									<span>с учётом НДС</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="data-center__body">
+						<div class="data-center__request">
+							<div class="data-center__description text text_white">
+								<p>Предоставляем размещение оборудования для майнинга в собственных дата-центрах в Сибири, на
+									высококонкурентных условиях и качественным сервисом с сопутствующими услугами:</p>
+								<ul>
+									<li>размещение и первоначальная настройка</li>
+									<li>предоставление доступа на площадку и экскурсия</li>
+									<li>техническое обслуживание вашего оборудования</li>
+									<li>обеспечение безопасности оборудования</li>
+									<li>ремонт оборудования</li>
+								</ul>
+							</div>
+							<form class="form-request">
+								<div class="form-request__title sub-title">Оставить заявку</div>
+								<fieldset class="form-request__actions">
+									<div class="form-request__input input-control">
+										<input type="text" placeholder="Имя*" name="client-name">
+										<span class="message-error">Поле должно быть заполнено</span>
+									</div>
+									<div class="form-request__input input-control">
+										<div class="tel-block" data-select="tel">
+											<input type="hidden" name="country">
+											<button class="tel-block__trigger" data-type-s="trigger" type="button">
+												<span class="trigger-content"></span>
+												<span class="trigger-icon">
+													<svg>
+														<use href="assets/images/svg/sprite.svg#arrow"></use>
+													</svg>
+												</span>
+											</button>
+											<ul class="tel-block__list" data-type-s="list">
+												<li class="tel-block__option" data-value="ru" data-placeholder="+7 (999) 999 99 99">
+													<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-ru.webp" type="image/webp"><img src="assets/images/temp/lang/flag-ru.jpg" alt="RU"></picture></span>
+												</li>
+												<li class="tel-block__option" data-value="en" data-placeholder="+13 (999) 999 99 99">
+													<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-en.webp" type="image/webp"><img src="assets/images/temp/lang/flag-en.jpg" alt="EN"></picture></span>
+												</li>
+											</ul>
+										</div>
+										<input type="tel" name="client-phone">
+									</div>
+									<button class="form-request__button button" type="submit">Отправить</button>
+								</fieldset>
+								<div class="form-request__info">
+									Нажимая кнопку Вы принимаете порядок обработки персональных данных описанный в нашей политике конфиденциальности.
+								</div>
+							</form>
+
+						</div>
+						<div class="data-center__video">
+							<a data-fancybox href="https://www.youtube.com/embed/raRAI0y4fSM?rel=0&showinfo=0;&autoplay=1" class="video-main" style="background: url('assets/images/temp/preview/preview.jpg') no-repeat center top / cover">
+								<img data-src="assets/images/icons/preview/play.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<section class="subscribe-us">
+			<div class="subscribe-us__container">
+				<div class="subscribe-us__body">
+					<div class="subscribe-us__title title title_white">
+						<img data-src="assets/images/icons/subscribe/telegram.svg" class="subscribe-us__icon" alt="Телеграм" data-da=".subscribe-us__actions, 960, first">
+						<h3>Подписывайся на наш Telegram - канал</h3>
+					</div>
+					<div class="text text_white">
+						<p>Мы предлагаем всестороннее освещение новостей, связанных с майнингом криптовалют, включая технологические
+							инновации, изменения в алгоритмах, обновления крупных проектов и многое другое.</p>
+					</div>
+				</div>
+				<div class="subscribe-us__actions">
+					<a href="#" class="button button_white">Перейти</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="top-footer">
+					<a class="logo" href="index.html">
+						<img src="assets/images/icons/logo/sibmain.svg" alt="Сибмэйн">
+					</a>
+					<nav>
+						<ul class="top-footer__list">
+							<li><a href="">Дата-центр</a></li>
+							<li><a href="">Каталог товаров</a></li>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Новости</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Полезная информация</a></li>
+							<li><a href="">Партнерам</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__contacts">
+					<div class="contact">
+						<div class="contact__icon">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#email"></use>
+							</svg>
+						</div>
+						<a href="mailto:info@sibmain.ru" class="contact__link">info@sibmain.ru</a>
+					</div>
+					<div class="contact">
+						<div class="contact__icon contact__icon_stroke">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#call"></use>
+							</svg>
+						</div>
+						<a href="tel:+79375444443" class="contact__link">+7 (937) 544 44 43</a>
+					</div>
+				</div>
+				<div class="bottom-footer">
+					<div class="bottom-footer__copy">Копирайт 2023</div>
+					<ul class="bottom-footer__list">
+						<li><a href="">Договор оферты</a></li>
+						<li><a href="">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- sсripts -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?v=20230608214355"></script>
+	<script src="assets/js/app.min.js?v=20230608214355"></script>
+
+</body>
+
+</html>

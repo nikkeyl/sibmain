@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<style>
+		html {
+			opacity: 0;
+			transition: opacity .5s ease-in-out;
+		}
+
+		html.loaded {
+			opacity: 1;
+		}
+	</style>
+	<title>Каталог</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css?v=20230608214355">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?v=20230608214355" />
+	<link rel="icon" href="favicon.ico">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body class="page">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-top header__top" data-lp>
+				<div class="header-top__container">
+					<div class="header-top__lang-select">
+						<div class="lang-block">
+							<button class="lang-block__trigger" type="button" data-target="sublist">
+								<span class="trigger-content">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-ru.webp" type="image/webp"><img src="assets/images/icons/lang/flag-ru.jpg" alt="RU"></picture></span> RU
+								</span>
+								<span class="trigger-icon">
+									<svg>
+										<use href="assets/images/svg/sprite.svg#arrow"></use>
+									</svg>
+								</span>
+							</button>
+							<div class="lang-block__list" data-sublist>
+								<a href="" class="lang-block__option active" data-value="ru">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-ru.webp" type="image/webp"><img src="assets/images/icons/lang/flag-ru.jpg" alt="RU"></picture></span> RU
+								</a>
+								<a href="" class="lang-block__option" data-value="en">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-en.webp" type="image/webp"><img src="assets/images/icons/lang/flag-en.jpg" alt="EN"></picture></span> EN
+								</a>
+							</div>
+						</div>
+					</div>
+					<nav class="menu-top header-top__menu" data-da=".menu-actions__info, 960">
+						<ul class="menu-top__list">
+							<li>
+								<a href="">Доставка и оплата</a>
+							</li>
+							<li>
+								<a href="">Поддержка</a>
+							</li>
+							<li>
+								<a href="">Гарантия и возврат</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-top__contacts">
+						<a href="mailto:info@sibmain.ru" class="contact" data-da=".menu-actions, 960">
+							<div class="contact__icon">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#email"></use>
+								</svg>
+							</div>
+							<div class="contact__link">info@sibmain.ru</div>
+						</a>
+						<a href="tel:+79375444443" class="contact">
+							<div class="contact__icon contact__icon_stroke">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#call"></use>
+								</svg>
+							</div>
+							<div class="contact__link">+7 (937) 544 44 43</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-body header__body" data-lp>
+				<div class="header-body__container">
+					<a class="logo" href="index.html">
+						<img src="assets/images/icons/logo/sibmain.svg" alt="Sibmain">
+					</a>
+					<button type="button" class="catalog-button header-body__catalog-button" data-da=".header-bottom__container, 960" data-child="header-catalog">
+						<span class="catalog-button__text">Каталог</span>
+						<span class="catalog-button__icon"><i></i></span>
+					</button>
+					<div class="catalog-menu header-body__catalog-menu" id="header-catalog" data-da=".menu-bottom, 480, first">
+						<div class="catalog-menu__head">
+							<a class="catalog-menu__logo" href="index.html">
+								<img src="assets/images/icons/logo/sibmain.svg" alt="Sibmain">
+							</a>
+							<button type="button" class="catalog-button catalog-button_close" data-child-close="header-catalog">
+								<span class="catalog-button__text">Каталог</span>
+								<span class="catalog-button__icon"><i></i></span>
+							</button>
+						</div>
+						<div class="catalog-menu__body">
+							<div class="catalog-menu__spollers spollers" data-spollers>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Производители
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Bitmain</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Whatsminer</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Innosilicon</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Canaan</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Контейнеры для майнинга
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Bitmain</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Whatsminer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Акессуары
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Canaan</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form class="search header-body__search" data-da=".header-bottom__container, 960">
+						<input class="search__input input" type="search" name="search" placeholder="Что Вы ищете?">
+						<button class="button search__button" type="submit">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#search"></use>
+							</svg>
+							Найти
+						</button>
+					</form>
+					<div class="actions header-body__actions">
+						<a href="" class="actions__button actions__button_favorites">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#favorite"></use>
+							</svg>
+						</a>
+						<a href="" class="actions__button actions__button_compare">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#compare"></use>
+							</svg>
+						</a>
+						<a href="" class="actions__button actions__button_cart">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#cart"></use>
+							</svg>
+							<span>99</span>
+						</a>
+						<button type="button" class="catalog-button burger-menu">
+							<span class="burger-menu__text">Меню</span>
+							<span class="burger-menu__icon">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+						<div class="menu-actions">
+							<div class="menu-actions__list"></div>
+							<div class="menu-actions__info"></div>
+							<div class="menu-actions__contacts"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom" data-lp>
+				<div class="header-bottom__container">
+					<nav class="menu-bottom header-bottom__menu" data-da=".menu-actions__list, 960">
+						<ul class="menu-bottom__list">
+							<li>
+								<a href="" class="active">Главная</a>
+							</li>
+							<li>
+								<a data-target="sublist">
+									Услуги
+									<svg>
+										<use href="assets/images/svg/sprite.svg#arrow-down"></use>
+									</svg>
+								</a>
+								<ul class="menu-bottom__sub-list" data-sublist>
+									<li>
+										<a href="">Размещение</a>
+									</li>
+									<li>
+										<a href="">Калькулятор</a>
+									</li>
+									<li>
+										<a href="">Обслуживание</a>
+									</li>
+									<li>
+										<a href="">Дата-центр</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Размещение</a>
+							</li>
+							<li>
+								<a href="">Калькулятор</a>
+							</li>
+							<li>
+								<a href="">Новости</a>
+							</li>
+							<li>
+								<a href="">О нас</a>
+							</li>
+							<li>
+								<a href="">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- main content -->
+		<main class="content" data-observ>
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="index.html">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<span class="breadcrumbs__current">Каталог</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<section class="manufactures">
+				<div class="manufactures__container">
+					<div class="manufactures__title title">
+						<h1>Производители</h1>
+					</div>
+					<div class="manufactures__cards">
+						<a class="manufactures__image-ibg--contain" href="">
+							<img data-src="assets/images/icons/manufacturers/bitmain-gray.svg" alt="Битмэйн">
+						</a>
+						<a class="manufactures__image-ibg--contain" href="">
+							<img data-src="assets/images/icons/manufacturers/whatsminer-gray.svg" alt="Вотсмайнер">
+						</a>
+						<a class="manufactures__image-ibg--contain" href="">
+							<img data-src="assets/images/icons/manufacturers/canaan-gray.svg" alt="Канаан">
+						</a>
+						<a class="manufactures__image-ibg--contain" href="">
+							<img data-src="assets/images/icons/manufacturers/innosilicon-gray.svg" alt="Инносиликон">
+						</a>
+						<a class="manufactures__image-ibg--contain" href="">
+							<img data-src="assets/images/icons/manufacturers/jasminer-gray.svg" alt="Джасмайнер">
+						</a>
+						<a class="manufactures__image-ibg--contain" href="">
+							<img data-src="assets/images/icons/manufacturers/ipollo-gray.svg" alt="Иполло">
+						</a>
+						<a class="manufactures__image-ibg--contain" href="">
+							<img data-src="assets/images/icons/manufacturers/glodshell.svg" alt="Голдшел">
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="products">
+				<div class="products__container">
+					<div class="actions-head products__head">
+						<div class="title">
+							<h3>Популярные товары</h3>
+						</div>
+						<div class="actions-head__actions-buttons">
+							<button class="actions-head__prev" type="button">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+							<button class="actions-head__next" type="button">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="swiper products__slider">
+						<div class="swiper-wrapper products__wrapper">
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-1.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-2.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-3.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-4.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-1.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-3.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products">
+				<div class="products__container">
+					<div class="actions-head products__head">
+						<div class="title">
+							<h3>Вы смотрели</h3>
+						</div>
+						<div class="actions-head__actions-buttons">
+							<button class="actions-head__prev actions-head__prev--later" type="button">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+							<button class="actions-head__next actions-head__next--later" type="button">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="swiper products__slider products__slider--later">
+						<div class="swiper-wrapper products__wrapper">
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-1.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-3.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="info">
+				<div class="info__container">
+					<h2 class="info__title title">Заголовок (SEO-текст)</h2>
+					<div class="info__text text text_gray">
+						<p>
+							В Whatsminer M50S 130Th используются 5 нанометровые чипы, который обеспечивают высокую скорость обработки данных
+							и эффективное управление теплом. Благодаря этому, майнер работает стабильно и без перегрева, что повышает его
+							надежность и долговечность.
+						</p>
+						<p>
+							Устройство имеет компактный размер и легко монтируется в стойке. Оно оснащено двумя вентиляторами, которые
+							обеспечивают надежное охлаждение и защиту от перегрева. Кроме того, Whatsminer M50S 130Th имеет удобный
+							интерфейс для управления майнером и мониторинга его работы.
+						</p>
+						<p>
+							В целом, Whatsminer M50S 130Th является отличным выбором для тех, кто хочет заработать на добыче криптовалюты.
+							Благодаря своей мощности, эффективности и надежности, майнер обеспечивает стабильный и высокий доход, что делает
+							его одним из лучших устройств на рынке.
+						</p>
+						<p>
+							Whatsminer M50S 130Th является мощным и эффективным ASIC-майнером, который предназначен для майнинга
+							криптовалюты, таких как Bitcoin и Bitcoin Cash. Устройство разработано компанией MicroBT и имеет высокую
+							производительность относительно других майнеров на рынке.
+						</p>
+						<p>
+							Одной из особенностей Whatsminer M50S 130Th является его хешрейт 130 Терахеш в секунду. Благодаря этому, майнер
+							обеспечивает быструю и эффективную добычу криптовалюты, что позволяет майнерам получать больше дохода.
+						</p>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<section class="subscribe-us">
+			<div class="subscribe-us__container">
+				<div class="subscribe-us__body">
+					<div class="subscribe-us__title title title_white">
+						<img data-src="assets/images/icons/subscribe/telegram.svg" class="subscribe-us__icon" alt="Телеграм" data-da=".subscribe-us__actions, 960, first">
+						<h3>Подписывайся на наш Telegram - канал</h3>
+					</div>
+					<div class="text text_white">
+						<p>Мы предлагаем всестороннее освещение новостей, связанных с майнингом криптовалют, включая технологические
+							инновации, изменения в алгоритмах, обновления крупных проектов и многое другое.</p>
+					</div>
+				</div>
+				<div class="subscribe-us__actions">
+					<a href="#" class="button button_white">Перейти</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="top-footer">
+					<a class="logo" href="index.html">
+						<img src="assets/images/icons/logo/sibmain.svg" alt="Сибмэйн">
+					</a>
+					<nav>
+						<ul class="top-footer__list">
+							<li><a href="">Дата-центр</a></li>
+							<li><a href="">Каталог товаров</a></li>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Новости</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Полезная информация</a></li>
+							<li><a href="">Партнерам</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__contacts">
+					<div class="contact">
+						<div class="contact__icon">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#email"></use>
+							</svg>
+						</div>
+						<a href="mailto:info@sibmain.ru" class="contact__link">info@sibmain.ru</a>
+					</div>
+					<div class="contact">
+						<div class="contact__icon contact__icon_stroke">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#call"></use>
+							</svg>
+						</div>
+						<a href="tel:+79375444443" class="contact__link">+7 (937) 544 44 43</a>
+					</div>
+				</div>
+				<div class="bottom-footer">
+					<div class="bottom-footer__copy">Копирайт 2023</div>
+					<ul class="bottom-footer__list">
+						<li><a href="">Договор оферты</a></li>
+						<li><a href="">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- sсripts -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?v=20230608214355"></script>
+	<script src="assets/js/app.min.js?v=20230608214355"></script>
+
+</body>
+
+</html>

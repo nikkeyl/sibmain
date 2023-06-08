@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<style>
+		html {
+			opacity: 0;
+			transition: opacity .5s ease-in-out;
+		}
+
+		html.loaded {
+			opacity: 1;
+		}
+	</style>
+	<title>Страница товара</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css?v=20230608214355">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?v=20230608214355" />
+	<link rel="icon" href="favicon.ico">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body class="page">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-top header__top" data-lp>
+				<div class="header-top__container">
+					<div class="header-top__lang-select">
+						<div class="lang-block">
+							<button class="lang-block__trigger" type="button" data-target="sublist">
+								<span class="trigger-content">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-ru.webp" type="image/webp"><img src="assets/images/icons/lang/flag-ru.jpg" alt="RU"></picture></span> RU
+								</span>
+								<span class="trigger-icon">
+									<svg>
+										<use href="assets/images/svg/sprite.svg#arrow"></use>
+									</svg>
+								</span>
+							</button>
+							<div class="lang-block__list" data-sublist>
+								<a href="" class="lang-block__option active" data-value="ru">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-ru.webp" type="image/webp"><img src="assets/images/icons/lang/flag-ru.jpg" alt="RU"></picture></span> RU
+								</a>
+								<a href="" class="lang-block__option" data-value="en">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-en.webp" type="image/webp"><img src="assets/images/icons/lang/flag-en.jpg" alt="EN"></picture></span> EN
+								</a>
+							</div>
+						</div>
+					</div>
+					<nav class="menu-top header-top__menu" data-da=".menu-actions__info, 960">
+						<ul class="menu-top__list">
+							<li>
+								<a href="">Доставка и оплата</a>
+							</li>
+							<li>
+								<a href="">Поддержка</a>
+							</li>
+							<li>
+								<a href="">Гарантия и возврат</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-top__contacts">
+						<a href="mailto:info@sibmain.ru" class="contact" data-da=".menu-actions, 960">
+							<div class="contact__icon">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#email"></use>
+								</svg>
+							</div>
+							<div class="contact__link">info@sibmain.ru</div>
+						</a>
+						<a href="tel:+79375444443" class="contact">
+							<div class="contact__icon contact__icon_stroke">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#call"></use>
+								</svg>
+							</div>
+							<div class="contact__link">+7 (937) 544 44 43</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-body header__body" data-lp>
+				<div class="header-body__container">
+					<a class="logo" href="index.html">
+						<img src="assets/images/icons/logo/sibmain.svg" alt="Sibmain">
+					</a>
+					<button type="button" class="catalog-button header-body__catalog-button" data-da=".header-bottom__container, 960" data-child="header-catalog">
+						<span class="catalog-button__text">Каталог</span>
+						<span class="catalog-button__icon"><i></i></span>
+					</button>
+					<div class="catalog-menu header-body__catalog-menu" id="header-catalog" data-da=".menu-bottom, 480, first">
+						<div class="catalog-menu__head">
+							<a class="catalog-menu__logo" href="index.html">
+								<img src="assets/images/icons/logo/sibmain.svg" alt="Sibmain">
+							</a>
+							<button type="button" class="catalog-button catalog-button_close" data-child-close="header-catalog">
+								<span class="catalog-button__text">Каталог</span>
+								<span class="catalog-button__icon"><i></i></span>
+							</button>
+						</div>
+						<div class="catalog-menu__body">
+							<div class="catalog-menu__spollers spollers" data-spollers>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Производители
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Bitmain</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Whatsminer</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Innosilicon</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Canaan</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Контейнеры для майнинга
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Bitmain</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Whatsminer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Акессуары
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Canaan</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form class="search header-body__search" data-da=".header-bottom__container, 960">
+						<input class="search__input input" type="search" name="search" placeholder="Что Вы ищете?">
+						<button class="button search__button" type="submit">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#search"></use>
+							</svg>
+							Найти
+						</button>
+					</form>
+					<div class="actions header-body__actions">
+						<a href="" class="actions__button actions__button_favorites">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#favorite"></use>
+							</svg>
+						</a>
+						<a href="" class="actions__button actions__button_compare">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#compare"></use>
+							</svg>
+						</a>
+						<a href="" class="actions__button actions__button_cart">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#cart"></use>
+							</svg>
+							<span>99</span>
+						</a>
+						<button type="button" class="catalog-button burger-menu">
+							<span class="burger-menu__text">Меню</span>
+							<span class="burger-menu__icon">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+						<div class="menu-actions">
+							<div class="menu-actions__list"></div>
+							<div class="menu-actions__info"></div>
+							<div class="menu-actions__contacts"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom" data-lp>
+				<div class="header-bottom__container">
+					<nav class="menu-bottom header-bottom__menu" data-da=".menu-actions__list, 960">
+						<ul class="menu-bottom__list">
+							<li>
+								<a href="" class="active">Главная</a>
+							</li>
+							<li>
+								<a data-target="sublist">
+									Услуги
+									<svg>
+										<use href="assets/images/svg/sprite.svg#arrow-down"></use>
+									</svg>
+								</a>
+								<ul class="menu-bottom__sub-list" data-sublist>
+									<li>
+										<a href="">Размещение</a>
+									</li>
+									<li>
+										<a href="">Калькулятор</a>
+									</li>
+									<li>
+										<a href="">Обслуживание</a>
+									</li>
+									<li>
+										<a href="">Дата-центр</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Размещение</a>
+							</li>
+							<li>
+								<a href="">Калькулятор</a>
+							</li>
+							<li>
+								<a href="">Новости</a>
+							</li>
+							<li>
+								<a href="">О нас</a>
+							</li>
+							<li>
+								<a href="">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="content">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="index.html">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<span class="breadcrumbs__current">Наименование товара</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<section class="catalog-item" data-observ>
+				<div class="catalog-item__container">
+					<div class="catalog-item-slider">
+						<div class="swiper product-thumbs-slider swiper-thumbs">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="product-thumbs-slider__image">
+										<picture><source srcset="assets/images/temp/products/product-1.webp" type="image/webp"><img src="assets/images/temp/products/product-1.jpg" alt=""></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-thumbs-slider__image">
+										<picture><source srcset="assets/images/temp/products/product-2.webp" type="image/webp"><img src="assets/images/temp/products/product-2.jpg" alt=""></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-thumbs-slider__image">
+										<picture><source srcset="assets/images/temp/products/product-3.webp" type="image/webp"><img src="assets/images/temp/products/product-3.jpg" alt=""></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-thumbs-slider__image">
+										<picture><source srcset="assets/images/temp/products/product-4.webp" type="image/webp"><img src="assets/images/temp/products/product-4.jpg" alt=""></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper product-main-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="product-main-slider__image">
+										<picture><source srcset="assets/images/temp/products/product-1.webp" type="image/webp"><img src="assets/images/temp/products/product-1.jpg" alt=""></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-main-slider__image">
+										<picture><source srcset="assets/images/temp/products/product-2.webp" type="image/webp"><img src="assets/images/temp/products/product-2.jpg" alt=""></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-main-slider__image">
+										<picture><source srcset="assets/images/temp/products/product-3.webp" type="image/webp"><img src="assets/images/temp/products/product-3.jpg" alt=""></picture>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product-main-slider__image">
+										<picture><source srcset="assets/images/temp/products/product-4.webp" type="image/webp"><img src="assets/images/temp/products/product-4.jpg" alt=""></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-info-body">
+						<div class="product-info-body__head">
+							<div class="product-article">Артикул: 4865132</div>
+							<div class="catalog-head-controls">
+								<a href="#" class="catalog-head-controls__item">
+									<svg>
+										<use href="assets/images/svg/sprite.svg#favorite"></use>
+									</svg>
+									<span>В избранное</span>
+								</a>
+								<a href="#" class="catalog-head-controls__item">
+									<svg>
+										<use href="assets/images/svg/sprite.svg#compare"></use>
+									</svg>
+									<span>Сравнить</span>
+								</a>
+								<a href="#" class="catalog-head-controls__item">
+									<svg>
+										<use href="assets/images/svg/sprite.svg#share"></use>
+									</svg>
+									<span>Поделиться</span>
+								</a>
+							</div>
+						</div>
+						<div class="product-title">
+							<h3>Asic майнер Whatsminer M50S 130Th</h3>
+						</div>
+						<div class="product-reviews">
+							<div class="rating">
+								<span class="rating__item"></span>
+								<span class="rating__item"></span>
+								<span class="rating__item"></span>
+								<span class="rating__item"></span>
+								<span class="rating__item"></span>
+							</div>
+							<a href="#feedback" class="product-reviews__link" data-change-tab>Отзывы <span>(12)</span></a>
+							<a href="#faq" class="product-reviews__link" data-change-tab>Вопросы и ответы <span>(12)</span></a>
+						</div>
+						<div class="hash-rate">
+							<div class="hash-rate__label">Хешрейт, Th/s:</div>
+							<div class="hash-rate__items">
+								<a href="#">100</a>
+								<a href="#">102</a>
+								<a href="#">104</a>
+								<a href="#">106</a>
+								<a href="#" class="active">108</a>
+							</div>
+						</div>
+					</div>
+					<div class="product-info-bottom">
+						<div class="product-info-bottom__offer">
+							<div class="price-block">
+								<div class="price-block__new">266 989 ₽</div>
+								<div class="price-block__old">266 989 ₽</div>
+							</div>
+							<div class="add-remove-controls" data-counter="counter">
+								<button class="add-remove-controls__add" data-counter="plus">+</button>
+								<input type="number" name="product_count" class="add-remove-controls__count" value="1" data-counter="count">
+								<button class="add-remove-controls__remove" data-counter="minus">-</button>
+							</div>
+							<button class="button" type="button">Добавить в корзину</button>
+							<button class="button button_stroke" type="button">Быстрый заказ</button>
+						</div>
+						<div class="product-info-bottom__specs">
+							<div class="specs-item">
+								<div class="specs-item__row">
+									<span class="specs-item__key">Алгоритм</span>
+									<span class="specs-item__value">SHA-256</span>
+								</div>
+								<div class="specs-item__row">
+									<span class="specs-item__key">Криптовалюта</span>
+									<span class="specs-item__value">BTC, BCH</span>
+								</div>
+								<div class="specs-item__row">
+									<span class="specs-item__key">Энергопотребление</span>
+									<span class="specs-item__value">3 500 Вт</span>
+								</div>
+								<a href="#features" class="specs-item__link" data-change-tab>Посмотреть все характеристики</a>
+							</div>
+							<div class="specs-item">
+								<div class="specs-item__row">
+									<span class="specs-item__key">Доход в день</span>
+									<span class="specs-item__value">20,9 $</span>
+								</div>
+								<div class="specs-item__row">
+									<span class="specs-item__key">Доход в месяц</span>
+									<span class="specs-item__value">634,4 $</span>
+								</div>
+								<div class="specs-item__row">
+									<span class="specs-item__key">Окупаемость</span>
+									<span class="specs-item__value">10,6 месяцев</span>
+								</div>
+								<a href="#calculator" class="specs-item__button" data-change-tab>
+									<svg>
+										<use href="assets/images/svg/sprite.svg#calc"></use>
+									</svg>
+									Калькулятор доходности
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog-item-tabs">
+				<div class="catalog-item-tabs__container">
+					<div class="tabs" data-tabs="product-info">
+						<div class="tabs__nav">
+							<button class="tabs__trigger" type="button" data-category="review">Обзор</button>
+							<button class="tabs__trigger" type="button" data-category="features">Характеристики</button>
+							<button class="tabs__trigger" type="button" data-category="calculator">Калькулятор доходности</button>
+							<button class="tabs__trigger" type="button" data-category="feedback">Отзывы</button>
+							<button class="tabs__trigger" type="button" data-category="faq">Вопросы и ответы</button>
+						</div>
+						<div class="tabs__content">
+							<div class="tabs__panel">
+								<div class="text-box">
+									<p>
+										В Whatsminer M50S 130Th используются 5 нанометровые чипы, который обеспечивают высокую скорость обработки данных и эффективное управление теплом. Благодаря этому, майнер работает стабильно и без перегрева, что повышает его надежность и долговечность.
+									</p>
+									<p>
+										Устройство имеет компактный размер и легко монтируется в стойке. Оно оснащено двумя вентиляторами, которые обеспечивают надежное охлаждение и защиту от перегрева. Кроме того, Whatsminer M50S 130Th имеет удобный интерфейс для управления майнером и мониторинга его работы.
+									</p>
+									<p>
+										В целом, Whatsminer M50S 130Th является отличным выбором для тех, кто хочет заработать на добыче криптовалюты. Благодаря своей мощности, эффективности и надежности, майнер обеспечивает стабильный и высокий доход, что делает его одним из лучших устройств на рынке.
+									</p>
+									<p>
+										Whatsminer M50S 130Th является мощным и эффективным ASIC-майнером, который предназначен для майнинга криптовалюты, таких как Bitcoin и Bitcoin Cash. Устройство разработано компанией MicroBT и имеет высокую производительность относительно других майнеров на рынке.
+									</p>
+									<p>
+										Одной из особенностей Whatsminer M50S 130Th является его хешрейт 130 Терахеш в секунду. Благодаря этому, майнер обеспечивает быструю и эффективную добычу криптовалюты, что позволяет майнерам получать больше дохода.
+									</p>
+									<p>
+										Также стоит отметить низкое энергопотребление устройства - всего 3,5 Вт на Терахеш в секунду, что делает Whatsminer M50S 130Th одним из самых энергоэффективных майнеров на рынке. Благодаря этому, майнеры могут существенно снизить свои затраты на электроэнергию и увеличить свою прибыльность.
+									</p>
+								</div>
+							</div>
+							<div class="tabs__panel">
+								<div class="page-layout">
+									<div class="page-layout__body">
+										<div class="features-block">
+											<div class="title title_blue">
+												<h2>Характеристики</h2>
+											</div>
+											<div class="specs-item">
+												<div class="specs-item__row">
+													<span class="specs-item__key">Производитель</span>
+													<span class="specs-item__value">Whatsminer</span>
+												</div>
+												<div class="specs-item__row">
+													<span class="specs-item__key">Алгоритм</span>
+													<span class="specs-item__value">SHA-256</span>
+												</div>
+												<div class="specs-item__row">
+													<span class="specs-item__key">Криптовалюта</span>
+													<span class="specs-item__value">Bitcoin (BTC), BitcoinCash (BCH)</span>
+												</div>
+												<div class="specs-item__row">
+													<span class="specs-item__key">Страна</span>
+													<span class="specs-item__value">Китай</span>
+												</div>
+												<div class="specs-item__row">
+													<span class="specs-item__key">Хэшрейт</span>
+													<span class="specs-item__value">108 TH/s</span>
+												</div>
+												<div class="specs-item__row">
+													<span class="specs-item__key">Энергопотребление</span>
+													<span class="specs-item__value">3 500 Вт</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<aside class="page-layout__sidebar">
+										<form class="form-request">
+											<div class="form-request__title sub-title">Оставить заявку</div>
+											<fieldset class="form-request__actions">
+												<div class="form-request__input input-control">
+													<input type="text" placeholder="Имя*" name="client-name">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+												<div class="form-request__input input-control">
+													<div class="tel-block" data-select="tel">
+														<input type="hidden" name="country">
+														<button class="tel-block__trigger" data-type-s="trigger" type="button">
+															<span class="trigger-content"></span>
+															<span class="trigger-icon">
+																<svg>
+																	<use href="assets/images/svg/sprite.svg#arrow"></use>
+																</svg>
+															</span>
+														</button>
+														<ul class="tel-block__list" data-type-s="list">
+															<li class="tel-block__option" data-value="ru" data-placeholder="+7 (999) 999 99 99">
+																<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-ru.webp" type="image/webp"><img src="assets/images/temp/lang/flag-ru.jpg" alt="RU"></picture></span>
+															</li>
+															<li class="tel-block__option" data-value="en" data-placeholder="+13 (999) 999 99 99">
+																<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-en.webp" type="image/webp"><img src="assets/images/temp/lang/flag-en.jpg" alt="EN"></picture></span>
+															</li>
+														</ul>
+													</div>
+													<input type="tel" name="client-phone">
+												</div>
+												<button class="form-request__button button" type="submit">Отправить</button>
+											</fieldset>
+											<div class="form-request__info">
+												Нажимая кнопку Вы принимаете порядок обработки персональных данных описанный в нашей политике конфиденциальности.
+											</div>
+										</form>
+
+									</aside>
+								</div>
+							</div>
+							<div class="tabs__panel">
+								<div class="page-layout page-layout_second">
+									<div class="page-layout__body">
+										<form class="calculator-block">
+											<div class="calculator-block__title">Выберите оборудование</div>
+											<div class="calculator-block__selects">
+												<div class="select-device" data-select="calc-device">
+													<input type="hidden" name="product-name">
+													<button class="select-device__trigger" data-type-s="trigger" type="button">
+														<span class="trigger-content"></span>
+														<span class="trigger-icon">
+															<svg>
+																<use href="assets/images/svg/sprite.svg#arrow"></use>
+															</svg>
+														</span>
+													</button>
+													<ul class="select-device__list" data-type-s="list">
+														<li class="select-device__option" data-value="Bitmain Antminer">Bitmain Antminer</li>
+														<li class="select-device__option" data-value="Dog Miner">Dog Miner</li>
+														<li class="select-device__option" data-value="Cat Miner">Cat Miner</li>
+													</ul>
+												</div>
+												<div class="select-device" data-select="device-model">
+													<input type="hidden" name="product-model">
+													<button class="select-device__trigger" data-type-s="trigger" type="button">
+														<span class="trigger-content"></span>
+														<span class="trigger-icon">
+															<svg>
+																<use href="assets/images/svg/sprite.svg#arrow"></use>
+															</svg>
+														</span>
+													</button>
+													<ul class="select-device__list" data-type-s="list">
+														<li class="select-device__option" data-value="none">Модель</li>
+														<li class="select-device__option" data-value="Bitmain Antminer">Bitmain Antminer</li>
+														<li class="select-device__option" data-value="Dog Miner">Dog Miner</li>
+														<li class="select-device__option" data-value="Cat Miner">Cat Miner</li>
+													</ul>
+												</div>
+											</div>
+											<div class="calculator-block__selects">
+												<div class="order-product order-product_center">
+													<div class="order-product__image-ibg">
+														<picture><source srcset="assets/images/temp/products/product-1.webp" type="image/webp"><img src="assets/images/temp/products/product-1.jpg" alt=""></picture>
+													</div>
+													<div class="order-product__info">
+														<span class="text-label">Наименование</span>
+														<span class="order-product__name">Asic майнер Whatsminer M50S 130Th</span>
+													</div>
+												</div>
+												<div class="calculator-block__amounts">
+													<div class="amount-field">
+														<span class="text-label">Стоимость</span>
+														<span class="amount-field__control">
+															<input type="text" name="product-cost" class="bold" value="408 999 ₽" disabled>
+														</span>
+													</div>
+													<div class="amount-field">
+														<span class="text-label">Потребление (Вт)</span>
+														<span class="amount-field__control">
+															<input type="text" name="product-power" value="3000" disabled>
+														</span>
+													</div>
+													<div class="amount-field" data-counter="counter">
+														<span class="text-label">Количество</span>
+														<span class="amount-field__control">
+															<button class="plus" type="button" data-counter="plus">+</button>
+															<input type="number" name="product-count" value="1" data-counter="count">
+															<button class="minus" type="button" data-counter="minus">-</button>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="calculator-block__unit-selection">
+												<div class="calculator-block__mode">
+													<div class="calculator-block__title">Выберите режим</div>
+													<label class="radio-control">
+														<span class="radio-control__field">
+															<input type="radio" name="mode" value="daily" checked>
+															<span class="radio-control__target"></span>
+															<span class="text-label">Суточный</span>
+														</span>
+													</label>
+													<label class="radio-control">
+														<span class="radio-control__field">
+															<input type="radio" name="mode" value="nightly">
+															<span class="radio-control__target"></span>
+															<span class="text-label">Ночной</span>
+														</span>
+													</label>
+												</div>
+												<div class="calculator-block__cost">
+													<div class="calculator-block__title">Введите стоимость электроэнергии</div>
+													<label class="radio-control">
+														<span class="radio-control__field">
+															<input type="radio" name="cost" value="base" checked>
+															<span class="radio-control__target"></span>
+															<span class="text-label">Базовое размещение</span>
+														</span>
+														<span class="cost-text">4,2 <span class="text-label">₽ / кВт / час</span></span>
+													</label>
+													<label class="radio-control">
+														<span class="radio-control__field">
+															<input type="radio" name="cost" value="custom">
+															<span class="radio-control__target"></span>
+															<span class="text-label">Задать свою стоимость</span>
+														</span>
+														<span class="amount-field">
+															<span class="amount-field__control">
+																<input type="text" name="cost-value" value="9">
+															</span>
+															<span class="text-label">₽ / кВт / час</span>
+														</span>
+													</label>
+												</div>
+											</div>
+											<div class="calculator-block__bottom">
+												<button class="button" type="button">Рассчитать доходность</button>
+												<div>
+													<span class="cost-text">USDT = 83.35 ₽</span>
+													<span class="text-label">на 19.05.2023</span>
+												</div>
+											</div>
+											<p class="calculator-block__note">Обратите внимание, что расчеты основаны на средних значениях, поэтому ваши окончательные результаты могут отличаться.</p>
+										</form>
+									</div>
+									<aside class="page-layout__sidebar">
+										<div class="order">
+											<div class="box-title">
+												<h2>Результаты расчётов</h2>
+											</div>
+											<ul class="profit order__profit">
+												<li>
+													<div class="profit__key">Чистая прибыль</div>
+													<div class="profit__value">1 600 238 ₽<span>/ мес.</span></div>
+												</li>
+												<li>
+													<div class="profit__key">Окупаемость</div>
+													<div class="profit__value">0,26<span>мес.</span></div>
+												</li>
+											</ul>
+											<ul class="order-info">
+												<li><span>Стоимость оборудования</span><span>408 999 ₽</span></li>
+												<li><span>Затраты на размещение</span><span>9 852 ₽</span></li>
+												<li><span>Доход от майнинга в месяц</span><span>1 610 090 ₽</span></li>
+											</ul>
+										</div>
+										<form class="form-request">
+											<div class="form-request__title sub-title">Оставить заявку</div>
+											<fieldset class="form-request__actions">
+												<div class="form-request__input input-control">
+													<input type="text" placeholder="Имя*" name="client-name">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+												<div class="form-request__input input-control">
+													<div class="tel-block" data-select="tel">
+														<input type="hidden" name="country">
+														<button class="tel-block__trigger" data-type-s="trigger" type="button">
+															<span class="trigger-content"></span>
+															<span class="trigger-icon">
+																<svg>
+																	<use href="assets/images/svg/sprite.svg#arrow"></use>
+																</svg>
+															</span>
+														</button>
+														<ul class="tel-block__list" data-type-s="list">
+															<li class="tel-block__option" data-value="ru" data-placeholder="+7 (999) 999 99 99">
+																<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-ru.webp" type="image/webp"><img src="assets/images/temp/lang/flag-ru.jpg" alt="RU"></picture></span>
+															</li>
+															<li class="tel-block__option" data-value="en" data-placeholder="+13 (999) 999 99 99">
+																<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-en.webp" type="image/webp"><img src="assets/images/temp/lang/flag-en.jpg" alt="EN"></picture></span>
+															</li>
+														</ul>
+													</div>
+													<input type="tel" name="client-phone">
+												</div>
+												<button class="form-request__button button" type="submit">Отправить</button>
+											</fieldset>
+											<div class="form-request__info">
+												Нажимая кнопку Вы принимаете порядок обработки персональных данных описанный в нашей политике конфиденциальности.
+											</div>
+										</form>
+
+									</aside>
+								</div>
+							</div>
+							<div class="tabs__panel">
+								<div class="page-layout page-layout_second">
+									<div class="page-layout__body">
+										<div class="feedback-block">
+											<div class="title title_blue">
+												<h2>Отзывы</h2>
+											</div>
+											<div class="feedback-block__empty">
+												<svg>
+													<use href="assets/images/svg/sprite.svg#message"></use>
+												</svg>На этот товар пока нет отзывов
+											</div>
+											<div class="feedback-block__count">2 отзыва</div>
+											<div class="feedback-message">
+												<div class="feedback-message__head">
+													<div class="client-name">Роман</div>
+													<div class="date-message">21.06.2023 г.</div>
+												</div>
+												<div class="rating">
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item disabled"></span>
+													<span class="rating__item disabled"></span>
+												</div>
+												<div class="text-message">
+													<span>Комментарий:</span> Давно хотел обновиться, выбор пал на этот асик, рекомендую
+												</div>
+												<div class="feedback-message__actions">
+													<button><svg>
+															<use href="assets/images/svg/sprite.svg#message"></use>
+														</svg>Ответить</button>
+													<button><svg>
+															<use href="assets/images/svg/sprite.svg#dislike"></use>
+														</svg>Пожаловаться</button>
+												</div>
+											</div>
+											<div class="feedback-message">
+												<div class="feedback-message__head">
+													<div class="client-name">Роман</div>
+													<div class="date-message">21.06.2023 г.</div>
+												</div>
+												<div class="rating">
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item disabled"></span>
+													<span class="rating__item disabled"></span>
+												</div>
+												<div class="text-message">
+													<span>Комментарий:</span> Давно хотел выбор пал на этот асик, рекомендую выбор пал на этот асик, рекомендую обновиться, выбор пал на этот асик, рекомендую
+												</div>
+												<div class="feedback-message__actions">
+													<button><svg>
+															<use href="assets/images/svg/sprite.svg#message"></use>
+														</svg>Ответить</button>
+													<button><svg>
+															<use href="assets/images/svg/sprite.svg#dislike"></use>
+														</svg>Пожаловаться</button>
+												</div>
+											</div>
+											<div class="feedback-message">
+												<div class="feedback-message__head">
+													<div class="client-name">Роман</div>
+													<div class="date-message">21.06.2023 г.</div>
+												</div>
+												<div class="rating">
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item disabled"></span>
+													<span class="rating__item disabled"></span>
+												</div>
+												<div class="text-message">
+													<span>Комментарий:</span> Давно хотел обновиться, выбор пал на этот асик, рекомендую
+												</div>
+												<div class="feedback-message__actions">
+													<button><svg>
+															<use href="assets/images/svg/sprite.svg#message"></use>
+														</svg>Ответить</button>
+													<button><svg>
+															<use href="assets/images/svg/sprite.svg#dislike"></use>
+														</svg>Пожаловаться</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<aside class="page-layout__sidebar">
+										<div class="feedback-info">
+											<div class="feedback-info__head">
+												<span>Рейтинг товара</span>
+												<div class="rating">
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item disabled"></span>
+												</div>
+												<span>4.1</span>
+											</div>
+											<button class="feedback-info__button button" type="button">Добавить отзыв</button>
+										</div>
+										<form class="form-request">
+											<div class="form-request__title sub-title">Оставить заявку</div>
+											<fieldset class="form-request__actions">
+												<div class="form-request__input input-control">
+													<input type="text" placeholder="Имя*" name="client-name">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+												<div class="form-request__input input-control">
+													<div class="tel-block" data-select="tel">
+														<input type="hidden" name="country">
+														<button class="tel-block__trigger" data-type-s="trigger" type="button">
+															<span class="trigger-content"></span>
+															<span class="trigger-icon">
+																<svg>
+																	<use href="assets/images/svg/sprite.svg#arrow"></use>
+																</svg>
+															</span>
+														</button>
+														<ul class="tel-block__list" data-type-s="list">
+															<li class="tel-block__option" data-value="ru" data-placeholder="+7 (999) 999 99 99">
+																<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-ru.webp" type="image/webp"><img src="assets/images/temp/lang/flag-ru.jpg" alt="RU"></picture></span>
+															</li>
+															<li class="tel-block__option" data-value="en" data-placeholder="+13 (999) 999 99 99">
+																<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-en.webp" type="image/webp"><img src="assets/images/temp/lang/flag-en.jpg" alt="EN"></picture></span>
+															</li>
+														</ul>
+													</div>
+													<input type="tel" name="client-phone">
+												</div>
+												<button class="form-request__button button" type="submit">Отправить</button>
+											</fieldset>
+											<div class="form-request__info">
+												Нажимая кнопку Вы принимаете порядок обработки персональных данных описанный в нашей политике конфиденциальности.
+											</div>
+										</form>
+
+									</aside>
+								</div>
+							</div>
+							<div class="tabs__panel">
+								<div class="page-layout page-layout_second">
+									<div class="page-layout__body">
+										<div class="faq-block">
+											<div class="title title_blue">
+												<h2>Вопросы и ответы</h2>
+											</div>
+											<div class="faq-message">
+												<div class="faq-message__body">
+													<div class="client-name">Роман</div>
+													<div class="faq-message__date date-message">21.05.2023 г.</div>
+													<div class="text-message">
+														<span>Вопрос:</span> Здравствуйте, я могу заказать 50 штук и Вы привезете мне их в течение недели?
+													</div>
+													<div class="faq-message__actions">
+														<button class="active"><svg>
+																<use href="assets/images/svg/sprite.svg#like"></use>
+															</svg></button>
+														<button><svg>
+																<use href="assets/images/svg/sprite.svg#dislike"></use>
+															</svg></button>
+													</div>
+												</div>
+											</div>
+											<div class="faq-message faq-message_answer">
+												<div class="faq-message__body">
+													<div class="client-name">Sibmain</div>
+													<div class="faq-message__date date-message">25.06.2023 г.</div>
+													<div class="text-message">
+														<span>Ответ:</span> Здравствуйте, Роман! Да, конечно, свяжитесь с нами удобным для Вас способом и мы проконсультируем Вас по всем вопросам.
+													</div>
+													<div class="faq-message__actions">
+														<button><svg>
+																<use href="assets/images/svg/sprite.svg#like"></use>
+															</svg></button>
+														<button class="active"><svg>
+																<use href="assets/images/svg/sprite.svg#dislike"></use>
+															</svg></button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<aside class="page-layout__sidebar">
+										<div class="feedback-info">
+											<div class="feedback-info__head">
+												<span>Рейтинг товара</span>
+												<div class="rating">
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item"></span>
+													<span class="rating__item disabled"></span>
+												</div>
+												<span>4.1</span>
+											</div>
+											<button class="feedback-info__button button" type="button">Добавить отзыв</button>
+										</div>
+										<form class="form-request">
+											<div class="form-request__title sub-title">Оставить заявку</div>
+											<fieldset class="form-request__actions">
+												<div class="form-request__input input-control">
+													<input type="text" placeholder="Имя*" name="client-name">
+													<span class="message-error">Поле должно быть заполнено</span>
+												</div>
+												<div class="form-request__input input-control">
+													<div class="tel-block" data-select="tel">
+														<input type="hidden" name="country">
+														<button class="tel-block__trigger" data-type-s="trigger" type="button">
+															<span class="trigger-content"></span>
+															<span class="trigger-icon">
+																<svg>
+																	<use href="assets/images/svg/sprite.svg#arrow"></use>
+																</svg>
+															</span>
+														</button>
+														<ul class="tel-block__list" data-type-s="list">
+															<li class="tel-block__option" data-value="ru" data-placeholder="+7 (999) 999 99 99">
+																<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-ru.webp" type="image/webp"><img src="assets/images/temp/lang/flag-ru.jpg" alt="RU"></picture></span>
+															</li>
+															<li class="tel-block__option" data-value="en" data-placeholder="+13 (999) 999 99 99">
+																<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-en.webp" type="image/webp"><img src="assets/images/temp/lang/flag-en.jpg" alt="EN"></picture></span>
+															</li>
+														</ul>
+													</div>
+													<input type="tel" name="client-phone">
+												</div>
+												<button class="form-request__button button" type="submit">Отправить</button>
+											</fieldset>
+											<div class="form-request__info">
+												Нажимая кнопку Вы принимаете порядок обработки персональных данных описанный в нашей политике конфиденциальности.
+											</div>
+										</form>
+
+									</aside>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products">
+				<div class="products__container">
+					<div class="actions-head products__head">
+						<div class="title">
+							<h3>С этим товаром <span>смотрят</span></h3>
+						</div>
+						<div class="actions-head__actions-buttons">
+							<button class="actions-head__prev" type="button">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+							<button class="actions-head__next" type="button">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="swiper products__slider">
+						<div class="swiper-wrapper products__wrapper">
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-1.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-2.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-3.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-4.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-1.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+							<div class="swiper-slide products__slide">
+								<article class="product-card">
+									<div class="product-card__body">
+										<a class="product-card__image-ibg--contain" href="">
+											<picture><source data-srcset="assets/images/temp/products/product-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/products/product-3.jpg" alt="Whatsminer m50 118 th/s"></picture>
+											<div class="product-card__category">Наименование категории</div>
+										</a>
+										<h3 class="product-card__title">
+											<a href="" class="product-card__link">Whatsminer m50 118 th/s</a>
+										</h3>
+										<div class="product-card__info">
+											<div class="product-card__payback">
+												<span>Доходность в месяц</span>
+												<span>$ 999</span>
+											</div>
+											<div class="product-card__profitability">
+												<span>Окупаемость</span>
+												<span>10 месяцев</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__actions text">
+										<div class="product-card__prices">
+											<div class="product-card__old-price text">26 000 ₽</div>
+											<div class="product-card__current-price">20 350 ₽</div>
+										</div>
+										<a href="" class="product-card__button">Заказать</a>
+									</div>
+								</article>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<section class="subscribe-us">
+			<div class="subscribe-us__container">
+				<div class="subscribe-us__body">
+					<div class="subscribe-us__title title title_white">
+						<img data-src="assets/images/icons/subscribe/telegram.svg" class="subscribe-us__icon" alt="Телеграм" data-da=".subscribe-us__actions, 960, first">
+						<h3>Подписывайся на наш Telegram - канал</h3>
+					</div>
+					<div class="text text_white">
+						<p>Мы предлагаем всестороннее освещение новостей, связанных с майнингом криптовалют, включая технологические
+							инновации, изменения в алгоритмах, обновления крупных проектов и многое другое.</p>
+					</div>
+				</div>
+				<div class="subscribe-us__actions">
+					<a href="#" class="button button_white">Перейти</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="top-footer">
+					<a class="logo" href="index.html">
+						<img src="assets/images/icons/logo/sibmain.svg" alt="Сибмэйн">
+					</a>
+					<nav>
+						<ul class="top-footer__list">
+							<li><a href="">Дата-центр</a></li>
+							<li><a href="">Каталог товаров</a></li>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Новости</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Полезная информация</a></li>
+							<li><a href="">Партнерам</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__contacts">
+					<div class="contact">
+						<div class="contact__icon">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#email"></use>
+							</svg>
+						</div>
+						<a href="mailto:info@sibmain.ru" class="contact__link">info@sibmain.ru</a>
+					</div>
+					<div class="contact">
+						<div class="contact__icon contact__icon_stroke">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#call"></use>
+							</svg>
+						</div>
+						<a href="tel:+79375444443" class="contact__link">+7 (937) 544 44 43</a>
+					</div>
+				</div>
+				<div class="bottom-footer">
+					<div class="bottom-footer__copy">Копирайт 2023</div>
+					<ul class="bottom-footer__list">
+						<li><a href="">Договор оферты</a></li>
+						<li><a href="">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?v=20230608214355"></script>
+	<script src="assets/js/app.min.js?v=20230608214355"></script>
+
+</body>
+
+</html>

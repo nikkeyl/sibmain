@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<style>
+		html {
+			opacity: 0;
+			transition: opacity .5s ease-in-out;
+		}
+
+		html.loaded {
+			opacity: 1;
+		}
+	</style>
+	<title>О компании</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css?v=20230608214355">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?v=20230608214355" />
+	<link rel="icon" href="favicon.ico">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body class="page">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-top header__top" data-lp>
+				<div class="header-top__container">
+					<div class="header-top__lang-select">
+						<div class="lang-block">
+							<button class="lang-block__trigger" type="button" data-target="sublist">
+								<span class="trigger-content">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-ru.webp" type="image/webp"><img src="assets/images/icons/lang/flag-ru.jpg" alt="RU"></picture></span> RU
+								</span>
+								<span class="trigger-icon">
+									<svg>
+										<use href="assets/images/svg/sprite.svg#arrow"></use>
+									</svg>
+								</span>
+							</button>
+							<div class="lang-block__list" data-sublist>
+								<a href="" class="lang-block__option active" data-value="ru">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-ru.webp" type="image/webp"><img src="assets/images/icons/lang/flag-ru.jpg" alt="RU"></picture></span> RU
+								</a>
+								<a href="" class="lang-block__option" data-value="en">
+									<span class="lang-block__image"><picture><source srcset="assets/images/icons/lang/flag-en.webp" type="image/webp"><img src="assets/images/icons/lang/flag-en.jpg" alt="EN"></picture></span> EN
+								</a>
+							</div>
+						</div>
+					</div>
+					<nav class="menu-top header-top__menu" data-da=".menu-actions__info, 960">
+						<ul class="menu-top__list">
+							<li>
+								<a href="">Доставка и оплата</a>
+							</li>
+							<li>
+								<a href="">Поддержка</a>
+							</li>
+							<li>
+								<a href="">Гарантия и возврат</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-top__contacts">
+						<a href="mailto:info@sibmain.ru" class="contact" data-da=".menu-actions, 960">
+							<div class="contact__icon">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#email"></use>
+								</svg>
+							</div>
+							<div class="contact__link">info@sibmain.ru</div>
+						</a>
+						<a href="tel:+79375444443" class="contact">
+							<div class="contact__icon contact__icon_stroke">
+								<svg>
+									<use href="assets/images/svg/sprite.svg#call"></use>
+								</svg>
+							</div>
+							<div class="contact__link">+7 (937) 544 44 43</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-body header__body" data-lp>
+				<div class="header-body__container">
+					<a class="logo" href="index.html">
+						<img src="assets/images/icons/logo/sibmain.svg" alt="Sibmain">
+					</a>
+					<button type="button" class="catalog-button header-body__catalog-button" data-da=".header-bottom__container, 960" data-child="header-catalog">
+						<span class="catalog-button__text">Каталог</span>
+						<span class="catalog-button__icon"><i></i></span>
+					</button>
+					<div class="catalog-menu header-body__catalog-menu" id="header-catalog" data-da=".menu-bottom, 480, first">
+						<div class="catalog-menu__head">
+							<a class="catalog-menu__logo" href="index.html">
+								<img src="assets/images/icons/logo/sibmain.svg" alt="Sibmain">
+							</a>
+							<button type="button" class="catalog-button catalog-button_close" data-child-close="header-catalog">
+								<span class="catalog-button__text">Каталог</span>
+								<span class="catalog-button__icon"><i></i></span>
+							</button>
+						</div>
+						<div class="catalog-menu__body">
+							<div class="catalog-menu__spollers spollers" data-spollers>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Производители
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Bitmain</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Whatsminer</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Innosilicon</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Canaan</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Контейнеры для майнинга
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Bitmain</a>
+											</li>
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Whatsminer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<button class="spollers__title" type="button" data-spoller>
+										Акессуары
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<div class="spollers__body">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<a href="" class="spollers__list-link menu-link">Canaan</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form class="search header-body__search" data-da=".header-bottom__container, 960">
+						<input class="search__input input" type="search" name="search" placeholder="Что Вы ищете?">
+						<button class="button search__button" type="submit">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#search"></use>
+							</svg>
+							Найти
+						</button>
+					</form>
+					<div class="actions header-body__actions">
+						<a href="" class="actions__button actions__button_favorites">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#favorite"></use>
+							</svg>
+						</a>
+						<a href="" class="actions__button actions__button_compare">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#compare"></use>
+							</svg>
+						</a>
+						<a href="" class="actions__button actions__button_cart">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#cart"></use>
+							</svg>
+							<span>99</span>
+						</a>
+						<button type="button" class="catalog-button burger-menu">
+							<span class="burger-menu__text">Меню</span>
+							<span class="burger-menu__icon">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+						<div class="menu-actions">
+							<div class="menu-actions__list"></div>
+							<div class="menu-actions__info"></div>
+							<div class="menu-actions__contacts"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom" data-lp>
+				<div class="header-bottom__container">
+					<nav class="menu-bottom header-bottom__menu" data-da=".menu-actions__list, 960">
+						<ul class="menu-bottom__list">
+							<li>
+								<a href="" class="active">Главная</a>
+							</li>
+							<li>
+								<a data-target="sublist">
+									Услуги
+									<svg>
+										<use href="assets/images/svg/sprite.svg#arrow-down"></use>
+									</svg>
+								</a>
+								<ul class="menu-bottom__sub-list" data-sublist>
+									<li>
+										<a href="">Размещение</a>
+									</li>
+									<li>
+										<a href="">Калькулятор</a>
+									</li>
+									<li>
+										<a href="">Обслуживание</a>
+									</li>
+									<li>
+										<a href="">Дата-центр</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Размещение</a>
+							</li>
+							<li>
+								<a href="">Калькулятор</a>
+							</li>
+							<li>
+								<a href="">Новости</a>
+							</li>
+							<li>
+								<a href="">О нас</a>
+							</li>
+							<li>
+								<a href="">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- main content -->
+		<main class="content">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="index.html">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<span class="breadcrumbs__current">О компании</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<section class="main-slider" data-observ>
+				<div class="main-slider__container">
+					<div class="swiper main-slider__slider main-slider__slider_reverse">
+						<div class="swiper-wrapper main-slider__wrapper">
+							<div class="swiper-slide main-slider__slide main-slider__slide_padding">
+								<div class="main-slider__info">
+									<div class="main-slider__body">
+										<div class="main-slider__title">
+											<h1>О компании</h1>
+										</div>
+										<div class="main-slider__text">
+											<p>
+												Sibmain - крупный поставщик майнинг оборудования
+												и оператор дата-центра натерритории России в Сибири,
+												обеспечивающий услуги по поставке, размещению
+												и обслуживанию оборудования для майнинга криптовалюты,
+												а также предлагающий готовые решения для энергоемких
+												вычислений, индустриального майнинга
+												и операций с облачным майнингом
+											</p>
+										</div>
+										<a href="" class="main-slider__button">Подробнее</a>
+									</div>
+								</div>
+								<div class="main-slider__image-bg">
+									<picture><source data-srcset="assets/images/temp/main-slider/about.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/main-slider/about.jpg" alt=""></picture>
+								</div>
+							</div>
+							<div class="swiper-slide main-slider__slide main-slider__slide_padding">
+								<div class="main-slider__info">
+									<div class="main-slider__body">
+										<div class="main-slider__title">
+											<h1>О компании</h1>
+										</div>
+										<div class="main-slider__text">
+											<p>
+												Sibmain - крупный поставщик майнинг оборудования
+												и оператор дата-центра натерритории России в Сибири,
+												обеспечивающий услуги по поставке, размещению
+												и обслуживанию оборудования для майнинга криптовалюты,
+												а также предлагающий готовые решения для энергоемких
+												вычислений, индустриального майнинга
+												и операций с облачным майнингом
+											</p>
+										</div>
+										<a href="" class="main-slider__button">Подробнее</a>
+									</div>
+								</div>
+								<div class="main-slider__image-bg">
+									<picture><source data-srcset="assets/images/temp/main-slider/about.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/main-slider/about.jpg" alt=""></picture>
+								</div>
+							</div>
+						</div>
+						<div class="main-slider__pagination"></div>
+					</div>
+				</div>
+			</section>
+			<div class="about-company">
+				<div class="about-company__container page-layout">
+					<div class="page-layout__body">
+						<section class="about-company-info">
+							<div class="about-company-info__title title">
+								<h3>Заголовок (SEO-текст)</h3>
+							</div>
+							<div class="about-company-info__info text text_gray">
+								<p>В Whatsminer M50S 130Th используются 5 нанометровые чипы, который обеспечивают высокую скорость
+									обработки данных и эффективное управление теплом. Благодаря этому, майнер работает стабильно и без
+									перегрева, что повышает его надежность и долговечность.</p>
+								<p>Устройство имеет компактный размер и легко монтируется в стойке. Оно оснащено двумя вентиляторами,
+									которые обеспечивают надежное охлаждение и защиту от перегрева. Кроме того, Whatsminer M50S 130Th имеет
+									удобный интерфейс для управления майнером и мониторинга его работы.</p>
+								<p>В целом, Whatsminer M50S 130Th является отличным выбором для тех, кто хочет заработать на добыче
+									криптовалюты. Благодаря своей мощности, эффективности и надежности, майнер обеспечивает стабильный и
+									высокий доход, что делает его одним из лучших устройств на рынке.</p>
+								<p>В Whatsminer M50S 130Th используются 5 нанометровые чипы, который обеспечивают высокую скорость
+									обработки данных и эффективное управление теплом. Благодаря этому, майнер работает стабильно и без
+									перегрева, что повышает его надежность и долговечность.</p>
+								<p>Устройство имеет компактный размер и легко монтируется в стойке. Оно оснащено двумя вентиляторами,
+									которые обеспечивают надежное охлаждение и защиту от перегрева. Кроме того, Whatsminer M50S 130Th имеет
+									удобный интерфейс для управления майнером и мониторинга его работы.</p>
+								<p>В целом, Whatsminer M50S 130Th является отличным выбором для тех, кто хочет заработать на добыче
+									криптовалюты. Благодаря своей мощности, эффективности и надежности, майнер обеспечивает стабильный и
+									высокий доход, что делает его одним из лучших устройств на рынке.</p>
+							</div>
+						</section>
+						<section class="reviews reviews_fix">
+							<div class="actions-head reviews__head">
+								<div class="title">
+									<h3>Отзывы Клиентов</h3>
+								</div>
+								<div class="actions-head__actions-buttons">
+									<button class="actions-head__prev" type="button">
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<button class="actions-head__next" type="button">
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="swiper reviews__slider">
+								<div class="swiper-wrapper reviews__wrapper">
+									<div class="swiper-slide reviews__slide">
+										<article class="review">
+											<div class="review__body">
+												<div class="review__text">
+													<svg>
+														<use href="assets/images/svg/sprite.svg#quote-up"></use>
+													</svg>
+													<p>
+														“One of the advantages of utilizing freelancers is finding talent with different skills
+														quickly as our needs change.”
+													</p>
+													<span></span>
+												</div>
+											</div>
+											<div class="review__client">
+												<div class="review__image-ibg">
+													<picture><source data-srcset="assets/images/temp/reviews/client-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/reviews/client-1.jpg" alt="Kлиент"></picture>
+												</div>
+												<div class="review__info">
+													<div class="review__name">Davis Rosser</div>
+													<div class="review__review__status">Director of Content Experience</div>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="swiper-slide reviews__slide">
+										<article class="review">
+											<div class="review__body">
+												<div class="review__text">
+													<svg>
+														<use href="assets/images/svg/sprite.svg#quote-up"></use>
+													</svg>
+													<p>
+														“One of the advantages of utilizing freelancers is finding talent with different skills
+														quickly as our needs change.”
+													</p>
+													<span></span>
+												</div>
+											</div>
+											<div class="review__client">
+												<div class="review__image-ibg">
+													<picture><source data-srcset="assets/images/temp/reviews/client-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/reviews/client-1.jpg" alt="Kлиент"></picture>
+												</div>
+												<div class="review__info">
+													<div class="review__name">Davis Rosser</div>
+													<div class="review__review__status">Director of Content Experience</div>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="swiper-slide reviews__slide">
+										<article class="review">
+											<div class="review__body">
+												<div class="review__text">
+													<svg>
+														<use href="assets/images/svg/sprite.svg#quote-up"></use>
+													</svg>
+													<p>
+														“One of the advantages of utilizing freelancers is finding talent with different skills
+														quickly as our needs change.”
+													</p>
+													<span></span>
+												</div>
+											</div>
+											<div class="review__client">
+												<div class="review__image-ibg">
+													<picture><source data-srcset="assets/images/temp/reviews/client-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/reviews/client-1.jpg" alt="Kлиент"></picture>
+												</div>
+												<div class="review__info">
+													<div class="review__name">Davis Rosser</div>
+													<div class="review__review__status">Director of Content Experience</div>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="certificats">
+							<div class="actions-head certificats__head">
+								<div class="title">
+									<h3>Сертификаты и награды</h3>
+								</div>
+								<div class="actions-head__actions-buttons">
+									<button class="actions-head__prev" type="button">
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+									<button class="actions-head__next" type="button">
+										<svg>
+											<use href="assets/images/svg/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="swiper certificats__slider">
+								<div class="swiper-wrapper">
+									<a data-fancybox="gallery" class="swiper-slide certificats__image-ibg" href="assets/images/temp/gallery/image-1.jpg">
+										<picture><source data-srcset="assets/images/temp/gallery/image-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-1.jpg" alt="Сертификат"></picture>
+									</a>
+									<a data-fancybox="gallery" class="swiper-slide certificats__image-ibg" href="assets/images/temp/gallery/image-1.jpg">
+										<picture><source data-srcset="assets/images/temp/gallery/image-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-1.jpg" alt="Сертификат"></picture>
+									</a>
+									<a data-fancybox="gallery" class="swiper-slide certificats__image-ibg" href="assets/images/temp/gallery/image-1.jpg">
+										<picture><source data-srcset="assets/images/temp/gallery/image-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-1.jpg" alt="Сертификат"></picture>
+									</a>
+									<a data-fancybox="gallery" class="swiper-slide certificats__image-ibg" href="assets/images/temp/gallery/image-1.jpg">
+										<picture><source data-srcset="assets/images/temp/gallery/image-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-1.jpg" alt="Сертификат"></picture>
+									</a>
+									<a data-fancybox="gallery" class="swiper-slide certificats__image-ibg" href="assets/images/temp/gallery/image-1.jpg">
+										<picture><source data-srcset="assets/images/temp/gallery/image-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-1.jpg" alt="Сертификат"></picture>
+									</a>
+									<a data-fancybox="gallery" class="swiper-slide certificats__image-ibg" href="assets/images/temp/gallery/image-1.jpg">
+										<picture><source data-srcset="assets/images/temp/gallery/image-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="assets/images/temp/gallery/image-1.jpg" alt="Сертификат"></picture>
+									</a>
+								</div>
+							</div>
+						</section>
+						<div class="contacts-info">
+							<div class="title">
+								<h2>Офис в городе Москва</h2>
+							</div>
+							<div class="contacts-info__address">Россия, г. Москва, Калужская площадь, 1/1</div>
+							<a href="tel:+79375444443" class="contact contacts-info__phone">
+								<div class="contacts-info__icon">
+									<svg>
+										<use href="assets/images/svg/sprite.svg#call"></use>
+									</svg>
+								</div>
+								<div class="contact__link">+7 (937) 544 44 43</div>
+							</a>
+							<a href="mailto:info@sibmain.ru" class="contact contacts-info__email">
+								<div class="contacts-info__icon stroke">
+									<svg>
+										<use href="assets/images/svg/sprite.svg#email"></use>
+									</svg>
+								</div>
+								<div class="contact__link">info@sibmain.ru</div>
+							</a>
+							<div class="contacts-info__subaddress">
+								<span>Дата-центр:</span> Красноярский край, Березовский район, рп. Березовка, район совхоза «Красноярский».
+							</div>
+						</div>
+
+					</div>
+					<div class="page-layout__sidebar">
+						<form class="form-request">
+							<div class="form-request__title sub-title">Оставить заявку</div>
+							<fieldset class="form-request__actions">
+								<div class="form-request__input input-control">
+									<input type="text" placeholder="Имя*" name="client-name">
+									<span class="message-error">Поле должно быть заполнено</span>
+								</div>
+								<div class="form-request__input input-control">
+									<div class="tel-block" data-select="tel">
+										<input type="hidden" name="country">
+										<button class="tel-block__trigger" data-type-s="trigger" type="button">
+											<span class="trigger-content"></span>
+											<span class="trigger-icon">
+												<svg>
+													<use href="assets/images/svg/sprite.svg#arrow"></use>
+												</svg>
+											</span>
+										</button>
+										<ul class="tel-block__list" data-type-s="list">
+											<li class="tel-block__option" data-value="ru" data-placeholder="+7 (999) 999 99 99">
+												<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-ru.webp" type="image/webp"><img src="assets/images/temp/lang/flag-ru.jpg" alt="RU"></picture></span>
+											</li>
+											<li class="tel-block__option" data-value="en" data-placeholder="+13 (999) 999 99 99">
+												<span class="tel-block__image"><picture><source srcset="assets/images/temp/lang/flag-en.webp" type="image/webp"><img src="assets/images/temp/lang/flag-en.jpg" alt="EN"></picture></span>
+											</li>
+										</ul>
+									</div>
+									<input type="tel" name="client-phone">
+								</div>
+								<button class="form-request__button button" type="submit">Отправить</button>
+							</fieldset>
+							<div class="form-request__info">
+								Нажимая кнопку Вы принимаете порядок обработки персональных данных описанный в нашей политике конфиденциальности.
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		<section class="subscribe-us">
+			<div class="subscribe-us__container">
+				<div class="subscribe-us__body">
+					<div class="subscribe-us__title title title_white">
+						<img data-src="assets/images/icons/subscribe/telegram.svg" class="subscribe-us__icon" alt="Телеграм" data-da=".subscribe-us__actions, 960, first">
+						<h3>Подписывайся на наш Telegram - канал</h3>
+					</div>
+					<div class="text text_white">
+						<p>Мы предлагаем всестороннее освещение новостей, связанных с майнингом криптовалют, включая технологические
+							инновации, изменения в алгоритмах, обновления крупных проектов и многое другое.</p>
+					</div>
+				</div>
+				<div class="subscribe-us__actions">
+					<a href="#" class="button button_white">Перейти</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="top-footer">
+					<a class="logo" href="index.html">
+						<img src="assets/images/icons/logo/sibmain.svg" alt="Сибмэйн">
+					</a>
+					<nav>
+						<ul class="top-footer__list">
+							<li><a href="">Дата-центр</a></li>
+							<li><a href="">Каталог товаров</a></li>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Новости</a></li>
+							<li><a href="">Контакты</a></li>
+							<li><a href="">Полезная информация</a></li>
+							<li><a href="">Партнерам</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__contacts">
+					<div class="contact">
+						<div class="contact__icon">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#email"></use>
+							</svg>
+						</div>
+						<a href="mailto:info@sibmain.ru" class="contact__link">info@sibmain.ru</a>
+					</div>
+					<div class="contact">
+						<div class="contact__icon contact__icon_stroke">
+							<svg>
+								<use href="assets/images/svg/sprite.svg#call"></use>
+							</svg>
+						</div>
+						<a href="tel:+79375444443" class="contact__link">+7 (937) 544 44 43</a>
+					</div>
+				</div>
+				<div class="bottom-footer">
+					<div class="bottom-footer__copy">Копирайт 2023</div>
+					<ul class="bottom-footer__list">
+						<li><a href="">Договор оферты</a></li>
+						<li><a href="">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- sсripts -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?v=20230608214355"></script>
+	<script src="assets/js/app.min.js?v=20230608214355"></script>
+
+</body>
+
+</html>
